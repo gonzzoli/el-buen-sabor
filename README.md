@@ -30,4 +30,4 @@ También facilitamos el trabajo de los empleados del local, con una simple inter
 
 **Pagina web:** muy pronto... pero menos pronto que el repositorio backend...
 
-**PDF con pantallas de la web:** [Enlace al archivo](./Sprint1-DS-Grupo_Java-li.pdf)
+**PDF con pantallas de la web:** [Enlace al archivo](./fuente/Sprint1-DS-Grupo_Java-li.pdf)
