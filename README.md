@@ -1,5 +1,6 @@
 # El Buen Sabor
-[Logo del negocio](./fuente/logo.png)
+![Logo del negocio](./fuente/logo.png)
+
 ## Sobre el proyecto
 *El Buen Sabor* es un negocio mendocino emergente (aun no vende nada), elogiado por los comensales mas prestigiosos de la ciudad (familiares de los creadores) y 3 veces ganador en competencias de gastronomía (que ellos mismos han organizado). 
 
@@ -26,5 +27,7 @@ También facilitamos el trabajo de los empleados del local, con una simple inter
 # Enlaces del proyecto
 
 **Repositorio backend:** muy pronto...
+
 **Pagina web:** muy pronto... pero menos pronto que el repositorio backend...
-**PDF con pantallas de la web:** [Enlace al archivo](./Sprint1-DS-Grupo_Java-li.pdf)
+
+**PDF con pantallas de la web:** [Enlace al archivo](./fuente/Sprint1-DS-Grupo_Java-li.pdf)
