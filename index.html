@@ -1,64 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="estilos_generales.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&family=Poppins:wght@300&family=Reenie+Beanie&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="estilos_generales.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&family=Poppins:wght@300&family=Reenie+Beanie&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>El Buen Sabor</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="header-logo">
-            <img src="./fuente/logo.png" alt="logo">
-        </div>
-        <div class="header-botones-links">
-            <ul class="header-links">
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="index.html">Pagina 1</a>
-                </li>
-                <li>
-                    <a href="index.html">Pagina 2</a>
-                </li>
-            </ul>
-            <div class="header-botones">
-                <button class="boton-secundario boton-carrito">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    Carrito
-                </button>
-                <button class="boton-primario boton-sesion">Iniciar Sesión</button>
-                <!-- Boton de sesion iniciada -->
-                <!-- <button class="boton-sesion boton-sesion-iniciada">
+      <div class="header-logo">
+        <img src="./fuente/logo.png" alt="logo" />
+      </div>
+      <div class="header-botones-links">
+        <ul class="header-links">
+          <li>
+            <a href="index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="index.html">Pagina 1</a>
+          </li>
+          <li>
+            <a href="index.html">Pagina 2</a>
+          </li>
+        </ul>
+        <div class="header-botones">
+          <button class="boton-secundario boton-carrito">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Carrito
+          </button>
+          <button class="boton-primario boton-sesion">Iniciar Sesión</button>
+          <!-- Boton de sesion iniciada -->
+          <!-- <button class="boton-sesion boton-sesion-iniciada">
                     <i class="fa-solid fa-user"></i>
                     Nombre
                 </button> -->
-            </div>
         </div>
-        <section>
-            <!-- ACA VA TODO EL CONTENIDO DE SU PAGINA -->
-            <!-- ACA VA TODO EL CONTENIDO DE SU PAGINA -->
-            <!-- ACA VA TODO EL CONTENIDO DE SU PAGINA -->
-        </section>
+      </div>
     </header>
-    <footer>
-        <div class="redes-sociales">
-            <p>Sigamos en contacto:</p>
-            <div class="iconos-redes">
-                <a target="_blank" href="https://twitter.com/elonmusk"><i class="fa-brands fa-twitter"></i></a>
-                <a target="_blank" href="https://www.facebook.com/mundogaturro"><i class="fa-brands fa-facebook"></i></a>
-                <a target="_blank" href="https://www.instagram.com/leomessi"><i class="fa-brands fa-instagram"></i></a>
-                <a target="_blank" href=""><i class="fa-solid fa-envelope"></i></a>
-            </div>
-        </div>
-        <p class="footer-marca">El Buen Sabor</p>
-    </footer>
 
-</body>
+    <div class="hero">
+      <h1 class="texto-hero">
+        Cuando nuestros clientes prueban nuestra comida, suelen decir <br />
+        "Este es el buen sabor"
+      </h1>
+    </div>
+
+    <section class="principal">
+      <div class="filtros-busqueda">
+        <div class="rubros-iconos">
+          <i class="fa-solid fa-burger"></i>
+          <i class="fa-solid fa-pizza-slice"></i>
+          <!-- va a quedar el de zanahoria hasta encontrar
+                uno de papas frtias gratis.
+                igual con la botella de agua de abajo, necesitamos
+                uno de gaseosa -->
+          <i class="fa-solid fa-carrot"></i>
+          <i class="fa-solid fa-bottle-water"></i>
+        </div>
+        <div class="buscador-producto">
+          <input
+            type="text"
+            id="busqueda-producto"
+            placeholder="Buscar un producto..."
+          />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+      <div class="categoria-productos">
+        <h2 class="categoria-titulo">Hamburguesas</h2>
+        <div class="categoria-lista-productos">
+          <div class="producto-carta">
+            <img
+              src="./fuente/hamburguesa-producto.jpg"
+              alt="Imagen producto"
+            />
+            <div class="producto-informacion">
+              <h3 class="producto-nombre">Titulo producto</h3>
+              <p class="producto-descripcion">
+                Descripcion. Lorem, ipsum dolor sit amet consectetur
+                adipisicing.
+              </p>
+              <p class="producto-precio">$99.99</p>
+              <div class="producto-botones">
+                <button class="boton-secundario boton-detalles-producto">
+                  Detalles
+                </button>
+                <button class="boton-primario boton-agregar-producto">
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="producto-carta">
+            <img
+              src="./fuente/hamburguesa-producto.jpg"
+              alt="Imagen producto"
+            />
+            <div class="producto-informacion">
+              <h3 class="producto-nombre">Titulo producto</h3>
+              <p class="producto-descripcion">
+                Descripcion. Lorem, ipsum dolor sit amet consectetur
+                adipisicing.
+              </p>
+              <p class="producto-precio">$99.99</p>
+              <div class="producto-botones">
+                <button class="boton-secundario boton-detalles-producto">
+                  Detalles
+                </button>
+                <button class="boton-primario boton-agregar-producto">
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="producto-carta">
+            <img
+              src="./fuente/hamburguesa-producto.jpg"
+              alt="Imagen producto"
+            />
+            <div class="producto-informacion">
+              <h3 class="producto-nombre">Titulo producto</h3>
+              <p class="producto-descripcion">
+                Descripcion. Lorem, ipsum dolor sit amet consectetur
+                adipisicing.
+              </p>
+              <p class="producto-precio">$99.99</p>
+              <div class="producto-botones">
+                <button class="boton-secundario boton-detalles-producto">
+                  Detalles
+                </button>
+                <button class="boton-primario boton-agregar-producto">
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="producto-carta">
+            <img
+              src="./fuente/hamburguesa-producto.jpg"
+              alt="Imagen producto"
+            />
+            <div class="producto-informacion">
+              <h3 class="producto-nombre">Titulo producto</h3>
+              <p class="producto-descripcion">
+                Descripcion. Lorem, ipsum dolor sit amet consectetur
+                adipisicing.
+              </p>
+              <p class="producto-precio">$99.99</p>
+              <div class="producto-botones">
+                <button class="boton-secundario boton-detalles-producto">
+                  Detalles
+                </button>
+                <button class="boton-primario boton-agregar-producto">
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="producto-carta">
+            <img
+              src="./fuente/hamburguesa-producto.jpg"
+              alt="Imagen producto"
+            />
+            <div class="producto-informacion">
+              <h3 class="producto-nombre">Titulo producto</h3>
+              <p class="producto-descripcion">
+                Descripcion. Lorem, ipsum dolor sit amet consectetur
+                adipisicing.
+              </p>
+              <p class="producto-precio">$99.99</p>
+              <div class="producto-botones">
+                <button class="boton-secundario boton-detalles-producto">
+                  Detalles
+                </button>
+                <button class="boton-primario boton-agregar-producto">
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="producto-carta">
+            <img
+              src="./fuente/hamburguesa-producto.jpg"
+              alt="Imagen producto"
+            />
+            <div class="producto-informacion">
+              <h3 class="producto-nombre">Titulo producto</h3>
+              <p class="producto-descripcion">
+                Descripcion. Lorem, ipsum dolor sit amet consectetur
+                adipisicing.
+              </p>
+              <p class="producto-precio">$99.99</p>
+              <div class="producto-botones">
+                <button class="boton-secundario boton-detalles-producto">
+                  Detalles
+                </button>
+                <button class="boton-primario boton-agregar-producto">
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="redes-sociales">
+        <p>Sigamos en contacto:</p>
+        <div class="iconos-redes">
+          <a target="_blank" href="https://twitter.com/elonmusk"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a target="_blank" href="https://www.facebook.com/mundogaturro"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a target="_blank" href="https://www.instagram.com/leomessi"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a target="_blank" href=""><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+      <p class="footer-marca">El Buen Sabor</p>
+    </footer>
+  </body>
 </html>
