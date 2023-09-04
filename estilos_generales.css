@@ -94,6 +94,20 @@ header .header-botones-links .header-botones .boton-carrito:hover i {
   line-height: 48px;
 }
 
+.ventana-emergente {
+  width: 75%;
+  max-width: 750px;
+  max-height: 75%;
+  border-radius: 10px;
+  background: white;
+  padding: 20px;
+  position: fixed;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .titulo-1 {
   color: #7d0300;
   font-size: 40px;
