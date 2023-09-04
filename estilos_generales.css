@@ -94,6 +94,78 @@ header .header-botones-links .header-botones .boton-carrito:hover i {
   line-height: 48px;
 }
 
+.titulo-1 {
+  color: #7d0300;
+  font-size: 40px;
+}
+
+.titulo-2 {
+  color: #7d0300;
+  font-size: 33px;
+}
+
+.titulo-3 {
+  color: #7d0300;
+  font-size: 28px;
+}
+
+.titulo-4 {
+  color: #7d0300;
+  font-size: 23px;
+}
+
+.titulo-5 {
+  color: #7d0300;
+  font-size: 19px;
+}
+
+.texto-body {
+  color: #7d0300;
+  font-size: 16px;
+}
+
+.texto-chico {
+  color: #7d0300;
+  font-size: 13px;
+}
+
+.buscador-texto {
+  background: rgba(241, 188, 44, 0.4941176471);
+  width: 100%;
+  min-width: 150px;
+  max-width: 350px;
+  color: #7d0300;
+  padding: 15px 20px;
+  border-radius: 50px;
+  border: none;
+}
+.buscador-texto:focus {
+  outline: 1px solid #7d0300;
+}
+
+.tabla {
+  display: flex;
+  justify-content: center;
+  border-collapse: collapse;
+  border-spacing: 40px;
+}
+
+.tabla-titulo-columna {
+  background-color: #B81A1A;
+  color: white;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 0px;
+  border: 1px solid #000;
+}
+
+.celda {
+  background-color: white;
+  text-align: center;
+  border-collapse: separate;
+  border: 1px solid #000;
+}
+
 .boton-secundario {
   border-radius: 50px;
   padding: 16px 24px;

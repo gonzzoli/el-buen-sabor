@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/*estilos de letra segun figma*/
+    h1{
+            color: #7d0300;
+            font-size: 40px;
+        }
+
+        h2{
+            color: #7d0300;
+            font-size: 33px;
+        }
+
+        h3{
+            color: #7d0300;
+            font-size: 28px;
+        }
+        h4{
+            color: #7d0300;
+            font-size: 23px;
+        }
+
+        h5{
+            color: #7d0300;
+            font-size: 19px;
+        }
+        texto_body {
+            color: #7d0300;
+            font-size: 16px;
+        }
+        texto_chico {
+            color: #7d0300;
+            font-size: 13px;
+        }
+/*tablas*/
+        .table{
+                    
+            display: flex;
+            justify-content: center;
+            border-collapse: collapse;
+            border-spacing:40px;
+        }
+
+        .th{
+            background-color: #B81A1A;
+            color:white;
+            text-align: center;
+            border-collapse: separate;
+            border-spacing: 0px;
+            border: 1px solid #000;
+        }
+
+        .td {
+            background-color:white;
+            text-align: center;
+            border-collapse: separate;
+            border: 1px solid #000;
+        }
+
+    /*boton*/
+    .button{
+            background-color:#F1BD2D;
+            padding: 10px 15px;
+            text-align: center;
+            border-radius: 32px;
+            float: left;
+            border:none;
+        }
+
+        .barraBusqueda {
+            background-color:#F1BD2D;
+            border-radius: 16px;
+            padding: 10px 20px;
+            margin-left: 1px; /*espacio entre botones*/
+            float: right;
+            border:none;
+        }
+
+        .buttonCancelar{
+            background-color: white;
+            border: 2px solid #B81A1A;
+            padding: 10px 15px;
+            text-align: center;
+            border-radius: 32px;
+            float: center;
+        }
+
+        .form {
+            color:#B81A1A;
+            border-width:thin;
+            border-style:solid;
+            border-color:#B81A1A;
+            border-radius: 8px;
+            padding: 10px 15px; /*medidas de la caja de formulario(hechas  a ojo según la HU20.1)*/
+        }
+
+</style>
+</head>
+
+<body>
+    <label for="fname" >Estado:</label>
+            <select name="EstadoRubro" id="Estrubros" class="form">
+                <option value="Alta" >Seleccionar Estado</option>
+                <option value="Alta">Alta</option>
+                <option value="Baja">Baja</option>
+            </select>
+        <br> <br> <br>
+    <button class="button"> <strong>Nuevo Rubro </strong></button>
+        <br> <br> <br>
+    <input class="barraBusqueda"  type="search" name="busquedapedido" placeholder="Buscar un pedido..">
+        <br> <br> <br>
+   
+    <table class="table" cellpadding="18" cellspacing="0">
+
+        <tr>
+
+            <th class="th">N° Orden</th>
+        
+            <th class="th">Cliente</th>
+        
+            <th class="th">Teléfono</th>
+
+            <th class="th">Dirección</th>
+
+            <th class="th">Detalles</th>
+
+            <th class="th">Acción</th>
+
+            <th></th>
+        
+          </tr>
+        <tr>
+          <td class="td">XXXX</td>
+      
+          <td class="td">Nombre Apellido</td>
+      
+          <td class="td">XXXXXXXXXX</td>
+
+          <td class="td"> texto</td>  
+
+          <td class="td">
+            <button class="buttonCancelar" style="color:#B81A1A"> <strong> Ver detalles </strong></button>
+          </td>
+
+          <td class="td">
+            <button class="button"> <strong>Entregar </strong></button>
+          </td>
+        </tr>
+        
+        <tr>
+            <td class="td">XXXX</td>
+        
+            <td class="td">Nombre Apellido</td>
+        
+            <td class="td">XXXXXXXXXX</td>
+  
+            <td class="td"> texto</td>  
+
+            <td class="td">
+              <button class="buttonCancelar" style="color:#B81A1A"> <strong> Ver detalles </strong></button>
+            </td>
+  
+            <td class="td">
+              <button class="button"> <strong>Entregar </strong></button>
+            </td>
+          </tr>
+        </tr>
+    </table>
+</body>
+</html>

@@ -22,26 +22,7 @@
   transition: 0.1s ease;
 }
 .principal .filtros-busqueda .rubros-iconos i:hover {
-  color: #B21C1D;
-}
-.principal .filtros-busqueda .buscador-producto {
-  background: rgba(241, 188, 44, 0.4941176471);
-  border-radius: 50px;
-  padding: 5px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-width: 300px;
-}
-.principal .filtros-busqueda .buscador-producto input {
-  background: none;
-  border: none;
-  color: #7d0300;
-  padding: 10px;
-  width: 100%;
-}
-.principal .filtros-busqueda .buscador-producto input:focus {
-  outline: none;
+  color: #b21c1d;
 }
 .principal .categoria-productos {
   margin: 40px;
@@ -58,7 +39,7 @@
   gap: 40px;
 }
 .principal .categoria-productos .categoria-lista-productos .producto-carta {
-  border: 1px solid #D4D2E3;
+  border: 1px solid #d4d2e3;
   border-radius: 24px;
   width: 20%;
 }

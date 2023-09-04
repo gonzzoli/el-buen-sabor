@@ -104,6 +104,70 @@ header {
     line-height: 48px;
   }
 }
+.titulo-1 {
+  color: $color-primario;
+  font-size: 40px;
+}
+
+.titulo-2 {
+  color: $color-primario;
+  font-size: 33px;
+}
+.titulo-3 {
+  color: $color-primario;
+  font-size: 28px;
+}
+.titulo-4 {
+  color: $color-primario;
+  font-size: 23px;
+}
+.titulo-5 {
+  color: $color-primario;
+  font-size: 19px;
+}
+.texto-body {
+  color: $color-primario;
+  font-size: 16px;
+}
+.texto-chico {
+  color: $color-primario;
+  font-size: 13px;
+}
+.buscador-texto {
+  background: #f1bc2c7e;
+  width: 100%;
+  min-width: 150px;
+  max-width: 350px;
+  color: $color-primario;
+  padding: 15px 20px;
+  border-radius: 50px;
+  border: none;
+  &:focus {
+    outline: 1px solid $color-primario;
+  }
+}
+.tabla{
+  display: flex;
+  justify-content: center;
+  border-collapse: collapse;
+  border-spacing:40px;
+}
+
+.tabla-titulo-columna{
+  background-color: #B81A1A;
+  color:white;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 0px;
+  border: 1px solid #000;
+}
+
+.celda {
+  background-color:white;
+  text-align: center;
+  border-collapse: separate;
+  border: 1px solid #000;
+}
 
 .boton-secundario {
   border-radius: 50px;
