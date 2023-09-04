@@ -79,11 +79,11 @@ header {
 }
 
 .hero {
-    /* ES LA IMAGEN DE FONDO GRANDE EN EL HERO
+  /* ES LA IMAGEN DE FONDO GRANDE EN EL HERO
     EN src PUEDEN PONER LA URL, O DESCARGAR LA FOTO
     Y GUARDARLA EN LA MISMA CARPETA Y APUNTAR AHÍ */
-    // pero no modificar este archivo. sobreescribanlo con su
-    // css
+  // pero no modificar este archivo. sobreescribanlo con su
+  // css
   height: 40vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./fuente/hamburguesa_prueba.jpg");
@@ -162,16 +162,16 @@ header {
     outline: 1px solid $color-primario;
   }
 }
-.tabla{
+.tabla {
   display: flex;
   justify-content: center;
   border-collapse: collapse;
-  border-spacing:40px;
+  border-spacing: 40px;
 }
 
-.tabla-titulo-columna{
-  background-color: #B81A1A;
-  color:white;
+.tabla-titulo-columna {
+  background-color: #b81a1a;
+  color: white;
   text-align: center;
   border-collapse: separate;
   border-spacing: 0px;
@@ -179,19 +179,36 @@ header {
 }
 
 .celda {
-  background-color:white;
+  background-color: white;
   text-align: center;
   border-collapse: separate;
   border: 1px solid #000;
 }
 
 .combo-box {
-  color:$color-secundario;
-  border-width:thin;
-  border-style:solid;
-  border-color:$color-secundario;
+  color: $color-secundario;
+  border-width: thin;
+  border-style: solid;
+  border-color: $color-secundario;
   border-radius: 8px;
   padding: 10px 15px; /*medidas de la caja de formulario(hechas  a ojo según la HU20.1)*/
+}
+
+.form-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  max-width: 250px;
+  .texto-input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid $color-secundario;
+    color: $color-primario;
+    &:focus {
+      outline: none;
+      border-bottom: 2px solid $color-secundario;
+    }
+  }
 }
 
 .boton-secundario {
