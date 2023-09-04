@@ -1,1 +1,227 @@
-/*# sourceMappingURL=carrito.css.map */
+.principal {
+  margin: 30px 0;
+  padding: 0 20px;
+}
+.principal .filtros-busqueda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 75px;
+}
+.principal .filtros-busqueda .rubros-iconos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 170px;
+  max-width: 250px;
+  width: 50%;
+}
+.principal .filtros-busqueda .rubros-iconos i {
+  font-size: 28px;
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+.principal .filtros-busqueda .rubros-iconos i:hover {
+  color: #b21c1d;
+}
+.principal .producto-detalle {
+  border: 2px solid black;
+  border-radius: 24px;
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+  width: 75%;
+  max-width: 750px;
+  height: 300px;
+}
+.principal .producto-detalle .imagen-detalle {
+  height: 100%;
+  width: 50%;
+  min-width: 200px;
+  border-radius: 24px 0 0 24px;
+  background: red;
+  background-image: url("./fuente/hamburguesa-producto.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.principal .producto-detalle .producto-detalle-informacion {
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.principal .producto-detalle .producto-detalle-informacion .arriba .producto-nombre {
+  margin-bottom: 10px;
+}
+.principal .producto-detalle .producto-detalle-informacion .abajo p {
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.principal .producto-detalle .producto-detalle-informacion .abajo .producto-botones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 15px;
+}
+.principal .producto-detalle .producto-detalle-informacion .abajo .producto-botones button {
+  padding: 15px 25px;
+}
+.principal .categoria-productos {
+  margin: 40px;
+}
+.principal .categoria-productos .categoria-titulo {
+  text-align: center;
+  margin: 30px 0;
+}
+.principal .categoria-productos .categoria-lista-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.principal .categoria-productos .categoria-lista-productos .producto-carta {
+  border: 1px solid #d4d2e3;
+  border-radius: 24px;
+  width: 20%;
+}
+.principal .categoria-productos .categoria-lista-productos .producto-carta img {
+  width: 100%;
+  border-radius: 24px 24px 0 0;
+}
+.principal .categoria-productos .categoria-lista-productos .producto-carta .producto-informacion {
+  padding: 10px;
+}
+.principal .categoria-productos .categoria-lista-productos .producto-carta .producto-informacion .producto-nombre {
+  margin-bottom: 5px;
+}
+.principal .categoria-productos .categoria-lista-productos .producto-carta .producto-informacion .producto-descripcion {
+  margin-bottom: 20px;
+}
+.principal .categoria-productos .categoria-lista-productos .producto-carta .producto-informacion .producto-precio {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.principal .categoria-productos .categoria-lista-productos .producto-carta .producto-informacion .producto-botones {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  padding: 10px;
+}
+.principal .categoria-productos .categoria-lista-productos .producto-carta .producto-informacion .producto-botones button {
+  padding: 12px 20px;
+}
+
+.ventana-carrito .boton-volver {
+  padding: 5px 10px;
+}
+.ventana-carrito .titulo-carrito {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.ventana-carrito .carrito-lista-productos {
+  background: #F4F4F4;
+}
+.ventana-carrito .carrito-lista-productos .producto-carrito {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+.ventana-carrito .carrito-lista-productos .producto-carrito > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ventana-carrito .carrito-lista-productos .producto-carrito .producto-carrito-derecha button {
+  padding: 10px 15px;
+}
+.ventana-carrito .ventana-carrito-abajo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.ventana-carrito .ventana-carrito-abajo p {
+  font-weight: 700;
+}
+
+.principal {
+  padding: 20px;
+}
+.principal .arriba {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.principal .arriba .boton-volver {
+  padding: 10px 15px;
+}
+.principal .arriba .titulo-carrito {
+  text-align: center;
+}
+.principal .contenido {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.principal .contenido .informacion-pago {
+  width: 50%;
+  min-width: 500px;
+}
+.principal .contenido .informacion-pago .seleccion-radio {
+  margin-bottom: 20px;
+}
+.principal .contenido .informacion-pago .seleccion-radio h4 {
+  margin-bottom: 10px;
+}
+.principal .contenido .informacion-pago .seleccion-radio .opciones {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.principal .contenido .informacion-pago .datos-cliente {
+  margin-top: 40px;
+}
+.principal .contenido .informacion-pago .datos-cliente h3 {
+  margin-bottom: 10px;
+}
+.principal .contenido .informacion-pago .datos-cliente .contenedor-inputs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+.principal .contenido .informacion-pago .datos-cliente .contenedor-inputs .form-texto {
+  width: 40%;
+  margin-bottom: 20px;
+}
+.principal .contenido .pedido {
+  width: 50%;
+  height: 100%;
+}
+.principal .contenido .pedido .ventana-carrito {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: static;
+  transform: none;
+}
+.principal .contenido .pedido .ventana-carrito .precio-total {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 500;
+}
+.principal .boton-confirmar-contenedor {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=carrito.css.map */

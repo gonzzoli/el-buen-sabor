@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../estilos_generales.css">
-    <link rel="stylesheet" href="../estilos_generales.css" />
+    <link rel="stylesheet" href="../../estilos_generales.css" />
+    <link rel="stylesheet" href="./carrito.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -51,16 +51,118 @@
         </div>
       </div>
     </header>
-    <div class="hero">
-      <!-- SU TEXTO -->
-      <h1 class="texto-hero">
-        Cuando nuestros clientes prueban nuestra comida, suelen decir <br />
-        "Este es el buen sabor"
-      </h1>
-    </div>
 
     <section class="principal">
-      <!-- ACA VA TODO SU CONTENIDO -->
+      <div class="arriba">
+        <button class="boton-secundario boton-volver">Volver</button>
+        <h1 class="titulo-1 titulo-carrito">Ya casi terminamos!</h1>
+        <span></span>
+      </div>
+
+      <form>
+        <div class="contenido">
+          <div class="informacion-pago">
+            <div class="modo-entrega seleccion-radio">
+              <h4 class="titulo-4">Modo de entrega</h4>
+              <div class="opciones">
+                <input
+                  type="radio"
+                  name="modo-entrega"
+                  value="retiro-local"
+                  id="retiro-local"
+                />
+                <label for="retiro-local">Retiro en local</label>
+
+                <input
+                  type="radio"
+                  name="modo-entrega"
+                  value="envio-domicilio"
+                  id="envio-domicilio"
+                />
+                <label for="envio-domicilio">Envío a domicilio</label>
+              </div>
+            </div>
+
+            <div class="metodo-pago seleccion-radio">
+              <h4 class="titulo-4">Método de pago</h4>
+              <div class="opciones">
+                <input
+                  type="radio"
+                  name="metodo-pago"
+                  value="efectivo"
+                  id="efectivo"
+                />
+                <label for="efectivo">Efectivo</label>
+
+                <input
+                  type="radio"
+                  name="metodo-pago"
+                  value="mercado-pago"
+                  id="mercado-pago"
+                />
+                <label for="mercado-pago">Mercado Pago</label>
+              </div>
+            </div>
+
+            <div class="datos-cliente">
+              <h3 class="titulo-3">Tus datos</h3>
+              <div class="contenedor-inputs">
+                <div class="form-texto">
+                  <label for="nombre-apellido">Nombre y apellido</label>
+                  <input
+                    id="nombre-apellido"
+                    type="text"
+                    placeholder="..."
+                    class="texto-input"
+                  />
+                </div>
+
+                <div class="form-texto">
+                  <label for="numero-telefono">Número de teléfono</label>
+                  <input
+                    id="numero-telefono"
+                    type="text"
+                    placeholder="..."
+                    class="texto-input"
+                  />
+                </div>
+                <div class="form-texto">
+                  <label for="direccion">Dirección</label>
+                  <input
+                    id="direccion"
+                    type="text"
+                    placeholder="..."
+                    class="texto-input"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pedido">
+            <div class="ventana-emergente ventana-carrito">
+              <h2 class="titulo-2 titulo-carrito">Tu pedido</h2>
+              <div class="carrito-lista-productos">
+                <div class="producto-carrito">
+                  <div class="producto-carrito-izquierda">
+                    <h5 class="titulo-5">Titulo Producto 1</h5>
+                    <p class="texto-body">Cantidad: 1</p>
+                  </div>
+                  <div class="producto-carrito-centro">
+                    <p class="texto-body">Precio unitario: $99.99</p>
+                    <h5 class="titulo-5">Subtotal: $99.99</h5>
+                  </div>
+                </div>
+              </div>
+                <p class="titulo-4 precio-total">Total: $300.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="boton-confirmar-contenedor">
+          <button type="submit" 
+        class="boton-primario boton-confirmar">Confirmar Pedido</button>
+        </div>
+        
+      </form>
     </section>
 
     <footer>
