@@ -116,4 +116,38 @@
 }
 .principal .categoria-productos .categoria-lista-productos .producto-carta .producto-informacion .producto-botones button {
   padding: 12px 20px;
+}
+
+.ventana-carrito .boton-volver {
+  padding: 5px 10px;
+}
+.ventana-carrito .titulo-carrito {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.ventana-carrito .carrito-lista-productos {
+  background: #F4F4F4;
+}
+.ventana-carrito .carrito-lista-productos .producto-carrito {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+.ventana-carrito .carrito-lista-productos .producto-carrito > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ventana-carrito .carrito-lista-productos .producto-carrito .producto-carrito-derecha button {
+  padding: 10px 15px;
+}
+.ventana-carrito .ventana-carrito-abajo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.ventana-carrito .ventana-carrito-abajo p {
+  font-weight: 700;
 }/*# sourceMappingURL=index.css.map */
