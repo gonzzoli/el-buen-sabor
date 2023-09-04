@@ -169,6 +169,15 @@ header {
   border: 1px solid #000;
 }
 
+.combo-box {
+  color:$color-secundario;
+  border-width:thin;
+  border-style:solid;
+  border-color:$color-secundario;
+  border-radius: 8px;
+  padding: 10px 15px; /*medidas de la caja de formulario(hechas  a ojo según la HU20.1)*/
+}
+
 .boton-secundario {
   border-radius: 50px;
   padding: 16px 24px;
