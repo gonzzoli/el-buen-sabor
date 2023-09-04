@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -44,7 +45,7 @@ header .header-botones-links .header-links li a {
   padding: 5px 5px;
 }
 header .header-botones-links .header-links li a:hover {
-  border-bottom: 1px solid #B21C1D;
+  border-bottom: 1px solid #b21c1d;
 }
 header .header-botones-links .header-botones .boton-carrito {
   transition: 0.1s ease;
@@ -70,19 +71,42 @@ header .header-botones-links .header-botones .boton-carrito:hover i {
   }
 }
 
+.hero {
+  /* ES LA IMAGEN DE FONDO GRANDE EN EL HERO
+  EN src PUEDEN PONER LA URL, O DESCARGAR LA FOTO
+  Y GUARDARLA EN LA MISMA CARPETA Y APUNTAR AHÍ */
+  height: 40vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./fuente/hamburguesa_prueba.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .texto-hero {
+  color: white;
+  font-size: 40px;
+  width: 70%;
+  max-width: 700px;
+  text-align: center;
+  line-height: 48px;
+}
+
 .boton-secundario {
   border-radius: 50px;
   padding: 16px 24px;
   font-weight: 700;
   transition: 0.1s ease-out;
   cursor: pointer;
-  color: #B21C1D;
+  color: #b21c1d;
   background: white;
-  border: 2px solid #B21C1D;
+  border: 2px solid #b21c1d;
 }
 .boton-secundario:hover {
   color: white;
-  background: #B21C1D;
+  background: #b21c1d;
 }
 
 .boton-primario {
@@ -92,8 +116,8 @@ header .header-botones-links .header-botones .boton-carrito:hover i {
   transition: 0.1s ease-out;
   cursor: pointer;
   color: black;
-  background: #F1BD2D;
-  border: 2px solid #F1BD2D;
+  background: #f1bd2d;
+  border: 2px solid #f1bd2d;
 }
 .boton-primario:hover {
   color: white;
