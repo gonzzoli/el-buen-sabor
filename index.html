@@ -7,15 +7,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>El Buen Sabor</title>
 </head>
 <body>
     <header>
-        <div class="contenedor-logo">
+        <div class="header-logo">
             <img src="./fuente/logo.png" alt="logo">
         </div>
-        <div class="contenedor-links-nav">
-            <ul>
+        <div class="header-botones-links">
+            <ul class="header-links">
                 <li>
                     <a href="index.html">Inicio</a>
                 </li>
@@ -26,11 +27,20 @@
                     <a href="index.html">Pagina 2</a>
                 </li>
             </ul>
+            <div class="header-botones">
+                <button class="boton-carrito">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Carrito
+                </button>
+                <button class="boton-sesion">Iniciar Sesión</button>
+                <!-- Boton de sesion iniciada -->
+                <!-- <button class="boton-sesion boton-sesion-iniciada">
+                    <i class="fa-solid fa-user"></i>
+                    Nombre
+                </button> -->
+            </div>
         </div>
-        <div class="contenedor-botones-nav">
-            <button>Carrito</button>
-            <button>Iniciar Sesión</button>
-        </div>
+        
     </header>
     <section class="hero">
         <h1>Cuando nuestros clientes prueban nuestra comida,

@@ -1,29 +1,86 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-    color: #7d0300;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: #7d0300;
 }
 
 header {
-    height: 82px;
-    border-bottom: 1px solid black ;
+  height: 82px;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
-.contenedor-logo {
-    width: 25%;
-    height: 75%;
+header .header-logo {
+  width: 25%;
+  height: 75%;
+  max-width: 250px;
+  display: flex;
+  align-items: center;
 }
-
-.contenedor-logo img {
-    width: 100%;
+header .header-logo img {
+  width: 100%;
+}
+header .header-botones-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+header .header-botones-links .header-links {
+  display: flex;
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+}
+header .header-botones-links .header-links li {
+  display: flex;
+  align-items: center;
+}
+header .header-botones-links .header-links li a {
+  text-decoration: none;
+  padding: 5px 5px;
+}
+header .header-botones-links .header-links li a:hover {
+  border-bottom: 1px solid #B21C1D;
+}
+header .header-botones-links .header-botones button {
+  border-radius: 50px;
+  padding: 16px 24px;
+  font-weight: 700;
+  transition: 0.1s ease-out;
+  cursor: pointer;
+}
+header .header-botones-links .header-botones button.boton-carrito {
+  color: #B21C1D;
+  background: white;
+  border: 2px solid #B21C1D;
+}
+header .header-botones-links .header-botones button.boton-carrito:hover {
+  color: white;
+  background: #B21C1D;
+}
+header .header-botones-links .header-botones button.boton-carrito:hover i {
+  color: white;
+}
+header .header-botones-links .header-botones button.boton-sesion {
+  color: black;
+  background: #F1BD2D;
+  border: 2px solid #F1BD2D;
+}
+header .header-botones-links .header-botones button.boton-sesion:hover {
+  color: white;
+  background: #7d0300;
+  border: 2px solid #7d0300;
+}
+header .header-botones-links .header-botones button.boton-sesion:hover i {
+  color: white;
 }
 
 footer {
-    height: 132px;
-    color: white;
-    background: #7D0300;
-}
-
-
-
+  height: 132px;
+  color: white;
+  background: #7d0300;
+}/*# sourceMappingURL=styles.css.map */

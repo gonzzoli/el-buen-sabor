@@ -1,0 +1,99 @@
+$color-primario: #7d0300;
+$color-secundario: #B21C1D;
+$color-terciario: #F1BD2D;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: $color-primario;
+}
+
+header {
+    height: 82px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    .header-logo {
+        width: 25%;
+        height: 75%;
+        max-width: 250px;
+        display: flex;
+        align-items: center;
+        img {
+            width: 100%;
+        }
+    }
+    .header-botones-links {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        .header-links {
+            display: flex;
+            list-style-type: none;
+            display: flex;
+            gap: 15px;
+            li {
+                display: flex;
+                align-items: center;
+                a {
+                    text-decoration: none;
+                    padding: 5px 5px;
+                    &:hover {
+                        border-bottom: 1px solid $color-secundario;
+                    }
+                }
+            }
+        }
+        .header-botones {
+            button {
+                border-radius: 50px;
+                padding: 16px 24px;
+                font-weight: 700;
+                transition: 0.1s ease-out;
+                cursor: pointer;
+                &.boton-carrito {
+                    color: $color-secundario;
+                    background: white;
+                    border: 2px solid $color-secundario;
+                    &:hover {
+                        color: white;
+                        background: $color-secundario;
+                        i {
+                            color: white;
+                        }
+                    }
+                }
+                &.boton-sesion {
+                    color: black;
+                    background: $color-terciario;
+                    border: 2px solid $color-terciario;
+                    &:hover {
+                        color: white;
+                        background: $color-primario;
+                        border: 2px solid $color-primario;
+                        i {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    height: 132px;
+    color: white;
+    background: $color-primario;
+}
+
+
+
+
+
+
+
