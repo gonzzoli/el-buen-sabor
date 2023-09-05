@@ -288,4 +288,29 @@ footer .footer-marca {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.principal .arriba .filtro-fecha {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.principal .arriba .filtro-fecha .fecha {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+.principal .contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15%;
+  margin-top: 40px;
+}
+.principal .contenido .contenedor-tabla {
+  text-align: center;
+}
+.principal .contenido .contenedor-tabla .tabla-titulo {
+  margin-bottom: 15px;
 }/*# sourceMappingURL=ranking_productos.css.map */
