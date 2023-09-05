@@ -7,7 +7,29 @@
         justify-content: space-between;
         align-items: center;
         .filtro-fecha {
-            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            .fecha {
+                display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5px;
+            }
+        }
+    }
+    .contenido {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15%;
+        margin-top: 40px;
+        .contenedor-tabla {
+            text-align: center;
+            .tabla-titulo {
+                margin-bottom: 15px;
+            }
         }
     }
 }
