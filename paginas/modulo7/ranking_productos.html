@@ -4,18 +4,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- ESTE ARCHIVO CSS ASEGURENSE QUE APUNTE AL DE
-    ESTILOS GENERALES BIEN. SI NO NO LES VA A TOMAR ESOS ESTILOS
-    QUE YA ESTAN HECHOS.
-    ADENTRO DE ESE ARCHIVO SE METANSE Y BUSCAN EL NOMBRE DE LA CLASE
-    PARA PONERLE A SUS ELEMENTOS HTML. HAY TITULOS, BOTONES PRIMARIO Y SECUNDARIO,
-    TABLAS, BUSCADOR, Y HEADER. -->
-    <link rel="stylesheet" href="../../estilos_generales.css" />
     <!-- Y ESTE ARCHIVO plantilla.css CAMBIENLE EL NOMBRE
     AL MISMO QUE LE PONGAN A SU ARCHIVO plantilla.html
     Y AHI LES VA A ANDAR BIEN LOS ESTILOS QUE ESCRIBAN PARA SU
     PROPIA PAGINA -->
-    <link rel="stylesheet" href="./plantilla.css">
+    <link rel="stylesheet" href="./ranking_productos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -62,16 +55,79 @@
         </div>
       </div>
     </header>
-    <div class="hero">
-      <!-- SU TEXTO -->
-      <h1 class="titulo-1 texto-hero">
-        Cuando nuestros clientes prueban nuestra comida, suelen decir <br />
-        "Este es el buen sabor"
-      </h1>
-    </div>
 
     <section class="principal">
-      <!-- ACA VA TODO SU CONTENIDO -->
+      <div class="arriba">
+        <h1 class="titulo1">Ranking de Productos</h1>
+        <div class="filtro-fecha">
+          <div class="fecha">
+            <p>Desde: </p>
+            <select name="fecha" id="">aaa</select>
+          </div>
+          <div class="fecha">
+            <p>Desde: </p>
+            <select name="fecha" id="">aaa</select>
+          </div>
+        </div>
+        <div class="excel">
+          <i class="fa-solid fa-file-excel"></i>
+          <p>Exportar</p>
+        </div>
+      </div>
+
+      <div class="contenido">
+        <div class="contenedor-tabla">
+          <h2 class="tabla-titulo">Cocina</h2>
+          <table class="tabla" cellpadding="18" cellspacing="0">
+            <tr>
+              <th class="tabla-titulo-columna">Nombre</th>
+              <th class="tabla-titulo-columna">Cantidad</th>
+            </tr>
+            <tr>
+              <td class="celda">a</td>
+              <td class="celda">a</td>
+            </tr>
+            <tr>
+              <td class="celda">a</td>
+              <td class="celda">a</td>
+            </tr>
+            <tr>
+              <td class="celda">a</td>
+              <td class="celda">a</td>
+            </tr>
+            <tr>
+              <td class="celda">a</td>
+              <td class="celda">a</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="contenedor-tabla">
+          <h2 class="tabla-titulo">Bebidas</h2>
+          <table class="tabla" cellpadding="18" cellspacing="0">
+            <tr>
+              <th class="tabla-titulo-columna">Nombre</th>
+              <th class="tabla-titulo-columna">Cantidad</th>
+            </tr>
+            <tr>
+              <td class="celda">a</td>
+              <td class="celda">a</td>
+            </tr>
+            <tr>
+              <td class="celda">a</td>
+              <td class="celda">a</td>
+            </tr>
+            <tr>
+              <td class="celda">a</td>
+              <td class="celda">a</td>
+            </tr>
+            <tr>
+              <td class="celda">a</td>
+              <td class="celda">a</td>
+            </tr>
+          </table>
+        </div>
+      </div>
     </section>
 
     <footer>

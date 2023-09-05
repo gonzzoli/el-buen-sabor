@@ -1,0 +1,13 @@
+@use '../../estilos_generales.scss';
+
+.principal {
+    padding: 20px;
+    .arriba {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .filtro-fecha {
+            
+        }
+    }
+}
