@@ -1,0 +1,142 @@
+.principal {
+    margin: 30px 0;
+    padding: 0 20px;
+  }
+  .principal .filtros-busqueda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+  }
+  .principal .filtros-busqueda .rubros-iconos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 170px;
+    max-width: 250px;
+    width: 50%;
+  }
+  .principal .filtros-busqueda .rubros-iconos i {
+    font-size: 28px;
+    cursor: pointer;
+    transition: 0.1s ease;
+  }
+  .principal .filtros-busqueda .rubros-iconos i:hover {
+    color: #B21C1D;
+  }
+  .principal .filtros-busqueda .buscador-producto {
+    background: rgba(241, 188, 44, 0.4941176471);
+    border-radius: 50px;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 300px;
+  }
+  .principal .filtros-busqueda .buscador-producto input {
+    background: none;
+    border: none;
+    color: #7d0300;
+    padding: 10px;
+    width: 100%;
+  }
+  .principal .filtros-busqueda .buscador-producto input:focus {
+    outline: none;
+  }
+  .principal .categoria-productos {
+    margin: 40px;
+  }
+  .principal .categoria-productos .categoria-titulo {
+    text-align: center;
+    margin: 30px 0;
+  }
+  .principal .categoria-productos .categoria-lista-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .principal .categoria-productos .categoria-lista-productos .producto-carta {
+    border: 1px solid #D4D2E3;
+    border-radius: 24px;
+    width: 20%;
+  }
+  .principal .categoria-productos .categoria-lista-productos .producto-carta img {
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+  }
+  .principal .categoria-productos .categoria-lista-productos .producto-carta .producto-informacion {
+    padding: 10px;
+  }
+  .principal .categoria-productos .categoria-lista-productos .producto-carta .producto-informacion .producto-nombre {
+    margin-bottom: 5px;
+  }
+  .principal .categoria-productos .categoria-lista-productos .producto-carta .producto-informacion .producto-descripcion {
+    margin-bottom: 20px;
+  }
+  .principal .categoria-productos .categoria-lista-productos .producto-carta .producto-informacion .producto-precio {
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .principal .categoria-productos .categoria-lista-productos .producto-carta .producto-informacion .producto-botones {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+  .principal .categoria-productos .categoria-lista-productos .producto-carta .producto-informacion .producto-botones button {
+    padding: 12px 20px;
+  }/*# sourceMappingURL=index.css.map */
+
+
+  /* COSAS PROPIAS DE LA PAGINA HECHA POR MI*/
+.cosasALaDerecha{
+  text-align: right;
+}
+
+.boton-estetico {
+  
+  padding: 5px 5px;
+  background-color: #ffffff; /* Color de fondo */
+  color: #7d0300; /* Color del texto */
+  border-radius: 5px;
+  border-color: #7d0300;
+  border: 2px solid #7d0300;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Estilos adicionales para cuando el botón se coloca sobre él */
+.boton-estetico:hover {
+  background-color: #000000; /* Cambio de color de fondo al pasar el ratón */
+  color: #ffffff
+}
+
+
+/* Estilos para los campos del formulario */
+.campo {
+  margin-bottom: 20px; 
+}
+
+/* Estilos para las etiquetas de los campos */
+label {
+  display: inline-block; 
+  font-weight: bold; 
+}
+
+/* Estilos de los inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%; 
+  padding: 10px; 
+  border: 1px solid #7d0300; 
+  border-radius: 5px; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]:hover {
+  border-color: #7d0300;
+}
