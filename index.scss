@@ -1,8 +1,4 @@
-$color-primario: #7d0300;
-$color-secundario: #b21c1d;
-$color-terciario: #f1bd2d;
-$min-width-small: 768px;
-$min-width-grande: 1196px;
+@use './fuente/estilos_generales.scss';
 
 .principal {
   margin: 30px 0;
