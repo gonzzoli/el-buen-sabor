@@ -1,5 +1,5 @@
-@use '../../index.scss';
-@use '../../fuente/estilos_generales.scss';
+@use '../../index.scss' as *;
+@use '../../fuente/estilos_generales.scss' as *;
 
 .principal {
     padding: 20px;
