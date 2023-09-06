@@ -13,7 +13,6 @@
         }
         .titulo-carrito {
             text-align: center;
-            
         }
     }
     
@@ -68,6 +67,29 @@
                     text-align: center;
                     font-weight: 500;
                 }
+            }
+        }
+        @media screen and (max-width: $min-width-small) {
+            flex-direction: column;
+            align-items: center;
+            gap: 70px;
+            .informacion-pago {
+                order: 1;
+                margin-bottom: 20px;
+                width: 100%;
+                min-width: 0px;
+                .datos-cliente {
+                    .contenedor-inputs {
+                        flex-direction: column;
+                        align-items: start;
+                        .form-texto {
+                            min-width: 200px;
+                        }
+                    }
+                }
+            }
+            .pedido {
+                width: 100%;
             }
         }
     }
