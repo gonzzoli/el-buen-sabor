@@ -171,6 +171,7 @@ header .header-botones-links .header-botones .boton-carrito:hover i {
   border-collapse: separate;
   border-spacing: 0px;
   border: 1px solid #000;
+  padding: 10px;
 }
 
 .celda {
@@ -178,6 +179,7 @@ header .header-botones-links .header-botones .boton-carrito:hover i {
   text-align: center;
   border-collapse: separate;
   border: 1px solid #000;
+  padding: 5px;
 }
 
 .combo-box {
@@ -301,16 +303,72 @@ footer .footer-marca {
   align-items: center;
   gap: 5px;
 }
-.principal .contenido {
+.principal .arriba .filtro-fecha .fecha input {
+  padding: 2px;
+  border-radius: 5px;
+  border: 1px solid #7d0300;
+}
+.principal .arriba .excel {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15%;
+  gap: 10px;
+  border-radius: 10px;
+  color: green;
+  border: 1px solid green;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+.principal .arriba .excel i, .principal .arriba .excel p {
+  color: green;
+  font-weight: 600;
+}
+.principal .arriba .excel:hover {
+  background: green;
+}
+.principal .arriba .excel:hover i, .principal .arriba .excel:hover p {
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .principal .arriba {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.principal .contenido {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 10%;
   margin-top: 40px;
+  height: 60vh;
 }
 .principal .contenido .contenedor-tabla {
   text-align: center;
+  width: 50%;
 }
 .principal .contenido .contenedor-tabla .tabla-titulo {
   margin-bottom: 15px;
+}
+.principal .contenido .contenedor-tabla .tabla {
+  width: 100%;
+  max-width: 450px;
+  display: table;
+  margin: auto;
+}
+.principal .contenido .contenedor-tabla .tabla tr {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .principal .contenido {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    height: auto;
+  }
+  .principal .contenido .contenedor-tabla {
+    width: 100%;
+    margin-top: 20px;
+  }
 }/*# sourceMappingURL=ranking_productos.css.map */
