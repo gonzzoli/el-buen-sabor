@@ -1,4 +1,4 @@
-@use '../../fuente/estilos_generales.scss';
+@use '../../fuente/estilos_generales.scss' as *;
 
 .principal {
     padding: 20px;
@@ -16,19 +16,71 @@
             justify-content: space-between;
             align-items: center;
             gap: 5px;
+            input {
+                padding: 2px;
+                border-radius: 5px;
+                border: 1px solid $color-primario;
             }
+            }
+        }
+        .excel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 10px;
+            color: green;
+            border: 1px solid green;
+            padding: 10px;
+            cursor: pointer;
+            transition: 0.1s ease-in-out;
+            i, p {
+                color: green;
+                font-weight: 600;
+            }
+            &:hover {
+                background: green;
+                i, p {
+                    color: white;
+                }
+            }
+        }
+        @media screen and (max-width: $min-width-small) {
+            flex-direction: column;
+            gap: 30px;
         }
     }
     .contenido {
         display: flex;
         justify-content: center;
-        align-items: center;
-        gap: 15%;
+        align-items: start;
+        gap: 10%;
         margin-top: 40px;
+        height: 60vh;
         .contenedor-tabla {
             text-align: center;
+            width: 50%;
             .tabla-titulo {
                 margin-bottom: 15px;
+            }
+            .tabla {
+                width: 100%;
+                max-width: 450px;
+                display: table;
+                margin: auto;
+                tr {
+                    width: 100%;
+                }
+            }
+        }
+        @media screen and (max-width: $min-width-small) {
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            height: auto;
+            .contenedor-tabla {
+                width: 100%;
+                margin-top: 20px;
             }
         }
     }
