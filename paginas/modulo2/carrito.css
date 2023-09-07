@@ -283,6 +283,13 @@ footer .footer-marca {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .hero .texto-hero {
+    width: 100%;
+    font-size: 28px;
+  }
+}
+
 .principal {
   margin: 30px 0;
   padding: 0 20px;
