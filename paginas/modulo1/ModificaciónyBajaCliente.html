@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="./CrearCuenta.css">
+    <link rel="stylesheet" href="./ModificaciónyBajaCliente.css">
     <link rel="stylesheet" href="../../fuente/estilos_generales.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +35,6 @@
                     Carrito
                 </button>
                 <button class="boton-sesion">Iniciar Sesión</button>
-                <!-- PRUEBAPRUEBA -->
                 <!-- Boton de sesion iniciada -->
                 <!-- <button class="boton-sesion boton-sesion-iniciada">
                     <i class="fa-solid fa-user"></i>
@@ -45,77 +44,76 @@
         </div>
         <section>
             <!-- ACA VA TODO EL CONTENIDO DE SU PAGINA -->
-            <!-- LO PUSE EN EL BODY YO XD PERO FUERA DEL HEADER DEL BODY, FUNCCIONA IGUAL-->
+            <!-- ACA VA TODO EL CONTENIDO DE SU PAGINA -->
+            <!-- ACA VA TODO EL CONTENIDO DE SU PAGINA -->
         </section>
     </header>
 
     <div style="height: 454px; width: 100%">
         <img src="imgparaCliente.jpg" height="454" width="100%"> 
-
     </div>
     <div class="campo" style="width: 5% "> </div>
-    <h1>Crear Cuenta</h1>
+    <div class="divvert">
+    <h1>Listado CLIENTES</h1>  
+    </div>
+    <div class="divorisontale">
+        <input class="boton-normal" type="submit" value="Buscar">
+        <input type="text" id="cliente" name="campo"
+        placeholder="BuscarCliente">
+
     </div>
   
     <div class="cosasALaDerecha" style="width: 5%; " ></div>
     <section class="principal">
-        
-        <form class="superFormulario">
-        <div class="divcontenedor">
-        <div class="divorisontale">
-            <div class="campo" style="width: 50% "> 
-
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="campo"
-                placeholder="Introduzca nombre">
-                <br>
-                
-                <label for="direccion">Dirección:</label>
-                <input type="text" id="direccion" name="campo"
-                placeholder="Introduzca dirección">
-
-        
-                <label for="telefono">Teléfono:</label>
-                <input type="text" id="telefono" name="campo"
-                placeholder="Introduzca teléfono">
-
-            </div>
-            <div class="campo" style="width: 5% "> </div>
-            <div class="campo" style="width: 50% ">
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="campo"
-                placeholder="Introduzca apellido">
-                <br>
-                <label for="departamento">Departamento:</label>
-                <input type="text" id="departamento" name="campo"
-                placeholder="ej:Piso-Numero de departamento">
-            </div>
+        <div class="conteiner">
+            <table>
+                <thead>
+                    <tr>
+                       <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Email</th>
+                        <th>Teléfono</th>
+                        <th>Dirección</th>
+                        <th>Departamento</th>
+                        <th>Contraseña</th>
+                        <th>Modificar</th>
+                        <th>Baja</th>
+                    </tr>   
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>Fernanda</td>
+                    <td>Gomez</td>
+                    <td>FerGomez@gamil.com</td>
+                    <td>2616250315</td>
+                    <td>SanMartín 1124</td>
+                    <td> </td>
+                    <td>********</td>
+                    <td>Modificar</td>
+                    <td>Baja</td>
+                    </tr>
+                    <tr>
+                    <td>Camilo</td>
+                    <td>Lopez</td>
+                    <td>Camilopez@gmail.com</td>
+                    <td>2616141960</td>
+                    <td>SanLorenzo 2525</td>
+                    <td>Piso2 Departamento4</td>
+                    <td>********</td>
+                    <td>Modificar</td>
+                    <td>Baja</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-             <div class="campo" style="width: 5% "> </div>
-            <div class="divvert">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="campo"
-                placeholder="Introduzca email">
-                <br>
-
-                <label for="contraseña">Contraseña:</label>
-                <input type="password" id="contraseña" name="campo"
-                placeholder="Introduzca contraseña">
-                <br>
-
-                <label for="contraseñanueva">Nueva contraseña:</label>
-                <input type="password" id="conficontraseña" name="campo"
-                placeholder="Introduzca nuevamente la contraseña">
-            </div>
-        </div>   
-            <div class="cosasALaDerecha">
-              <input class="boton-estetico" type="submit" value="Registrar">
-              <input class="boton-estetico" type="reset" value="Borrar">
-              <input class="boton-estetico" type="button" value="Iniciar sesion con google"> <!-- Esto va a quedar mejor con java-->
-            </div>
-        </form>
-
     </section>
+    <div class="divvert">
+        <h1>Agregar Cliente</h1>  
+        <br>
+        <br>
+        <input class="boton-estetico" type="submit" value="Agregar">
+    </div>
+
     <footer>
         <div class="redes-sociales">
             <p>Sigamos en contacto:</p>

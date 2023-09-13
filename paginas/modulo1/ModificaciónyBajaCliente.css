@@ -106,6 +106,16 @@
   font-size: 16px;
   cursor: pointer;
   }
+  .boton-normal{   
+    padding: 5px 5px;
+    background-color: #ffffff; /* Color de fondo */
+    color: #B21C1D; /* Color del texto */
+    border-radius: 5px;
+    border-color: #B21C1D;
+    border: 2px solid #B21C1D;
+    font-size: 16px;
+    cursor: pointer;
+    }
   
   /* Estilos adicionales para cuando el botón se coloca sobre él */
   .boton-estetico:hover {
@@ -142,7 +152,7 @@
   border-color: #7d0300;
   }
   
-  /*Esto lo voy a usar para que los divs se separen de forma Horisontal*/
+  /*Esto lo voy a usar para que los divs se separen de forma orisontal*/
   .divorisontale{
     margin-bottom: 100px;
     width: 50%;
@@ -155,3 +165,34 @@
   .divcontenedor{
     display: flex;
   }
+.conteiner{
+    padding: 5px 5px;
+    background-color:#D4D2E3; /* Color de fondo */
+    color: #000000; /* Color del texto */
+    border: solid 5px;
+    border-color: #B21C1D;
+    cursor: pointer;
+}
+table{
+    color: #000000;
+    font-size: 14px;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+thead{
+    background: #B21C1D;
+}
+th{
+    padding: 20px 15px;
+    font-weight: 700;
+}
+td{
+    padding: 20px 15px;
+    border-bottom: solid 5px #B21C1D;
+}
+tbody tr{
+    cursor: pointer;
+     }
+ tbody tr hover{
+background: #B21C1D;
+ }
