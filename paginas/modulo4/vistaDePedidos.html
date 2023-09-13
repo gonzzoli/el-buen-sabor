@@ -1,150 +1,205 @@
-<!-- CAMBIENLE EL NOMBRE DE ESTE ARCHIVO A LO QUE SEA SU PAGINA -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../fuente/estilos_generales.css" />
-    <link rel="stylesheet" href="../../fuente/estilos_generales.scss" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="./vistaDePedidos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&family=Poppins:wght@300&family=Reenie+Beanie&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../fuente/estilos_generales.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&family=Poppins:wght@300&family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>El Buen Sabor</title>
-  </head>
-  <body>
-    <header>
-      <div class="header-logo">
-        <img src="../../fuente//logo.png" alt="logo" />
+</head>
+<body>
+  <header>
+    <div class="header-logo">
+      <img src="../../fuente//logo.png" alt="logo" />
+    </div>
+    <div class="header-botones-links">
+      <ul class="header-links">
+        <li>
+          <a href="index.html">Inicio</a>
+        </li>
+        <li>
+          <a href="index.html">Pagina 1</a>
+        </li>
+        <li>
+          <a href="index.html">Pagina 2</a>
+        </li>
+      </ul>
+      <div class="header-botones">
+        <button class="boton-secundario boton-carrito">
+          <i class="fa-solid fa-cart-shopping"></i>
+          Carrito
+        </button>
+        <button class="boton-primario boton-sesion">Iniciar Sesión</button>
+        <!-- Boton de sesion iniciada -->
+        <!-- <button class="boton-sesion boton-sesion-iniciada">
+                  <i class="fa-solid fa-user"></i>
+                  Nombre
+              </button> -->
       </div>
-      <div class="header-botones-links">
-        <ul class="header-links">
-          <li>
-            <a href="index.html">Inicio</a>
-          </li>
-          <li>
-            <a href="index.html">Pagina 1</a>
-          </li>
-          <li>
-            <a href="index.html">Pagina 2</a>
-          </li>
-        </ul>
-        <div class="header-botones">
-          <button class="boton-secundario boton-carrito">
-            <i class="fa-solid fa-cart-shopping"></i>
-            Carrito
-          </button>
-          <button class="boton-primario boton-sesion">Iniciar Sesión</button>
-          <!-- Boton de sesion iniciada -->
-          <!-- <button class="boton-sesion boton-sesion-iniciada">
-                    <i class="fa-solid fa-user"></i>
-                    Nombre
-                </button> -->
-        </div>
+    </div>
+  </header>
+
+
+  <section class="principal">
+
+      <div>
+      <h1>Pedidos de Cocina</h1>
       </div>
-    </header>
+
+      <div>
+      <table class="tabla">
+
+          <tr>
+    
+            <th class="tabla-titulo-columna">N° Orden</th>
+    
+            <th class="tabla-titulo-columna"> Nombre del pedido</th>
+    
+            <th class="tabla-titulo-columna">Fecha y Hora</th>
+    
+            <th class="tabla-titulo-columna">Detalles</th>
+
+            <th class="tabla-titulo-columna"> Estado</th>
+    
+          </tr>
+
+          <tr>
+            <td class="celda">XXXX</td>
+    
+            <td class="celda">XXXXXXXXXX</td>
+    
+            <td class="celda">DD-MM-AA</td>
+              
+            <td class="celda"> 
+                  <button class="boton-primario boton-sesion"> Ver detalles</button>
+            </td>
+
+            <td class="celda">
+              <select name="EstadoRubro" id="Estrubros" class="menuDesplegable">
+                  <option value="Alta" class="menuDesplegable titulo-5" ><h5>Seleccionar Estado</h5></option>
+                  <option value="En preparación" class="menuDesplegable titulo-5"><h5>En preparación</h5></option>
+                  <option value="Baja" class="menuDesplegable titulo-5" >Listo</option>
+              </select>
+
+            </td>
+          </tr>
+
+          <tr>
+            <td class="celda">XXXX</td>
+    
+            <td class="celda">XXXXXXXXXX</td>
+    
+            <td class="celda">DD-MM-AA</td>
+              
+            <td class="celda"> 
+                  <button class="boton-primario boton-sesion"> Ver detalles</button>
+            </td>
+
+            <td class="celda">
+              <select name="EstadoRubro" id="Estrubros" class="menuDesplegable">
+                  <option value="Alta" class="menuDesplegable titulo-5" ><h5>Seleccionar Estado</h5></option>
+                  <option value="En preparación" class="menuDesplegable titulo-5"><h5>En preparación</h5></option>
+                  <option value="Baja" class="menuDesplegable titulo-5" >Listo</option>
+              </select>
+
+            </td>
+          </tr>
+
+          <tr>
+            <td class="celda">XXXX</td>
+    
+            <td class="celda">XXXXXXXXXX</td>
+    
+            <td class="celda">DD-MM-AA</td>
+              
+            <td class="celda"> 
+                  <button class="boton-primario boton-sesion"> Ver detalles</button>
+            </td>
+
+            <td class="celda">
+              <select name="EstadoRubro" id="Estrubros" class="menuDesplegable">
+                  <option value="Alta" class="menuDesplegable titulo-5" ><h5>Seleccionar Estado</h5></option>
+                  <option value="En preparación" class="menuDesplegable titulo-5"><h5>En preparación</h5></option>
+                  <option value="Baja" class="menuDesplegable titulo-5" >Listo</option>
+              </select>
+
+            </td>
+          </tr>
+
+          <tr>
+            <td class="celda">XXXX</td>
+    
+            <td class="celda">XXXXXXXXXX</td>
+    
+            <td class="celda">DD-MM-AA</td>
+              
+            <td class="celda"> 
+                  <button class="boton-primario boton-sesion"> Ver detalles</button>
+            </td>
+
+            <td class="celda">
+              <select name="EstadoRubro" id="Estrubros" class="menuDesplegable">
+                  <option value="Alta" class="menuDesplegable titulo-5" ><h5>Seleccionar Estado</h5></option>
+                  <option value="En preparación" class="menuDesplegable titulo-5"><h5>En preparación</h5></option>
+                  <option value="Baja" class="menuDesplegable titulo-5" >Listo</option>
+              </select>
+
+            </td>
+          </tr>
+
+          <tr>
+            <td class="celda">XXXX</td>
+    
+            <td class="celda">XXXXXXXXXX</td>
+    
+            <td class="celda">DD-MM-AA</td>
+              
+            <td class="celda"> 
+                  <button class="boton-primario boton-sesion"> Ver detalles</button>
+            </td>
+
+            <td class="celda">
+              <select name="EstadoRubro" id="Estrubros" class="menuDesplegable">
+                  <option value="Alta" class="menuDesplegable titulo-5" ><h5>Seleccionar Estado</h5></option>
+                  <option value="En preparación" class="menuDesplegable titulo-5"><h5>En preparación</h5></option>
+                  <option value="Baja" class="menuDesplegable titulo-5" >Listo</option>
+              </select>
+
+            </td>
+          </tr>
 
 
-    <section class="principal">
-
-        <div>
-        <h1>Pedidos de Cocina</h1>
-        </div>
-
-        <div>
-        <table class="tabla" cellpadding="18" cellspacing="0">
-
-            <tr>
-      
-              <th class="tabla-titulo-columna">N° Orden</th>
-      
-              <th class="tabla-titulo-columna"> Nombre del pedido</th>
-      
-              <th class="tabla-titulo-columna">Fecha y Hora</th>
-      
-              <th class="tabla-titulo-columna">Detalles</th>
-
-              <th class="tabla-titulo-columna"> Estado</th>
-      
-            </tr>
-
-            <tr>
-              <td class="celda">XXXX</td>
-      
-              <td class="celda">XXXXXXXXXX</td>
-      
-              <td class="celda">DD-MM-AA</td>
-                
-              <td class="celda"> 
-                    <button class="boton-primario boton-sesion"> Ver detalles</button>
-              </td>
-
-              <td class="celda">
-                <!-- Split button -->
-<div class="btn-group">
-  <button type="button" class="btn btn-danger">Action</button>
-  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="caret"></span>
-    <span class="sr-only">Toggle Dropdown</span>
-  </button>
-  <ul class="dropdown-menu">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-  </ul>
-</div>
-                <!-- <details>
-                    <summary>Botón Desplegable</summary>
-                    <div>
-                        <ul>
-                            <li><button>Pedido</button> </li>
-                            <li> <button>En Preparación</button></li>
-                            <li><button>Listo</button></li>
-                        </ul>
-                    </div>
-                </details> -->
-              </td>
-            </tr>
-
-
-      
-            
-          </table>   
-        </div>
-    </section>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <footer>
-      <div class="redes-sociales">
-        <p>Sigamos en contacto:</p>
-        <div class="iconos-redes">
-          <a target="_blank" href="https://twitter.com/elonmusk"
-            ><i class="fa-brands fa-twitter"></i
-          ></a>
-          <a target="_blank" href="https://www.facebook.com/mundogaturro"
-            ><i class="fa-brands fa-facebook"></i
-          ></a>
-          <a target="_blank" href="https://www.instagram.com/leomessi"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-          <a target="_blank" href=""><i class="fa-solid fa-envelope"></i></a>
-        </div>
+    
+          
+        </table>   
       </div>
-      <p class="footer-marca">El Buen Sabor</p>
-    </footer>
-  </body>
+  </section>
+
+  <br>
+  
+
+  <footer>
+    <div class="redes-sociales">
+      <p>Sigamos en contacto:</p>
+      <div class="iconos-redes">
+        <a target="_blank" href="https://twitter.com/elonmusk"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a target="_blank" href="https://www.facebook.com/mundogaturro"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a target="_blank" href="https://www.instagram.com/leomessi"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a target="_blank" href=""><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <p class="footer-marca">El Buen Sabor</p>
+  </footer>
+</body>
 </html>
