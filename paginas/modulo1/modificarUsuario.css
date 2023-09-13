@@ -95,11 +95,12 @@
 text-align: right;
 }
 
+ /*
 .boton-estetico {
 
 padding: 5px 5px;
-background-color: #ffffff; /* Color de fondo */
-color: #7d0300; /* Color del texto */
+background-color: #ffffff; 
+color: #7d0300; 
 border-radius: 5px;
 border-color: #7d0300;
 border: 2px solid #7d0300;
@@ -107,12 +108,11 @@ font-size: 16px;
 cursor: pointer;
 }
 
-/* Estilos adicionales para cuando el botón se coloca sobre él */
 .boton-estetico:hover {
-background-color: #000000; /* Cambio de color de fondo al pasar el ratón */
+background-color: #000000;
 color: #ffffff
 }
-
+*/
 
 /* Estilos para los campos del formulario */
 .campo {
