@@ -105,6 +105,17 @@ header {
     line-height: 48px;
   }
 }
+
+.fondo_oscuro {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+  
+}
+
 .ventana-emergente {
   // ajustar tamaños a sus necesidades
   // sobreescribir en su propio css, no cambiar esto
@@ -116,7 +127,6 @@ header {
   padding: 20px;
   position: fixed;
   display: none;
-
   // cambiar despues con js display: block;
   top: 50%;
   left: 50%;
