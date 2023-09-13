@@ -1,0 +1,34 @@
+ /* Estilos para ocultar el contenido inicialmente */
+ details[open] summary::after {
+    content: "▼"; /* Símbolo de flecha hacia abajo cuando está abierto */
+}
+
+details summary::after {
+    content: "►"; /* Símbolo de flecha hacia la derecha cuando está cerrado */
+}
+
+/* Estilos para dar formato al botón desplegable */
+details summary {
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Estilos para el contenido desplegable */
+details div {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 3px 3px;
+    padding: 10px;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+  }
+  details summary::marker {
+    display: none;
+  }
