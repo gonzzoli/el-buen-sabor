@@ -44,6 +44,7 @@ header .header-botones-links .header-links li {
 header .header-botones-links .header-links li a {
   text-decoration: none;
   padding: 5px 5px;
+  color:#7d0300
 }
 header .header-botones-links .header-links li a:hover {
   border-bottom: 1px solid #b21c1d;
