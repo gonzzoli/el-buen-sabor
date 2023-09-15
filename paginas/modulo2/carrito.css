@@ -95,6 +95,15 @@ header .header-botones-links .header-botones .boton-carrito:hover i {
   line-height: 48px;
 }
 
+.fondo_oscuro {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
 .ventana-emergente {
   width: 75%;
   max-width: 750px;
