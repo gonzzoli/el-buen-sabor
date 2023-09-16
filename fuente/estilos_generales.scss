@@ -52,6 +52,9 @@ header {
       }
     }
     .header-botones {
+      a {
+        text-decoration: none;
+      }
       .boton-carrito {
         transition: 0.1s ease;
         i {

@@ -48,6 +48,9 @@ header .header-botones-links .header-links li a {
 header .header-botones-links .header-links li a:hover {
   border-bottom: 1px solid #b21c1d;
 }
+header .header-botones-links .header-botones a {
+  text-decoration: none;
+}
 header .header-botones-links .header-botones .boton-carrito {
   transition: 0.1s ease;
 }
