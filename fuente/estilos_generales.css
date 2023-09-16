@@ -28,7 +28,7 @@ header .header-logo img {
 }
 header .header-botones-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
   gap: 30px;
 }
 header .header-botones-links .header-links {
