@@ -295,4 +295,20 @@ footer .footer-marca {
     color: white;
     font-size: 32px;
   }
+}
+
+.navegacion-proyecto {
+  margin-top: 30px;
+}
+.navegacion-proyecto h2 {
+  text-align: center;
+}
+.navegacion-proyecto .lista-links-paginas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style-type: none;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
 }/*# sourceMappingURL=estilos_generales.css.map */

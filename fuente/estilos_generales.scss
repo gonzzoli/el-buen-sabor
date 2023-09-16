@@ -306,3 +306,17 @@ footer {
     }
   }
 }
+
+.navegacion-proyecto {
+  margin-top: 30px;
+  h2 {text-align: center;}
+  .lista-links-paginas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style-type: none;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+  }
+}
