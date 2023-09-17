@@ -167,28 +167,102 @@
   }
 .conteiner{
     padding: 5px 5px;
-    background-color:#D4D2E3; /* Color de fondo */
+    background-color:#ffffff; /* Color de fondo */
     color: #000000; /* Color del texto */
     border: solid 5px;
     border-color: #B21C1D;
     cursor: pointer;
 }
-table{
-    color: #000000;
-    font-size: 14px;
-    table-layout: fixed;
-    border-collapse: collapse;
+/*tablas*/
+.table{
+  display: flex;
+  justify-content: center;
+  border-collapse: separate;
+  border-spacing:200px;
+  width:100%;
 }
-thead{
-    background: #B21C1D;
+
+.th{
+  background-color: #B81A1A;
+  color:white;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 200px;
+  border: 1px solid #000;
 }
-th{
+
+.td {
+  background-color:white;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 200px;
+  border: 1px solid #000;
+}
+.tabla {
+  display: flex;
+  justify-content: center;
+  border-collapse: collapse;
+  border-spacing: 40px;
+  width: 100%;
+}
+
+.tabla-titulo-columna {
+  background-color: #b81a1a;
+  color: white;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 0px;
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+.celda {
+  background-color: white;
+  text-align: center;
+  border-collapse: separate;
+  border: 1px solid #000;
+  padding: 5px;
+}
+
+/*Barras*/
+.barraBusqueda {
+  background-color: #F1BD2D;
+  border-radius: 16px;
+  padding: 10px 20px;
+  margin-left: 1px;
+  /*espacio entre botones*/
+  float: right;
+  border: none;
+}
+
+.barraBusquedaprima {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.barraBusquedaMid {
+  background-color: #F1BD2D;
+  border-radius: 16px;
+  padding: 10px 20px;
+  margin-left: 1px;
+  /*espacio entre botones*/
+  width: 200px;
+  /* Establece el ancho deseado para el elemento */
+  margin: 0 auto;
+  /* Centra horizontalmente el elemento */
+  border: none;
+}
+/*th{
     padding: 20px 15px;
     font-weight: 700;
 }
 td{
-    padding: 20px 15px;
-    border-bottom: solid 5px #B21C1D;
+    background-color: white;
+    text-align: center;
+    border-collapse: separate;
+    border: 1px solid #B21C1D;
+    padding: 5px;
 }
 tbody tr{
     cursor: pointer;
@@ -196,3 +270,22 @@ tbody tr{
  tbody tr hover{
 background: #B21C1D;
  }
+thead {
+  background-color: #B21C1D;
+  color: white;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 0px;
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+table{
+  color: #000000;
+  font-size: 14px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  display: flex;
+  justify-content: center;
+  border-spacing: 40px;
+}*/

@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="./ModificaciónyBajaCliente.css">
     <link rel="stylesheet" href="../../fuente/estilos_generales.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,55 +61,84 @@
     <div class="campo" style="width: 5% "> </div>
     <div class="divvert">
         <h1>Listado CLIENTES</h1>
+        <input class="barraBusquedaMid" type="search" name="busquedacliente" placeholder="Buscar un cliente...">
+      <br> 
     </div>
-    <div class="divorisontale">
-        <input class="boton-normal" type="submit" value="Buscar">
-        <input type="text" id="cliente" name="campo" placeholder="BuscarCliente">
-
-    </div>
-
-    <div class="cosasALaDerecha" style="width: 5%; "></div>
+  
     <section class="principal">
-        <div class="conteiner">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Apellido</th>
-                        <th>Email</th>
-                        <th>Teléfono</th>
-                        <th>Dirección</th>
-                        <th>Departamento</th>
-                        <th>Contraseña</th>
-                        <th>Modificar</th>
-                        <th>Baja</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Fernanda</td>
-                        <td>Gomez</td>
-                        <td>FerGomez@gamil.com</td>
-                        <td>2616250315</td>
-                        <td>SanMartín 1124</td>
-                        <td> </td>
-                        <td>********</td>
-                        <td>Modificar</td>
-                        <td>Baja</td>
-                    </tr>
-                    <tr>
-                        <td>Camilo</td>
-                        <td>Lopez</td>
-                        <td>Camilopez@gmail.com</td>
-                        <td>2616141960</td>
-                        <td>SanLorenzo 2525</td>
-                        <td>Piso2 Departamento4</td>
-                        <td>********</td>
-                        <td>Modificar</td>
-                        <td>Baja</td>
-                    </tr>
-                </tbody>
+        <div style="width: 100%; " >
+            <table class="tabla" cellpaddind="30" cellspacing="20">
+
+                <tr>
+        
+                    <th class="th">Nombre</th>
+                
+                    <th class="th">Apellido</th>
+
+                    <th class="th">Email</th>
+                
+                    <th class="th">Teléfono</th>
+        
+                    <th class="th">Dirección</th>
+        
+                    <th class="th">Departamentos</th>
+        
+                    <th class="th">Contraseña</th>
+
+                    <th class="th">Modificar</th>
+
+                    <th class="th">Eliminar</th>
+                
+                  </tr>
+                <tr>
+                  <td class="td">Fernanda</td>
+              
+                  <td class="td">Gomez</td>
+              
+                  <td class="td">FerGomez@gamil.com</td>
+        
+                  <td class="td"> 2616250315</td>  
+
+                  <td class="td">SanMartín 1124</td>
+
+                  <td class="td"></td>
+
+                  <td class="td">********</td>
+        
+                  <td class="td">
+                    <i class="fa-solid fa-pen" href="ModificarCliente.html"></i>
+                  </td>
+        
+                  <td class="td">
+                    <button type="reset"><i class="fa-solid fa-trash"></i></button>
+                  </td>
+                </tr>
+                
+                <tr>
+                    <td class="td">Camilo</td>
+                
+                    <td class="td"> Lopez</td>
+                
+                    <td class="td">Camilopez@gmail.com</td>
+          
+                    <td class="td"> 2616141960</td>  
+        
+                    <td class="td">SanLorenzo 2525</td>
+          
+                    <td class="td">Piso2 Departamento4</td>
+
+                    <td class="td">********</td>
+        
+                    <td class="td">
+                      <i class="fa-solid fa-pen" href="ModificarCliente.html"></i>
+                    </td>
+          
+                    <td class="td">
+                      <button type="reset"><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                </tr>
             </table>
+         
         </div>
     </section>
     <div class="divvert">
