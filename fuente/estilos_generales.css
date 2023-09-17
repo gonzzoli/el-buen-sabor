@@ -44,10 +44,12 @@ header .header-botones-links .header-links li {
 header .header-botones-links .header-links li a {
   text-decoration: none;
   padding: 5px 5px;
-  color:#7d0300
 }
 header .header-botones-links .header-links li a:hover {
   border-bottom: 1px solid #b21c1d;
+}
+header .header-botones-links .header-botones a {
+  text-decoration: none;
 }
 header .header-botones-links .header-botones .boton-carrito {
   transition: 0.1s ease;
@@ -94,6 +96,16 @@ header .header-botones-links .header-botones .boton-carrito:hover i {
   max-width: 700px;
   text-align: center;
   line-height: 48px;
+}
+
+.fondo_oscuro {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  display: none;
 }
 
 .ventana-emergente {
@@ -283,6 +295,22 @@ footer .footer-marca {
     color: white;
     font-size: 32px;
   }
+}
+
+.navegacion-proyecto {
+  margin-top: 30px;
+}
+.navegacion-proyecto h2 {
+  text-align: center;
+}
+.navegacion-proyecto .lista-links-paginas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style-type: none;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
 }/*# sourceMappingURL=estilos_generales.css.map */
 
 

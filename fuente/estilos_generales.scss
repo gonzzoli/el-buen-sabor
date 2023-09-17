@@ -52,6 +52,9 @@ header {
       }
     }
     .header-botones {
+      a {
+        text-decoration: none;
+      }
       .boton-carrito {
         transition: 0.1s ease;
         i {
@@ -105,6 +108,17 @@ header {
     line-height: 48px;
   }
 }
+
+.fondo_oscuro {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+  display: none;
+}
+
 .ventana-emergente {
   // ajustar tamaños a sus necesidades
   // sobreescribir en su propio css, no cambiar esto
@@ -116,7 +130,6 @@ header {
   padding: 20px;
   position: fixed;
   display: none;
-
   // cambiar despues con js display: block;
   top: 50%;
   left: 50%;
@@ -292,17 +305,4 @@ footer {
       font-size: 32px;
     }
   }
-}
-
-.menuDesplegable {
-  border: 2px solid #7d0300;
-  border-radius: 50px ;
-  background-color: white;
-  color: #7d0300;
-  padding: 8px 8px;
-
-    .titulo-5{
-      color: #7d0300;
-  font-size: 19px;
-    }
 }
