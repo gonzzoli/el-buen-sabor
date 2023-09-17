@@ -30,7 +30,7 @@
   <body>
     <header>
       <div class="header-logo">
-        <img src="/fuente/logo.png" alt="logo" />
+        <img src="/fuente/logo.png" class="img-fluid" alt="logo" />
       </div>
       <div class="header-botones-links">
         <ul class="header-links">
@@ -62,21 +62,84 @@
     <div class="hero">
         <!-- El mio no tiene titulo -->
       </div>
+<section>
+
 
     <div class="container">
         <div class="container-left">
-            <img src="./FuenteModificarEmpleado/FotoPerfil.png" alt="fotoperfil" />
-            <h1 class="titulo-1">Nombre de Usuario</h1>
+            <img src="./FuenteModificarEmpleado/FotoPerfil.png" class="img-fluid" alt="fotoperfil" />
+            <div class="texto-modificar">
+            <h1 class="titulo-2">Nombre de Usuario</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-edit" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7d0300" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M7 7h-1a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-1" />
+                <path d="M20.385 6.585a2.1 2.1 0 0 0 -2.97 -2.97l-8.415 8.385v3h3l8.385 -8.415z" />
+                <path d="M16 5l3 3" />
+              </svg>
+            </div>
         </div>
         <div class="container-right">
+            <div class="texto-modificar">
             <h1 class="titulo-1">Datos personales</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-edit" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7d0300" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M7 7h-1a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-1" />
+                <path d="M20.385 6.585a2.1 2.1 0 0 0 -2.97 -2.97l-8.415 8.385v3h3l8.385 -8.415z" />
+                <path d="M16 5l3 3" />
+              </svg>
+        </div>
             <!-- Comienza formulario -->
             <form class="formulario">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputName">Nombre</label>
+                      <input type="text" class="form-control" placeholder="Juan">
+                      <!-- -- <input type="email" class="form-control" id="inputEmail4" placeholder="Email"> -->
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputName">Apellido</label>
+                      <input type="text" class="form-control" placeholder="Gonzalez">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail4">Direccion</label>
+                      <input type="text" class="form-control"  placeholder="Laprida 223">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Departamento</label>
+                    <input type="text" class="form-control"  placeholder="Las Heras">
+                    </div>
+                  </div>
+                  <div class="form-row">
 
+                  
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Teléfono</label>
+                    <input type="number" class="form-control"  placeholder="1231-323123-22">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">E-Mail</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="JuanGonzales@elbuensabor.com">
+                        </div>
+                    </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="inputPassword4">Contraseña</label>
+                              <input type="password" class="form-control" id=inputPassword4>
+                              <!-- -- <input type="email" class="form-control" id="inputEmail4" placeholder="Email"> -->
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="inputPassword4">Confirmar Contraseña</label>
+                              <input type="password" class="form-control" id=inputPassword4 >
+                            </div>
+                          </div>
+                          <button type="submit" class="boton-primario boton-sesion boton-modificar">Modificar</button>
             </form>
 
         </div>
     </div>
+</section>
 <footer>
     <div class="redes-sociales">
       <p>Sigamos en contacto:</p>

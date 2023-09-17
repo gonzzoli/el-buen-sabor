@@ -1,0 +1,225 @@
+<!-- CAMBIENLE EL NOMBRE DE ESTE ARCHIVO A LO QUE SEA SU PAGINA -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Y ESTE ARCHIVO plantilla.css CAMBIENLE EL NOMBRE
+    AL MISMO QUE LE PONGAN A SU ARCHIVO plantilla.html
+    Y AHI LES VA A ANDAR BIEN LOS ESTILOS QUE ESCRIBAN PARA SU
+    PROPIA PAGINA -->
+    <link rel="stylesheet" href="./movimientom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&family=Poppins:wght@300&family=Reenie+Beanie&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>El Buen Sabor</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="../../../fuente/logo.png" alt="logo" />
+        </div>
+        <div class="header-botones-links">
+            <ul class="header-links">
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="index.html">Pagina 1</a>
+                </li>
+                <li>
+                    <a href="index.html">Pagina 2</a>
+                </li>
+            </ul>
+            <div class="header-botones">
+                <button class="boton-secundario boton-carrito">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Carrito
+                </button>
+                <button class="boton-primario boton-sesion">Iniciar Sesión</button>
+                <!-- Boton de sesion iniciada -->
+                <!-- <button class="boton-sesion boton-sesion-iniciada">
+                    <i class="fa-solid fa-user"></i>
+                    Nombre
+                </button> -->
+            </div>
+        </div>
+    </header>
+
+    <section class="principal">
+        <div class="arriba">
+            <h1 class="titulo-2">Movimientos Monetarios</h1>
+            <div class="filtro-fecha">
+                <div class="fecha">
+                    <p>Desde: </p>
+                    <input type="date">
+                </div>
+                <div class="fecha">
+                    <p>Hasta: </p>
+                    <input type="date">
+                </div>
+            </div>
+            <div class="excel">
+                <i class="fa-solid fa-file-excel"></i>
+                <p>Exportar</p>
+            </div>
+        </div>
+
+
+        <div class="contenedor-tabla"><br><br>
+            <table class="tabla tablepima">
+
+                <tr>
+
+                    <th class="tabla-titulo-columna  tablepima">N° Pedido</th>
+
+                    <th class="tabla-titulo-columna  tablepima">Nombre</th>
+
+                    <th class="tabla-titulo-columna  tablepima">Costo</th>
+
+                    <th class="tabla-titulo-columna  tablepima">Ingreso</th>
+
+                    <th class="tabla-titulo-columna  tablepima">Pedido</th>
+
+                    <th></th>
+
+                </tr>
+
+                <tr>
+
+                    <td class="celda  tablepima">XXXX</td>
+
+                    <td class="celda  tablepima">XXXX</td>
+
+                    <td class="celda  tablepima">$XXXX</td>
+
+                    <td class="celda  tablepima">$XXXX</td>
+
+                    <td class="celda  tablepima">
+                        <button class="boton-secundario boton-carrito">
+                            Ver pedidos
+                        </button>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td class="celda  tablepima">XXXX</td>
+
+                    <td class="celda  tablepima">XXXX</td>
+
+                    <td class="celda  tablepima">$XXXX</td>
+
+                    <td class="celda  tablepima">$XXXX</td>
+
+                    <td class="celda  tablepima">
+                        <button class="boton-secundario boton-carrito">
+                            Ver pedidos
+                        </button>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td class="celda  tablepima">XXXX</td>
+
+                    <td class="celda  tablepima">XXXX</td>
+
+                    <td class="celda  tablepima">$XXXX</td>
+
+                    <td class="celda  tablepima">$XXXX</td>
+
+                    <td class="celda  tablepima">
+                        <button class="boton-secundario boton-carrito">
+                            Ver pedidos
+                        </button>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td class="celda  tablepima">XXXX</td>
+
+                    <td class="celda  tablepima">XXXX</td>
+
+                    <td class="celda  tablepima">$XXXX</td>
+
+                    <td class="celda  tablepima">$XXXX</td>
+
+                    <td class="celda  tablepima">
+                        <button class="boton-secundario boton-carrito">
+                            Ver pedidos
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="redes-sociales">
+            <p>Sigamos en contacto:</p>
+            <div class="iconos-redes">
+                <a target="_blank" href="https://twitter.com/elonmusk"><i class="fa-brands fa-twitter"></i></a>
+                <a target="_blank" href="https://www.facebook.com/mundogaturro"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a target="_blank" href="https://www.instagram.com/leomessi"><i class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" href=""><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+        <p class="footer-marca">El Buen Sabor</p>
+    </footer>
+
+    <!-- Para navegar por el proyecto, puesto que aun no podemos
+    implementar js para la navegacion con listas desplegables
+    y pop ups -->
+    <div class="navegacion-proyecto">
+        <h2>Navegacion del proyecto</h2>
+        <ul class="lista-links-paginas">
+            <li class="link-pagina">
+                <a href="/index.html">Inicio</a>
+            </li>
+            <li class="link-pagina">
+                <a href="/paginas/modulo1/CrearCuenta.html">Crear Cuenta</a>
+            </li>
+            <li class="link-pagina">
+                <a href="/paginas/modulo1/HU4/Registroempleado.html">Registrar Empleado</a>
+            </li>
+            <li class="link-pagina">
+                <a href="/paginas/modulo1/">Crear Cuenta</a>
+            </li>
+            <li class="link-pagina">
+                <a href="/paginas/modulo1/ModificaciónyBajaCliente.html">Modificacion y baja cliente (por
+                    administrador)</a>
+            </li>
+            <li class="link-pagina">
+                <a href="/paginas/modulo1/ModificarCliente.html">Modificacion cliente (por cliente)</a>
+            </li>
+            <li class="link-pagina">
+                <a href="/paginas/modulo1/modificarUsuario.html">Modificar usuario</a>
+            </li>
+            <li class="link-pagina">
+                <a href="/paginas/modulo2/carrito.html">Carrito</a>
+            </li>
+            <li class="link-pagina">
+                <a href="/paginas/modulo2/historialpedidos.html">Historial de pedidos</a>
+            </li>
+            <li class="link-pagina">
+                <a href="/paginas/modulo4/vistaDePedidos.html">Vista de pedidos</a>
+            </li>
+            <li class="link-pagina">
+                <a href="/paginas/modulo7/ranking_productos.html">Ranking de productos</a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
