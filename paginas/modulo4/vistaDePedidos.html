@@ -1,11 +1,9 @@
-<!-- CAMBIENLE EL NOMBRE DE ESTE ARCHIVO A LO QUE SEA SU PAGINA -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../fuente/estilos_generales.css" />
-    <link rel="stylesheet" href="../../fuente/estilos_generales.scss" />
+    <link rel="stylesheet" href="/fuente/estilos_generales.css" />
     <link rel="stylesheet" href="./vistaDePedidos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,41 +23,49 @@
   <body>
     <header>
       <div class="header-logo">
-        <img src="../../fuente//logo.png" alt="logo" />
+        <img src="../../fuente/logo.png" alt="logo" />
       </div>
       <div class="header-botones-links">
         <ul class="header-links">
           <li>
-            <a href="index.html">Inicio</a>
+            <a href="/index.html">Inicio</a>
           </li>
           <li>
-            <a href="index.html">Pagina 1</a>
+            <a href="index.html">Historial de Pedidos</a>
           </li>
           <li>
-            <a href="index.html">Pagina 2</a>
+            <a href="index.html"></a>
           </li>
         </ul>
         <div class="header-botones">
-          <button class="boton-secundario boton-carrito">
-            <i class="fa-solid fa-cart-shopping"></i>
-            Carrito
-          </button>
-          <button class="boton-primario boton-sesion">Iniciar Sesión</button>
+          <a href="/paginas/modulo2/carrito.html">
+            <button class="boton-secundario boton-carrito">
+              <i class="fa-solid fa-cart-shopping"></i>
+              Carrito
+            </button>
+          </a>
+  
+          <a href="/paginas/modulo1/CrearCuenta.html">
+            <button class="boton-primario boton-sesion">Iniciar Sesión</button>
+  
+          </a>
           <!-- Boton de sesion iniciada -->
           <!-- <button class="boton-sesion boton-sesion-iniciada">
-                    <i class="fa-solid fa-user"></i>
-                    Nombre
-                </button> -->
+                      <i class="fa-solid fa-user"></i>
+                      Nombre
+                  </button> -->
         </div>
       </div>
     </header>
 
 
-    <section class="principal">
+  <section class="principal">
 
         <div>
-        <h1>Pedidos de Cocina</h1>
+        <h1 class="titulo-1">Pedidos de Cocina</h1>
         </div>
+
+        <br>
 
         <div>
         <table class="tabla" cellpadding="18" cellspacing="0">
@@ -90,18 +96,133 @@
               </td>
 
               <td class="celda">
-                <details>
-                    <summary>Botón Desplegable</summary>
-                    <div>
-                        <ul>
-                            <li><button>Pedido</button> </li>
-                            <li> <button>En Preparación</button></li>
-                            <li><button>Listo</button></li>
-                        </ul>
-                    </div>
-                </details>
+                  <select name="EstadoRubro" id="Estrubros" class="menuDesplegable">
+                      <option value="Alta" >Seleccionar Estado</option>
+                      <option value="Alta">En preparación</option>
+                      <option value="Baja">Listo</option>
+                  </select>
               </td>
             </tr>
+            <tr>
+              <td class="celda">XXXX</td>
+      
+              <td class="celda">XXXXXXXXXX</td>
+      
+              <td class="celda">DD-MM-AA</td>
+                
+              <td class="celda"> 
+                    <button class="boton-primario boton-sesion"> Ver detalles</button>
+              </td>
+
+              <td class="celda">
+                  <select name="EstadoRubro" id="Estrubros" class="menuDesplegable">
+                      <option value="Alta" >Seleccionar Estado</option>
+                      <option value="Alta">En preparación</option>
+                      <option value="Baja">Listo</option>
+                  </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="celda">XXXX</td>
+      
+              <td class="celda">XXXXXXXXXX</td>
+      
+              <td class="celda">DD-MM-AA</td>
+                
+              <td class="celda"> 
+                    <button class="boton-primario boton-sesion"> Ver detalles</button>
+              </td>
+
+              <td class="celda">
+                  <select name="EstadoRubro" id="Estrubros" class="menuDesplegable">
+                      <option value="Alta" >Seleccionar Estado</option>
+                      <option value="Alta">En preparación</option>
+                      <option value="Baja">Listo</option>
+                  </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="celda">XXXX</td>
+      
+              <td class="celda">XXXXXXXXXX</td>
+      
+              <td class="celda">DD-MM-AA</td>
+                
+              <td class="celda"> 
+                    <button class="boton-primario boton-sesion"> Ver detalles</button>
+              </td>
+
+              <td class="celda">
+                  <select name="EstadoRubro" id="Estrubros" class="menuDesplegable">
+                      <option value="Alta" >Seleccionar Estado</option>
+                      <option value="Alta">En preparación</option>
+                      <option value="Baja">Listo</option>
+                  </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="celda">XXXX</td>
+      
+              <td class="celda">XXXXXXXXXX</td>
+      
+              <td class="celda">DD-MM-AA</td>
+                
+              <td class="celda"> 
+                    <button class="boton-primario boton-sesion"> Ver detalles</button>
+              </td>
+
+              <td class="celda">
+                  <select name="EstadoRubro" id="Estrubros" class="menuDesplegable">
+                      <option value="Alta" >Seleccionar Estado</option>
+                      <option value="Alta">En preparación</option>
+                      <option value="Baja">Listo</option>
+                  </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="celda">XXXX</td>
+      
+              <td class="celda">XXXXXXXXXX</td>
+      
+              <td class="celda">DD-MM-AA</td>
+                
+              <td class="celda"> 
+                    <button class="boton-primario boton-sesion"> Ver detalles</button>
+              </td>
+
+              <td class="celda">
+                  <select name="EstadoRubro" id="Estrubros" class="menuDesplegable">
+                      <option value="Alta" >Seleccionar Estado</option>
+                      <option value="Alta">En preparación</option>
+                      <option value="Baja">Listo</option>
+                  </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="celda">XXXX</td>
+      
+              <td class="celda">XXXXXXXXXX</td>
+      
+              <td class="celda">DD-MM-AA</td>
+                
+              <td class="celda"> 
+                    <button class="boton-primario boton-sesion"> Ver detalles</button>
+              </td>
+
+              <td class="celda">
+                  <select name="EstadoRubro" id="Estrubros" class="menuDesplegable">
+                      <option value="Alta" >Seleccionar Estado</option>
+                      <option value="Alta">En preparación</option>
+                      <option value="Baja">Listo</option>
+                  </select>
+              </td>
+            </tr>
+
 
 
       
@@ -110,6 +231,7 @@
         </div>
     </section>
 
+<br>
 
 
     <footer>

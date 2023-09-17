@@ -4,18 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- ESTE ARCHIVO CSS ASEGURENSE QUE APUNTE AL DE
-    ESTILOS GENERALES BIEN. SI NO NO LES VA A TOMAR ESOS ESTILOS
-    QUE YA ESTAN HECHOS.
-    ADENTRO DE ESE ARCHIVO SE METANSE Y BUSCAN EL NOMBRE DE LA CLASE
-    PARA PONERLE A SUS ELEMENTOS HTML. HAY TITULOS, BOTONES PRIMARIO Y SECUNDARIO,
-    TABLAS, BUSCADOR, Y HEADER. -->
-  <link rel="stylesheet" href="/fuente/estilos_generales.css" />
-  <!-- Y ESTE ARCHIVO plantilla.css CAMBIENLE EL NOMBRE
-    AL MISMO QUE LE PONGAN A SU ARCHIVO plantilla.html
-    Y AHI LES VA A ANDAR BIEN LOS ESTILOS QUE ESCRIBAN PARA SU
-    PROPIA PAGINA -->
 
+  <link rel="stylesheet" href="../../estilos_generales.css" />
  
   <link rel="stylesheet" href="./historialpedidos.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,26 +22,32 @@
 <body>
   <header>
     <div class="header-logo">
-      <img src="../../fuente/logo.png" alt="logo" />
+      <img src="/fuente/logo.png" alt="logo" />
     </div>
     <div class="header-botones-links">
       <ul class="header-links">
         <li>
-          <a href="index.html">Inicio</a>
+          <a href="/index.html">Inicio</a>
         </li>
         <li>
-          <a href="index.html">Pagina 1</a>
+          <a href="index.html">Historial de Pedidos</a>
         </li>
         <li>
-          <a href="index.html">Pagina 2</a>
+          <a href="index.html"></a>
         </li>
       </ul>
       <div class="header-botones">
-        <button class="boton-secundario boton-carrito">
-          <i class="fa-solid fa-cart-shopping"></i>
-          Carrito
-        </button>
-        <button class="boton-primario boton-sesion">Iniciar Sesión</button>
+        <a href="/paginas/modulo2/carrito.html">
+          <button class="boton-secundario boton-carrito">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Carrito
+          </button>
+        </a>
+
+        <a href="/paginas/modulo1/CrearCuenta.html">
+          <button class="boton-primario boton-sesion">Iniciar Sesión</button>
+
+        </a>
         <!-- Boton de sesion iniciada -->
         <!-- <button class="boton-sesion boton-sesion-iniciada">
                     <i class="fa-solid fa-user"></i>
@@ -164,6 +160,48 @@
     </div>
     <p class="footer-marca">El Buen Sabor</p>
   </footer>
+
+  <!-- Para navegar por el proyecto, puesto que aun no podemos
+    implementar js para la navegacion con listas desplegables
+    y pop ups -->
+    <div class="navegacion-proyecto">
+      <h2>Navegacion del proyecto</h2>
+      <ul class="lista-links-paginas">
+        <li class="link-pagina">
+          <a href="/index.html">Inicio</a>
+        </li>
+        <li class="link-pagina">
+          <a href="/paginas/modulo1/CrearCuenta.html">Crear Cuenta</a>
+        </li>
+        <li class="link-pagina">
+          <a href="/paginas/modulo1/HU4/Registroempleado.html">Registrar Empleado</a>
+        </li>
+        <li class="link-pagina">
+          <a href="/paginas/modulo1/">Crear Cuenta</a>
+        </li>
+        <li class="link-pagina">
+          <a href="/paginas/modulo1/ModificaciónyBajaCliente.html">Modificacion y baja cliente (por administrador)</a>
+        </li>
+        <li class="link-pagina">
+          <a href="/paginas/modulo1/ModificarCliente.html">Modificacion cliente (por cliente)</a>
+        </li>
+        <li class="link-pagina">
+          <a href="/paginas/modulo1/modificarUsuario.html">Modificar usuario</a>
+        </li>
+        <li class="link-pagina">
+          <a href="/paginas/modulo2/carrito.html">Carrito</a>
+        </li>
+        <li class="link-pagina">
+          <a href="/paginas/modulo2/historialpedidos.html">Historial de pedidos</a>
+        </li>
+        <li class="link-pagina">
+          <a href="/paginas/modulo4/vistaDePedidos.html">Vista de pedidos</a>
+        </li>
+        <li class="link-pagina">
+          <a href="/paginas/modulo7/ranking_productos.html">Ranking de productos</a>
+        </li>
+      </ul>
+    </div>
 </body>
 
 </html>
