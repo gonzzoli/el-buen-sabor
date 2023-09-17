@@ -98,4 +98,10 @@ a{
     color: #7d0300;
     
 }
+.boton-secundario .ver-pedidos{
+  display: flex;
+  align-items: center;
+  max-width: max-content;
+}
+
 /*# sourceMappingURL=RankingdeCleintes.css.map */
