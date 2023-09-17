@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/fuente/estilos_generales.css" />
+        <link rel="stylesheet" href="./controlDeStock.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&family=Poppins:wght@300&family=Reenie+Beanie&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        />
+        <title>El Buen Sabor</title>
+      </head>
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="../../fuente/logo.png" alt="logo">
+        </div>
+        <div class="header-botones-links">
+          <ul class="header-links">
+            <li>
+              <a href="/index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="index.html">Historial de Pedidos</a>
+            </li>
+            <li>
+              <a href="index.html"></a>
+            </li>
+          </ul>
+          <div class="header-botones">
+            <a href="/paginas/modulo2/carrito.html">
+              <button class="boton-secundario boton-carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Carrito
+              </button>
+            </a>
+    
+            <a href="/paginas/modulo1/CrearCuenta.html">
+              <button class="boton-primario boton-sesion">Iniciar Sesión</button>
+    
+            </a>
+            <!-- Boton de sesion iniciada -->
+            <!-- <button class="boton-sesion boton-sesion-iniciada">
+                        <i class="fa-solid fa-user"></i>
+                        Nombre
+                    </button> -->
+          </div>
+        </div>
+      </header>
+    
+      <div class="titulo-buscador">
+        <h1 class="titulo-1">Control de Stock</h1>
+  
+        <input class="buscador-texto" type="text" id="busqueda-producto" placeholder="Buscar un producto..." />
+      </div>
+
+      <div>
+
+      <table class="tabla" cellpadding="18" cellspacing="0">
+
+        <tr>
+  
+          <th class="tabla-titulo-columna"> Ingrediente</th>
+  
+          <th class="tabla-titulo-columna"> Stock minimo</th>
+  
+          <th class="tabla-titulo-columna">Stock actual</th>
+  
+          <th class="tabla-titulo-columna">Diferencia de stock</th>
+
+          <th class="tabla-titulo-columna"> Unidad de medida y detalles</th>
+
+          <th class="tabla-titulo-columna"> Comprar ingredientes</th>
+  
+        </tr>
+
+        <tr>
+          <td class="celda">XXXXXX</td>
+  
+          <td class="celda">XXXXXX</td>
+  
+          <td class="celda">XXXXXX</td>
+
+          <td class="celda">XXXXXX</td>
+            
+          <td class="celda"> 
+            <a href="#miModal" class="abrir-modal boton-secundario" style="text-decoration: none;">
+              Ver detalles
+          </a>
+              </td>
+
+          <td class="celda">
+            <a href="https://www.mercadolibre.com.ar/">
+              <button class="boton-primario" type="button"> Comprar +</button>
+        </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="celda">XXXXXX</td>
+    
+            <td class="celda">XXXXXX</td>
+    
+            <td class="celda">XXXXXX</td>
+  
+            <td class="celda">XXXXXX</td>
+              
+            <td class="celda"> 
+              <a href="#miModal" class="abrir-modal boton-secundario" style="text-decoration: none;">
+                Ver detalles
+            </a>
+                </td>
+  
+            <td class="celda">
+              <a href="https://www.mercadolibre.com.ar/">
+                <button class="boton-primario" type="button"> Comprar +</button>
+          </a>
+              </td>
+          </tr>
+
+          <tr>
+            <td class="celda">XXXXXX</td>
+    
+            <td class="celda">XXXXXX</td>
+    
+            <td class="celda">XXXXXX</td>
+  
+            <td class="celda">XXXXXX</td>
+              
+            <td class="celda"> 
+              <a href="#miModal" class="abrir-modal boton-secundario" style="text-decoration: none;">
+                Ver detalles
+            </a>
+                </td>
+  
+            <td class="celda">
+              <a href="https://www.mercadolibre.com.ar/">
+                <button class="boton-primario" type="button"> Comprar +</button>
+          </a>
+              </td>
+          </tr>
+
+          <tr>
+            <td class="celda">XXXXXX</td>
+    
+            <td class="celda">XXXXXX</td>
+    
+            <td class="celda">XXXXXX</td>
+  
+            <td class="celda">XXXXXX</td>
+              
+            <td class="celda"> 
+              <a href="#miModal" class="abrir-modal boton-secundario" style="text-decoration: none;">
+                Ver detalles
+            </a>
+                </td>
+  
+            <td class="celda">
+              <a href="https://www.mercadolibre.com.ar/">
+                <button class="boton-primario" type="button"> Comprar +</button>
+          </a>
+              </td>
+          </tr>
+
+          <tr>
+            <td class="celda">XXXXXX</td>
+    
+            <td class="celda">XXXXXX</td>
+    
+            <td class="celda">XXXXXX</td>
+  
+            <td class="celda">XXXXXX</td>
+              
+            <td class="celda"> 
+              <a href="#miModal" class="abrir-modal boton-secundario" style="text-decoration: none;">
+                Ver detalles
+            </a>
+                </td>
+  
+            <td class="celda">
+              <a href="https://www.mercadolibre.com.ar/">
+                <button class="boton-primario" type="button"> Comprar +</button>
+          </a>
+              </td>
+          </tr>
+
+          <tr>
+            <td class="celda">XXXXXX</td>
+    
+            <td class="celda">XXXXXX</td>
+    
+            <td class="celda">XXXXXX</td>
+  
+            <td class="celda">XXXXXX</td>
+              
+            <td class="celda"> 
+              <a href="#miModal" class="abrir-modal boton-secundario" style="text-decoration: none;">
+                Ver detalles
+            </a>
+                </td>
+  
+            <td class="celda">
+              <a href="https://www.mercadolibre.com.ar/">
+                <button class="boton-primario" type="button"> Comprar +</button>
+          </a>
+              </td>
+          </tr>
+
+          <tr>
+            <td class="celda">XXXXXX</td>
+    
+            <td class="celda">XXXXXX</td>
+    
+            <td class="celda">XXXXXX</td>
+  
+            <td class="celda">XXXXXX</td>
+              
+            <td class="celda"> 
+              <a href="#miModal" class="abrir-modal boton-secundario" style="text-decoration: none;">
+                Ver detalles
+            </a>
+                </td>
+  
+            <td class="celda">
+              <a href="https://www.mercadolibre.com.ar/">
+                <button class="boton-primario" type="button"> Comprar +</button>
+          </a>
+              </td>
+          </tr>
+
+          <tr>
+            <td class="celda">XXXXXX</td>
+    
+            <td class="celda">XXXXXX</td>
+    
+            <td class="celda">XXXXXX</td>
+  
+            <td class="celda">XXXXXX</td>
+              
+            <td class="celda"> 
+              <a href="#miModal" class="abrir-modal boton-secundario" style="text-decoration: none;">
+                Ver detalles
+            </a>
+                </td>
+  
+            <td class="celda">
+              <a href="https://www.mercadolibre.com.ar/">
+                <button class="boton-primario" type="button"> Comprar +</button>
+          </a>
+              </td>
+          </tr>
+</table>
+<br>
+    </div>
+
+    <!-- VENTANA EMERGENTE-->
+    <div id="miModal" class="modal">
+        <div class="modal-contenido">
+            <a href="#" class="cerrar-modal">&times;</a>
+            <h2 class="titulo-2" style="text-decoration: underline;"> Detalles del ingrediente</h2>
+           <br>
+            <ul class="listaDani">
+                <li> <h3 class="titulo-3">Unidad de medida:</h3> lorem ipsum dolor</li>
+                <li><h3 class="titulo-3">Otros detalles:</h3></li>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            </ul>
+        </div>
+    </div>
+     <!-- FIN VENTANA EMERGENTE-->
+
+      <footer>
+        <div class="redes-sociales">
+          <p>Sigamos en contacto:</p>
+          <div class="iconos-redes">
+            <a target="_blank" href="https://twitter.com/elonmusk"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a target="_blank" href="https://www.facebook.com/mundogaturro"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a target="_blank" href="https://www.instagram.com/leomessi"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a target="_blank" href=""><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+        <p class="footer-marca">El Buen Sabor</p>
+      </footer>
+
+      <!-- Para navegar por el proyecto, puesto que aun no podemos
+    implementar js para la navegacion con listas desplegables
+    y pop ups -->
+    <div class="navegacion-proyecto">
+        <h2>Navegacion del proyecto</h2>
+        <ul class="lista-links-paginas">
+            <li class="link-pagina">
+                <a href="/index.html">Inicio</a>
+            </li>
+            <li class="link-pagina">
+                <a href="/paginas/modulo1/CrearCuenta.html">Crear Cuenta</a>
+            </li>
+            <li class="link-pagina">
+                <a href="/paginas/modulo1/HU4/Registroempleado.html">Registrar Empleado</a>
+            </li>
+            <li class="link-pagina">
+                <a href="/paginas/modulo1/">Crear Cuenta</a>
+            </li>
+            <li class="link-pagina">
+                <a href="/paginas/modulo1/ModificaciónyBajaCliente.html">Modificacion y baja cliente (por
+                    administrador)</a>
+            </li>
+            <li class="link-pagina">
+                <a href="/paginas/modulo1/ModificarCliente.html">Modificacion cliente (por cliente)</a>
+            </li>
+            <li class="link-pagina">
+                <a href="/paginas/modulo1/modificarUsuario.html">Modificar usuario</a>
+            </li>
+            <li class="link-pagina">
+                <a href="/paginas/modulo2/carrito.html">Carrito</a>
+            </li>
+            <li class="link-pagina">
+                <a href="/paginas/modulo2/historialpedidos.html">Historial de pedidos</a>
+            </li>
+            <li class="link-pagina">
+                <a href="/paginas/modulo4/vistaDePedidos.html">Vista de pedidos</a>
+            </li>
+            <li class="link-pagina">
+                <a href="/paginas/modulo7/ranking_productos.html">Ranking de productos</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
