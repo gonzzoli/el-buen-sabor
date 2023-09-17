@@ -4,11 +4,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Y ESTE ARCHIVO plantilla.css CAMBIENLE EL NOMBRE
-    AL MISMO QUE LE PONGAN A SU ARCHIVO plantilla.html
-    Y AHI LES VA A ANDAR BIEN LOS ESTILOS QUE ESCRIBAN PARA SU
-    PROPIA PAGINA -->
-    <link rel="stylesheet" href="./ranking_productos.css">
+    <link rel="stylesheet" href="../../fuente/estilos_generales.css" />
+    <link rel="stylesheet" href="../../fuente/estilos_generales.scss" />
+    <link rel="stylesheet" href="./vistaDePedidos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,7 +25,7 @@
   <body>
     <header>
       <div class="header-logo">
-        <img src="../../fuente/logo.png" alt="logo" />
+        <img src="../../fuente//logo.png" alt="logo" />
       </div>
       <div class="header-botones-links">
         <ul class="header-links">
@@ -56,79 +54,63 @@
       </div>
     </header>
 
+
     <section class="principal">
-      <div class="arriba">
-        <h1 class="titulo-2">Ranking de Productos</h1>
-        <div class="filtro-fecha">
-          <div class="fecha">
-            <p>Desde: </p>
-            <input type="date">
-          </div>
-          <div class="fecha">
-            <p>Hasta: </p>
-            <input type="date">          
-          </div>
-        </div>
-        <div class="excel">
-          <i class="fa-solid fa-file-excel"></i>
-          <p>Exportar</p>
-        </div>
-      </div>
 
-      <div class="contenido">
-        <div class="contenedor-tabla">
-          <h2 class="tabla-titulo titulo-3">Cocina</h2>
-          <table class="tabla">
-            <tr>
-              <th class="tabla-titulo-columna">Nombre</th>
-              <th class="tabla-titulo-columna">Cantidad</th>
-            </tr>
-            <tr>
-              <td class="celda">a</td>
-              <td class="celda">a</td>
-            </tr>
-            <tr>
-              <td class="celda">a</td>
-              <td class="celda">a</td>
-            </tr>
-            <tr>
-              <td class="celda">a</td>
-              <td class="celda">a</td>
-            </tr>
-            <tr>
-              <td class="celda">a</td>
-              <td class="celda">a</td>
-            </tr>
-          </table>
+        <div>
+        <h1>Pedidos de Cocina</h1>
         </div>
 
-        <div class="contenedor-tabla">
-          <h2 class="tabla-titulo titulo-3">Bebidas</h2>
-          <table class="tabla" cellpadding="18" cellspacing="0">
+        <div>
+        <table class="tabla" cellpadding="18" cellspacing="0">
+
             <tr>
-              <th class="tabla-titulo-columna">Nombre</th>
-              <th class="tabla-titulo-columna">Cantidad</th>
+      
+              <th class="tabla-titulo-columna">N° Orden</th>
+      
+              <th class="tabla-titulo-columna"> Nombre del pedido</th>
+      
+              <th class="tabla-titulo-columna">Fecha y Hora</th>
+      
+              <th class="tabla-titulo-columna">Detalles</th>
+
+              <th class="tabla-titulo-columna"> Estado</th>
+      
             </tr>
+
             <tr>
-              <td class="celda">a</td>
-              <td class="celda">a</td>
+              <td class="celda">XXXX</td>
+      
+              <td class="celda">XXXXXXXXXX</td>
+      
+              <td class="celda">DD-MM-AA</td>
+                
+              <td class="celda"> 
+                    <button class="boton-primario boton-sesion"> Ver detalles</button>
+              </td>
+
+              <td class="celda">
+                <details>
+                    <summary>Botón Desplegable</summary>
+                    <div>
+                        <ul>
+                            <li><button>Pedido</button> </li>
+                            <li> <button>En Preparación</button></li>
+                            <li><button>Listo</button></li>
+                        </ul>
+                    </div>
+                </details>
+              </td>
             </tr>
-            <tr>
-              <td class="celda">a</td>
-              <td class="celda">a</td>
-            </tr>
-            <tr>
-              <td class="celda">a</td>
-              <td class="celda">a</td>
-            </tr>
-            <tr>
-              <td class="celda">a</td>
-              <td class="celda">a</td>
-            </tr>
-          </table>
+
+
+      
+            
+          </table>   
         </div>
-      </div>
     </section>
+
+
 
     <footer>
       <div class="redes-sociales">

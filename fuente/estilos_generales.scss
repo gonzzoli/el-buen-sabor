@@ -19,6 +19,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  width: 100vw;
   .header-logo {
     width: 25%;
     height: 75%;
@@ -177,6 +178,7 @@ header {
   border-collapse: separate;
   border-spacing: 0px;
   border: 1px solid #000;
+  padding: 10px;
 }
 
 .celda {
@@ -184,6 +186,7 @@ header {
   text-align: center;
   border-collapse: separate;
   border: 1px solid #000;
+  padding: 5px;
 }
 
 .combo-box {

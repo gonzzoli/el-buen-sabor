@@ -1,9 +1,5 @@
-@use '../../index.scss';
-$color-primario: #7d0300;
-$color-secundario: #B21C1D;
-$color-terciario: #F1BD2D;
-$min-width-small: 768px;
-$min-width-grande: 1196px;
+@use '../../index.scss' as *;
+@use '../../fuente/estilos_generales.scss' as *;
 
 .principal {
     padding: 20px;
@@ -17,7 +13,6 @@ $min-width-grande: 1196px;
         }
         .titulo-carrito {
             text-align: center;
-            
         }
     }
     
@@ -72,6 +67,29 @@ $min-width-grande: 1196px;
                     text-align: center;
                     font-weight: 500;
                 }
+            }
+        }
+        @media screen and (max-width: $min-width-small) {
+            flex-direction: column;
+            align-items: center;
+            gap: 70px;
+            .informacion-pago {
+                order: 1;
+                margin-bottom: 20px;
+                width: 100%;
+                min-width: 0px;
+                .datos-cliente {
+                    .contenedor-inputs {
+                        flex-direction: column;
+                        align-items: start;
+                        .form-texto {
+                            min-width: 200px;
+                        }
+                    }
+                }
+            }
+            .pedido {
+                width: 100%;
             }
         }
     }
