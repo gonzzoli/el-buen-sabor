@@ -1,3 +1,12 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: #7d0300;
+}
+
 .hero {
     /* ES LA IMAGEN DE FONDO GRANDE EN EL HERO
     EN src PUEDEN PONER LA URL, O DESCARGAR LA FOTO
@@ -20,4 +29,84 @@
   .boton-secundario{
     border-radius: 20px;
   }
+  
+  body{
+    color: 7d0300;
+  }
+
+  header {
+    color: 7d0300
+  }
+  header {
+    height: 82px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+  }
+  header .header-logo {
+    width: 25%;
+    height: 75%;
+    max-width: 250px;
+    display: flex;
+    align-items: center;
+  }
+  header .header-logo img {
+    width: 100%;
+  }
+  header .header-botones-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  header .header-botones-links .header-links {
+    display: flex;
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+  }
+  header .header-botones-links .header-links li {
+    display: flex;
+    align-items: center;
+  }
+  header .header-botones-links .header-links li a {
+    text-decoration: none;
+    padding: 5px 5px;
+  }
+  header .header-botones-links .header-links li a:hover {
+    border-bottom: 1px solid #b21c1d;
+  }
+  header .header-botones-links .header-botones a {
+    text-decoration: none;
+  }
+  header .header-botones-links .header-botones .boton-carrito {
+    transition: 0.1s ease;
+  }
+  header .header-botones-links .header-botones .boton-carrito i {
+    color: #7d0300;
+  }
+  header .header-botones-links .header-botones .boton-carrito:hover i {
+    color: white;
+  }
+  @media screen and (max-width: 768px) {
+    header {
+      padding: 10px 8px;
+    }
+    header .header-logo {
+      display: none;
+    }
+    header .header-botones-links {
+      width: 100%;
+    }
+    header .header-botones-links .header-botones button {
+      padding: 8px 10px;
+    }
+  }
+
+  a{
+    color: #7d0300;
+  }
+
   
