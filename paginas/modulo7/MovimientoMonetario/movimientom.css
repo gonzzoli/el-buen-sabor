@@ -106,7 +106,6 @@ header .header-botones-links .header-botones .boton-carrito:hover i {
   left: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   display: none;
-  z-index: 2;
 }
 
 .ventana-emergente {
@@ -121,7 +120,6 @@ header .header-botones-links .header-botones .boton-carrito:hover i {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 4;
 }
 
 .titulo-1 {
@@ -299,257 +297,97 @@ footer .footer-marca {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .hero {
-    height: 30vh;
-  }
-  .hero .texto-hero {
-    width: 100%;
-    font-size: 28px;
-    line-height: 40px;
-  }
-}
-
 .principal {
-  margin: 30px 0;
-  padding: 0 20px;
-}
-.principal .filtros-busqueda {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 75px;
-}
-.principal .filtros-busqueda .rubros-iconos {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-width: 170px;
-  max-width: 250px;
-  width: 50%;
-}
-.principal .filtros-busqueda .rubros-iconos i {
-  font-size: 28px;
-  cursor: pointer;
-  transition: 0.1s ease;
-}
-.principal .filtros-busqueda .rubros-iconos i:hover {
-  color: #b21c1d;
-}
-.principal .producto-detalle {
-  border: 2px solid black;
-  border-radius: 24px;
-  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 40px auto;
-  width: 75%;
-  max-width: 750px;
-  height: 300px;
-}
-.principal .producto-detalle .imagen-detalle {
-  height: 100%;
-  width: 50%;
-  min-width: 200px;
-  border-radius: 24px 0 0 24px;
-  background: red;
-  background-image: url("./fuente/hamburguesa-producto.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-.principal .producto-detalle .producto-detalle-informacion {
   padding: 20px;
-  height: 100%;
+}
+.principal .arriba {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-}
-.principal .producto-detalle .producto-detalle-informacion .arriba .producto-nombre {
-  margin-bottom: 10px;
-}
-.principal .producto-detalle .producto-detalle-informacion .abajo p {
-  margin-bottom: 5px;
-  font-weight: 700;
-}
-.principal .producto-detalle .producto-detalle-informacion .abajo .producto-botones {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 25px;
-  margin-top: 15px;
 }
-.principal .producto-detalle .producto-detalle-informacion .abajo .producto-botones button {
-  padding: 15px 25px;
-}
-.principal .categoria-productos {
-  margin: 40px;
-}
-.principal .categoria-productos .categoria-titulo {
-  text-align: center;
-  margin: 30px 0;
-}
-.principal .categoria-productos .categoria-lista-productos {
+.principal .arriba .filtro-fecha {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 40px;
-}
-.principal .categoria-productos .categoria-lista-productos .producto-carta {
-  border: 1px solid #d4d2e3;
-  border-radius: 24px;
-  width: 20%;
-  min-width: 250px;
-}
-.principal .categoria-productos .categoria-lista-productos .producto-carta img {
-  width: 100%;
-  border-radius: 24px 24px 0 0;
-}
-.principal .categoria-productos .categoria-lista-productos .producto-carta .producto-informacion {
-  padding: 10px;
-}
-.principal .categoria-productos .categoria-lista-productos .producto-carta .producto-informacion .producto-nombre {
-  margin-bottom: 5px;
-}
-.principal .categoria-productos .categoria-lista-productos .producto-carta .producto-informacion .producto-descripcion {
-  margin-bottom: 20px;
-}
-.principal .categoria-productos .categoria-lista-productos .producto-carta .producto-informacion .producto-precio {
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-.principal .categoria-productos .categoria-lista-productos .producto-carta .producto-informacion .producto-botones {
-  display: flex;
   gap: 20px;
-  justify-content: flex-end;
-  padding: 10px;
 }
-.principal .categoria-productos .categoria-lista-productos .producto-carta .producto-informacion .producto-botones button {
-  padding: 12px 20px;
+.principal .arriba .filtro-fecha .fecha {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+.principal .arriba .filtro-fecha .fecha input {
+  padding: 2px;
+  border-radius: 5px;
+  border: 1px solid #7d0300;
+}
+.principal .arriba .excel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  color: green;
+  border: 1px solid green;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+.principal .arriba .excel i, .principal .arriba .excel p {
+  color: green;
+  font-weight: 600;
+}
+.principal .arriba .excel:hover {
+  background: green;
+}
+.principal .arriba .excel:hover i, .principal .arriba .excel:hover p {
+  color: white;
 }
 @media screen and (max-width: 768px) {
-  .principal .filtros-busqueda {
+  .principal .arriba {
     flex-direction: column;
     gap: 30px;
   }
-  .principal .filtros-busqueda .rubros-iconos {
-    gap: 10%;
-    width: 100%;
-  }
-  .principal .producto-detalle {
-    flex-direction: column;
-    height: auto;
-    width: 100%;
-  }
-  .principal .producto-detalle .imagen-detalle {
-    width: 100%;
-    height: 200px;
-    border-radius: 24px 24px 0 0;
-  }
-  .principal .categoria-productos {
-    margin: 40px 0;
-  }
-  .principal .categoria-productos .categoria-lista-productos {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .principal .categoria-productos .categoria-lista-productos .producto-carta {
-    width: 100%;
-  }
 }
-
-.ventana-carrito {
-  z-index: 2;
-  display: block;
+.principal .contenido {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 10%;
+  margin-top: 40px;
+  height: 60vh;
 }
-.ventana-carrito .boton-volver {
-  padding: 5px 10px;
+.tablepima{
+    width: 100%;
+    padding: 30px; /* Ajusta el espacio interno de las celdas */
+    border: 2px solid #ccc; /* Agrega un borde a las celdas */
 }
-.ventana-carrito .titulo-carrito {
+.principal .contenido .contenedor-tabla {
   text-align: center;
+  width: 50%;
+}
+.principal .contenido .contenedor-tabla .tabla-titulo {
   margin-bottom: 15px;
 }
-.ventana-carrito .carrito-lista-productos {
-  background: #F4F4F4;
-}
-.ventana-carrito .carrito-lista-productos .producto-carrito {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 15px;
-}
-.ventana-carrito .carrito-lista-productos .producto-carrito > div {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.ventana-carrito .carrito-lista-productos .producto-carrito .producto-carrito-derecha button {
-  padding: 10px 15px;
-}
-.ventana-carrito .ventana-carrito-abajo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 30px;
-}
-.ventana-carrito .ventana-carrito-abajo p {
-  font-weight: 700;
-}
-
-.fondo_oscuro {
-  display: block;
-}
-
-#modal {
-  display: none;
-}
-
-#modal:target {
-  display: block;
-}/*# sourceMappingURL=index.css.map */
-
-.modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
+.principal .contenido .contenedor-tabla .tabla {
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
+  max-width: 450px;
+  display: table;
+  margin: auto;
 }
-
-.modal:target {
-  display: block;
-  opacity: 1;
-  pointer-events: auto;
+.principal .contenido .contenedor-tabla .tabla tr {
+  width: 100%;
 }
-
-.modal-contenido {
-  background-color: white;
-  margin: 10% auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 80%;
-  max-width: 400px;
-  text-align: center;
-  position: relative;
-}
-
-.cerrar-modal {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  text-decoration: none;
-  font-size: 24px;
-  color: #333;
-}
-.boton-Ingresar{
-  padding-top: 20px;
-}
+@media screen and (max-width: 768px) {
+  .principal .contenido {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    height: auto;
+  }
+  .principal .contenido .contenedor-tabla {
+    width: 100%;
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=ranking_productos.css.map */

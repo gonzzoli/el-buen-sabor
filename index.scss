@@ -166,6 +166,8 @@
 }
 
 .ventana-carrito {
+  z-index: 2;
+  display: block;
   .boton-volver {
     padding: 5px 10px;
   }
@@ -199,4 +201,14 @@
       font-weight: 700;
     }
   }
+}
+.fondo_oscuro {
+  display: block;
+}
+
+#modal {
+  display: none;
+}
+#modal:target {
+  display: block;
 }
