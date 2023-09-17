@@ -117,6 +117,7 @@ header {
   left: 0;
   background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
   display: none;
+  z-index: 2;
 }
 
 .ventana-emergente {
@@ -134,6 +135,7 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 4;
 }
 .titulo-1 {
   color: $color-primario;

@@ -106,6 +106,7 @@ header .header-botones-links .header-botones .boton-carrito:hover i {
   left: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   display: none;
+  z-index: 2;
 }
 
 .ventana-emergente {
@@ -120,6 +121,7 @@ header .header-botones-links .header-botones .boton-carrito:hover i {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 4;
 }
 
 .titulo-1 {
@@ -459,6 +461,10 @@ footer .footer-marca {
   }
 }
 
+.ventana-carrito {
+  z-index: 2;
+  display: block;
+}
 .ventana-carrito .boton-volver {
   padding: 5px 10px;
 }
@@ -491,4 +497,16 @@ footer .footer-marca {
 }
 .ventana-carrito .ventana-carrito-abajo p {
   font-weight: 700;
+}
+
+.fondo_oscuro {
+  display: block;
+}
+
+#modal {
+  display: none;
+}
+
+#modal:target {
+  display: block;
 }/*# sourceMappingURL=index.css.map */
