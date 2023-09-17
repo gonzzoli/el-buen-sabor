@@ -298,3 +298,7 @@ footer .footer-marca {
     font-size: 32px;
   }
 }/*# sourceMappingURL=estilos_generales.css.map */
+
+.abajo {
+  display: inline-block;
+}
