@@ -598,3 +598,7 @@ footer .footer-marca {
 .cerrar-modal:hover {
   color: red;
 }
+
+a{
+  color: #7d0300;
+}
