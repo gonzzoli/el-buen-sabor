@@ -14,7 +14,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  width: 100vw;
+  width: 100%;
 }
 header .header-logo {
   width: 25%;
@@ -47,6 +47,9 @@ header .header-botones-links .header-links li a {
 }
 header .header-botones-links .header-links li a:hover {
   border-bottom: 1px solid #b21c1d;
+}
+header .header-botones-links .header-botones a {
+  text-decoration: none;
 }
 header .header-botones-links .header-botones .boton-carrito {
   transition: 0.1s ease;
@@ -102,6 +105,7 @@ header .header-botones-links .header-botones .boton-carrito:hover i {
   top: 0;
   left: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  display: none;
 }
 
 .ventana-emergente {
