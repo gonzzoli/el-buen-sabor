@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../estilos_generales.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&family=Poppins:wght@300&family=Reenie+Beanie&display=swap"
+        rel="stylesheet"
+        />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+<style>
+    .window-notice .content {
+    background: #fff;
+    border-radius: 2px;
+    border: 1px solid black;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    min-width: 320px;
+    overflow: hidden;
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.3rem;
+    text-align: center;
+    position: absolute;
+    top: 32;
+    left: 0;
+    right: 0;
+    
+    }
+    /*boton*/
+    .button{
+            background-color:#F1BD2D;
+            padding: 10px 15px;
+            text-align: center;
+            border-radius: 32px;
+            float: center;
+            border:none;
+        }
+        .buttonCancelar{
+            background-color: white;
+            border: 2px solid #B81A1A;
+            padding: 10px 15px;
+            text-align: center;
+            border-radius: 32px;
+            float: center;
+        }
+        .barraBusqueda {
+            background-color:#F1BD2D;
+            border-radius: 16px;
+            border:none;
+            padding: 10px 20px;
+            margin-left: 100px; /*espacio entre botones*/
+            float: right;
+        }
+
+        .form {
+            color:#B81A1A;
+            border-width:thin;
+            border-style:solid;
+            border-color:#B81A1A;
+            border-radius: 8px;
+            padding: 10px 15px;
+            margin-left: 4px;
+
+        }
+        
+/*tabla*/
+        .table{
+                    
+                    display: flex;
+                    justify-content: center;
+                    border-collapse: collapse;
+                    border-spacing:40px;
+                }
+
+        .th{
+            background-color: #B81A1A;
+            color:white;
+            text-align: center;
+            border-collapse: separate;
+            border-spacing: 0px;
+            border: 1px solid #000;
+        }
+
+        .td {
+            background-color:white;
+            text-align: center;
+            border-collapse: separate;
+            border: 1px solid #000;
+        }
+/*encabezado y pie de pagina*/
+        footer{
+            text-align: center;
+             background-color: #7d0300;
+             color: white;
+            
+        }
+
+        .hr{
+            background-color: #7d0300;
+            height: 1px;
+        }
+/*Tipo de letras*/
+        h1{
+            color: #7d0300;
+            font-size: 40px;
+            font-family:Inter; /*arreglar fuente*/
+        }
+
+        h2{
+            color: #7d0300;
+            font-size: 33px;
+        }
+
+        h3{
+            color: #7d0300;
+            font-size: 28px;
+        }
+        h4{
+            color: #7d0300;
+            font-size: 23px;
+        }
+
+        h5{
+            color: #7d0300;
+            font-size: 19px;
+        }
+        texto_body {
+            color: #7d0300;
+            font-size: 16px;
+        }
+        texto_chico {
+            color: #7d0300;
+            font-size: 13px;
+        }   
+
+</style>
+<header>
+        <div class="header-logo">
+                    <img src="./logo.png" alt="logo" />
+                </div>
+                <div class="header-botones-links">
+                    <ul class="header-links">
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Pagina 1</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Pagina 2</a>
+                    </li>
+                    </ul>
+                <div class="header-botones">
+                <button class="boton-secundario boton-carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Carrito
+                </button>
+                <button class="boton-primario boton-sesion">Iniciar Sesión</button>
+                <!-- Boton de sesion iniciada -->
+                <!-- <button class="boton-sesion boton-sesion-iniciada">
+                        <i class="fa-solid fa-user"></i>
+                        Nombre
+                    </button> -->
+        </div>
+    </header>
+<br><br>
+
+        <div class="window-notice" id="window-notice">
+            <div class="content" >
+               
+                <div class="content-text">
+                    <h3 class="h3" >Nuevo Rubro</h3> <hr class="hr">
+                    <form>
+                        
+                        <label for="fname" class="texto_body" style="margin: auto;">Nombre:</label>
+                        <input type="text" id="fname" name="fname" class="form">
+                    
+                        <label for="fname"  class="texto_body" style="margin-left: 32px;">Ingrediente:</label>
+                        <input type="text" id="fname" name="fname" class="form">
+                    
+                        <label for="fname" class="texto_body" style="margin-left: 32px;">Estado:</label>
+                        <select name="EstadoRubro" id="Estrubros" class="form">
+                            <option value="null">Seleccionar Estado</option>
+                            <option value="Alta">Alta</option>
+                            <option value="Baja">Baja</option>
+                        </select>
+                    
+                        <br><br>
+                        <button class="button"> <strong>Confirmar</strong></button>
+                        <button class="buttonCancelar" style="color:#B81A1A"> <strong>Cancelar </strong></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <button class="button"> <strong>Nuevo Rubro </strong></button>
+<input class="barraBusqueda"  type="search" name="busquedapedido" placeholder="Buscar un pedido..">
+
+<br><br><br><br>
+        <table class="table" cellpadding="18" cellspacing="0">
+
+            <tr>
+    
+                <th class="th">Rubro</th>
+            
+                <th class="th">Ingrediente Relacionado</th>
+            
+                <th class="th">Estado</th>
+    
+                <th class="th" colspan="2">Acciones</th>
+    
+                <th></th>
+            
+              </tr>
+            <tr>
+          
+              <td class="td">Rubro</td>
+          
+              <td class="td">Ingrediente</td>
+          
+              <td class="td">Alta/Baja</td>
+    
+              <td class="td"> Editar</td>  
+    
+              <td class="td">Eliminar</td>
+    
+          
+            </tr>
+            <tr>
+          
+                <td class="td">Rubro</td>
+            
+                <td class="td">Ingrediente</td>
+            
+                <td class="td">Alta/Baja</td>
+      
+                <td  class="td"> Editar</td>  
+      
+                <td  class="td">Eliminar</td>
+      
+            
+              </tr>
+    
+              <tr>
+          
+                <td class="td">Rubro</td>
+            
+                <td class="td">Ingrediente</td>
+            
+                <td class="td">Alta/Baja</td>
+      
+                <td class="td"> Editar</td>  
+      
+                <td class="td">Eliminar</td>
+      
+            
+              </tr>
+    
+              <tr>
+          
+                <td class="celda">Rubro</td>
+            
+                <td class="celda">Ingrediente</td>
+            
+                <td class="celda">Alta/Baja</td>
+      
+                <td class="celda"> Editar</td>  
+      
+                <td class="celda">Eliminar</td>
+      
+            
+              </tr>
+              <tr>
+          
+                <td class="celda">Rubro</td>
+            
+                <td class="celda">Ingrediente</td>
+            
+                <td class="celda">Alta/Baja</td>
+      
+                <td class="celda"> Editar</td>  
+      
+                <td class="celda">Eliminar</td>
+      
+            
+              </tr>
+          
+          </table>
+          <br><br><br><br><br><br>
+          <footer>
+            <div class="redes-sociales">
+              <p>Sigamos en contacto:</p>
+              <div class="iconos-redes">
+                <a target="_blank" href="https://twitter.com/elonmusk"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a target="_blank" href="https://www.facebook.com/mundogaturro"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a target="_blank" href="https://www.instagram.com/leomessi"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a target="_blank" href=""><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+            <p class="footer-marca">El Buen Sabor</p>
+      </footer>
+    </body>
+</html>
