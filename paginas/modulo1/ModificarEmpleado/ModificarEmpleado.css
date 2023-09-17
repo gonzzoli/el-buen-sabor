@@ -18,11 +18,26 @@ a{
   }
   .container{
     gap: 30px;
-    padding: 10px 10px 10px 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
+    justify-content: space-between;
   }
-  .container-left{
+  .container .container-left{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+  .container .container-right{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container .container-right .boton-primario .boton-sesion .boton-modificar{
+    justify-content: right;
+  }
+  .texto-modificar{
+    display: flex;
+    gap: 10px;
+  }
+  
