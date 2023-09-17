@@ -7,7 +7,7 @@
 
 h1 {
     color: #7d0300;
-    font-size: 40px;
+    font-size: 40px;   
 }
 
 h2 {
@@ -39,6 +39,27 @@ h5 {
     color: #7d0300;
     font-size: 13px;
 }
+
+.separacion_h{
+    text-align: left; 
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 20px; 
+}
+
+.container {
+    display: flex; /* Usamos flexbox para alinear los divs en una fila */
+  }
+  
+  .box {
+    flex: 1; /* Hace que los divs ocupen un tercio del ancho disponible */
+    padding: 10px; /* Agrega espacio interno alrededor del texto */
+  }
+
+.palabras {
+    color: black; /* Color del texto en negro */
+    font-weight: normal; /* Peso de la letra normal (por defecto) */
+  }
 
 /*tablas*/
 .tablepima{

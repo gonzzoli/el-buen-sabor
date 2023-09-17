@@ -14,7 +14,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  width: 100vw;
+  width: 100%;
 }
 header .header-logo {
   width: 25%;
@@ -47,6 +47,9 @@ header .header-botones-links .header-links li a {
 }
 header .header-botones-links .header-links li a:hover {
   border-bottom: 1px solid #b21c1d;
+}
+header .header-botones-links .header-botones a {
+  text-decoration: none;
 }
 header .header-botones-links .header-botones .boton-carrito {
   transition: 0.1s ease;
@@ -95,6 +98,17 @@ header .header-botones-links .header-botones .boton-carrito:hover i {
   line-height: 48px;
 }
 
+.fondo_oscuro {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  display: none;
+  z-index: 2;
+}
+
 .ventana-emergente {
   width: 75%;
   max-width: 750px;
@@ -107,6 +121,7 @@ header .header-botones-links .header-botones .boton-carrito:hover i {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 4;
 }
 
 .titulo-1 {
@@ -446,6 +461,10 @@ footer .footer-marca {
   }
 }
 
+.ventana-carrito {
+  z-index: 2;
+  display: block;
+}
 .ventana-carrito .boton-volver {
   padding: 5px 10px;
 }
@@ -478,4 +497,56 @@ footer .footer-marca {
 }
 .ventana-carrito .ventana-carrito-abajo p {
   font-weight: 700;
+}
+
+.fondo_oscuro {
+  display: block;
+}
+
+#modal {
+  display: none;
+}
+
+#modal:target {
+  display: block;
 }/*# sourceMappingURL=index.css.map */
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.modal:target {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-contenido {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.cerrar-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-decoration: none;
+  font-size: 24px;
+  color: #333;
+}

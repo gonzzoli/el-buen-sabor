@@ -358,6 +358,11 @@ footer .footer-marca {
   margin-top: 40px;
   height: 60vh;
 }
+.tablepima{
+    width: 100%;
+    padding: 30px; /* Ajusta el espacio interno de las celdas */
+    border: 2px solid #ccc; /* Agrega un borde a las celdas */
+}
 .principal .contenido .contenedor-tabla {
   text-align: center;
   width: 50%;

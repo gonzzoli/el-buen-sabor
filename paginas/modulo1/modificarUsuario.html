@@ -1,112 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="./modificarUsuario.css">
     <link rel="stylesheet" href="../../fuente/estilos_generales.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&family=Poppins:wght@300&family=Reenie+Beanie&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&family=Poppins:wght@300&family=Reenie+Beanie&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>El Buen Sabor</title>
 </head>
+
 <body>
     <header>
         <div class="header-logo">
             <img src="../../fuente/logo.png" alt="logo">
         </div>
         <div class="header-botones-links">
-            <ul class="header-links">
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="index.html">Pagina 1</a>
-                </li>
-                <li>
-                    <a href="index.html">Pagina 2</a>
-                </li>
-            </ul>
-            <div class="header-botones">
-                <button class="boton-carrito">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    Carrito
-                </button>
-                <button class="boton-sesion">Iniciar Sesión</button>
-                <!-- Boton de sesion iniciada -->
-                <!-- <button class="boton-sesion boton-sesion-iniciada">
-                    <i class="fa-solid fa-user"></i>
-                    Nombre
-                </button> -->
-            </div>
+          <ul class="header-links">
+            <li>
+              <a href="/index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="index.html">Historial de Pedidos</a>
+            </li>
+            <li>
+              <a href="index.html"></a>
+            </li>
+          </ul>
+          <div class="header-botones">
+            <a href="/paginas/modulo2/carrito.html">
+              <button class="boton-secundario boton-carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Carrito
+              </button>
+            </a>
+    
+            <a href="/paginas/modulo1/CrearCuenta.html">
+              <button class="boton-primario boton-sesion">Iniciar Sesión</button>
+    
+            </a>
+            <!-- Boton de sesion iniciada -->
+            <!-- <button class="boton-sesion boton-sesion-iniciada">
+                        <i class="fa-solid fa-user"></i>
+                        Nombre
+                    </button> -->
+          </div>
         </div>
-        <section>
-            <!-- ACA VA TODO EL CONTENIDO DE SU PAGINA -->
-            <!-- ACA VA TODO EL CONTENIDO DE SU PAGINA -->
-            <!-- ACA VA TODO EL CONTENIDO DE SU PAGINA -->
-        </section>
-    </header>
+      </header>
 
     <!-- Se viene lo principal capitos-->
 
-    <h1>Actualizar datos</h1>
+    <div id="miModal" class="modal">
+        <div class="modal-contenido">
+            <a href="#" class="cerrar-modal">&times;</a>
+            <h2 class="titulo-2"> ¡Cambios guardados correctamente!</h2>
+           <br>
+            <p>
+            <a href="../../index.html">
+                <button class="boton-secundario" >Volver a inicio</button>
+            </a>
+            </p>
+        </div>
+    </div>
+
+
     <section class="principal">
-        
-        <form class="superFormulario">
-            <div class="campo"> 
+        <h1 class="titulo-1">Actualizar datos</h1>
+<div class="superContenedor">
+
+        <div class="contenedor1">
+        <form>
+            <div class="campo">
 
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="campo"
-                placeholder="Introduce tu nombre">
-        
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="campo"
-                placeholder="Introduce tu apellido">
-        
-                <label for="direccion">Dirección:</label>
-                <input type="text" id="direccion" name="campo"
-                placeholder="Introduce tu dirección">
-        
-                <label for="email">Email:</label>
-                <input type="text" id="email" name="campo"
-                placeholder="Introduce tu email">
-        
-                <label for="telefono">Teléfono:</label>
-                <input type="text" id="telefono" name="campo"
-                placeholder="Introduce tu teléfono">
-        
-                <label for="contraseña">Contraseña:</label>
-                <input type="password" id="contraseña" name="campo"
-                placeholder="Introduce tu nueva contraseña">
-        
-                <label for="contraseñanueva">Nueva contraseña:</label>
-                <input type="password" id="contraseñanueva" name="campo"
-                placeholder="Introduce nuevamente la contraseña">
-        
-                </div>
-                
-            <div class="cosasALaDerecha">
-              <input class="boton-estetico" type="submit" value="Enviar">
-              <input class="boton-estetico" type="reset" value="Borrar">
-            </div>
-        </form>
+                <input type="text" id="nombre" name="campo" placeholder="Introduce tu nombre">
 
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="campo" placeholder="Introduce tu apellido">
+
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="campo" placeholder="Introduce tu dirección">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="campo" placeholder="Introduce tu email">
+
+                <label for="telefono">Teléfono:</label>
+                <input type="text" id="telefono" name="campo" placeholder="Introduce tu teléfono">
+
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="contraseña" name="campo" placeholder="La contraseña debe tener 8 caracteres y una mayuscula">
+
+                <label for="contraseñanueva">Repita su contraseña:</label>
+                <input type="password" id="contraseñanueva" name="campo"
+                    placeholder="Introduce nuevamente la contraseña">
+
+            </div>
+            <br>
+            <div class="cosasALaDerecha">
+                <a href="#miModal" class="abrir-modal boton-primario">
+                    Enviar
+                </a>
+                <br>
+            </div>
+
+        </form>
+    </div>
+
+</div>
     </section>
 
-<!-- y hemos llegado al final, it was a long way home-->
+    <!-- y hemos llegado al final, it was a long way home-->
     <footer>
         <div class="redes-sociales">
             <p>Sigamos en contacto:</p>
             <div class="iconos-redes">
                 <a target="_blank" href="https://twitter.com/elonmusk"><i class="fa-brands fa-twitter"></i></a>
-                <a target="_blank" href="https://www.facebook.com/mundogaturro"><i class="fa-brands fa-facebook"></i></a>
+                <a target="_blank" href="https://www.facebook.com/mundogaturro"><i
+                        class="fa-brands fa-facebook"></i></a>
                 <a target="_blank" href="https://www.instagram.com/leomessi"><i class="fa-brands fa-instagram"></i></a>
                 <a target="_blank" href=""><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
         <p class="footer-marca">El Buen Sabor</p>
     </footer>
+    <!-- Para navegar por el proyecto, puesto que aun no podemos
+    implementar js para la navegacion con listas desplegables
+    y pop ups -->
+    <div class="navegacion-proyecto">
+        <h2>Navegacion del proyecto</h2>
+        <ul class="lista-links-paginas">
+            <li class="link-pagina">
+                <a href="/index.html">Inicio</a>
+            </li>
+            <li class="link-pagina">
+                <a href="/paginas/modulo1/CrearCuenta.html">Crear Cuenta</a>
+            </li>
+            <li class="link-pagina">
+                <a href="/paginas/modulo1/HU4/Registroempleado.html">Registrar Empleado</a>
+            </li>
+            <li class="link-pagina">
+                <a href="/paginas/modulo1/">Crear Cuenta</a>
+            </li>
+            <li class="link-pagina">
+                <a href="/paginas/modulo1/ModificaciónyBajaCliente.html">Modificacion y baja cliente (por
+                    administrador)</a>
+            </li>
+            <li class="link-pagina">
+                <a href="/paginas/modulo1/ModificarCliente.html">Modificacion cliente (por cliente)</a>
+            </li>
+            <li class="link-pagina">
+                <a href="/paginas/modulo1/modificarUsuario.html">Modificar usuario</a>
+            </li>
+            <li class="link-pagina">
+                <a href="/paginas/modulo2/carrito.html">Carrito</a>
+            </li>
+            <li class="link-pagina">
+                <a href="/paginas/modulo2/historialpedidos.html">Historial de pedidos</a>
+            </li>
+            <li class="link-pagina">
+                <a href="/paginas/modulo4/vistaDePedidos.html">Vista de pedidos</a>
+            </li>
+            <li class="link-pagina">
+                <a href="/paginas/modulo7/ranking_productos.html">Ranking de productos</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- PRUEBA DE VENTANA EMERGENTE-->
+    
+
+
 </body>
+
 </html>

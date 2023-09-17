@@ -1,0 +1,252 @@
+<!-- CAMBIENLE EL NOMBRE DE ESTE ARCHIVO A LO QUE SEA SU PAGINA -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&family=Poppins:wght@300&family=Reenie+Beanie&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/fuente/estilos_generales.css">
+    <link rel="stylesheet" href="HU4Style2.css" />
+    <title>El Buen Sabor</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-logo">
+      <img src="/fuente/logo.png" alt="logo" />
+    </div>
+    <div class="header-botones-links">
+      <ul class="header-links">
+        <li>
+          <a href="/index.html">Inicio</a>
+        </li>
+        <li>
+          <a href="index.html">Historial de Pedidos</a>
+        </li>
+        <li>
+          <a href="index.html"></a>
+        </li>
+      </ul>
+      <div class="header-botones">
+        <a href="/paginas/modulo2/carrito.html">
+          <button class="boton-secundario boton-carrito">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Carrito
+          </button>
+        </a>
+
+        <a href="/paginas/modulo1/CrearCuenta.html">
+          <button class="boton-primario boton-sesion">Iniciar Sesión</button>
+
+        </a>
+        <!-- Boton de sesion iniciada -->
+        <!-- <button class="boton-sesion boton-sesion-iniciada">
+                    <i class="fa-solid fa-user"></i>
+                    Nombre
+                </button> -->
+      </div>
+    </div>
+  </header>
+  <div class="hero">
+    <!-- El mio no tiene titulo -->
+  </div>
+
+  <section class="principal">
+    <h1 class="titulo-1">Registre a su empleado</h1>
+<!-- COMIENZA TABLA DE BOOTSTRAP -->
+<form class="formulario">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputName">Nombre</label>
+      <input type="text" class="form-control" placeholder="Juan">
+      <!-- -- <input type="email" class="form-control" id="inputEmail4" placeholder="Email"> -->
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputName">Apellido</label>
+      <input type="text" class="form-control" placeholder="Gonzalez">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="JuanGonzales@elbuensabor.com">
+  </div>
+  <div class="form-group col-md-6">
+    <label for="inputEmail4">Confirmar Email</label>
+    <input type="email" class="form-control" id="inputEmail4" placeholder="JuanGonzales@elbuensabor.com">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Contraseña</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+  </div>
+  <div class="form-group col-md-6">
+    <label for="inputPassword4">Confirmar Contraseña</label>
+    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputPhone">Teléfono</label>
+      <input type="text" class="form-control" id="inputPhone" placeholder="2615433224">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+  </div>
+  <button type="submit" class="boton-primario boton-sesion">Registrar</button>
+</form>
+    <!-- COMIENZA TABLA CON BOTONES MIOS -->
+    <!-- <div class="titulo">
+      <h1 class="titulo-1">Registre a su nuevo empleado.<h1>
+    </div>
+    <div class="combo-box">
+      <div class="columna1">
+        Nombre Y Apellido
+        <div class="Rlabel">
+           Nombre 
+          <div class="form-texto">
+            <h1 class="texto-chico">Nombre</h1>
+            <form>
+              <input type="texto-input" placeholder="Juan">
+          </div>
+          <div class="form-texto">
+           Apellido!
+            <h1 class="texto-chico"> Apellido </h1>
+            <input type="password" placeholder="Pereyra"><br><br>
+          </div>
+        </div>
+        <div class="Rlabel">
+          Direccion
+          <div class="form-texto">
+            <h1 class="texto-chico">Dirección</h1>
+            <form>
+              <input placeholder="Los Pinos 22">
+          </div>
+          <div class="form-texto">
+            Departamento!
+            <h1 class="texto-chico"> Departamento </h1>
+            <input placeholder="San Carlos"><br><br>
+          </div>
+        </div>
+        <div class="label">
+          <div class="form-texto">
+            Teléfono 
+            <h1 class="texto-chico"> Teléfono </h1>
+            <input placeholder="XXX-XXXXXXX">
+          </div>
+        </div>
+      </div>
+      <div class="columna2">
+        <div class="label">
+          <div class="form-texto">
+            email
+            <h1 class="texto-chico"> E-Mail </h1>
+            <input type="email" placeholder="JuanPereyra@elbuensabor.com.ar">
+          </div>
+        </div>
+        <div class="Rlabel">
+           Contraseña 
+          <div class="form-texto">
+            <h1 class="texto-chico">Contraseña</h1>
+            <form>
+              <input type="password" placeholder="*********">
+          </div>
+          <div class="form-texto">
+            Confirmar contraseña!
+            <h1 class="texto-chico"> Confirmar contraseña </h1>
+            <input type="password" placeholder="*********"><br><br>
+          </div>
+        </div>
+        <nav>
+          <ul class="desplegableOFF">
+            <a class="texto-chico">ROL</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9" fill="none">
+              <path id="Vector" d="M1.25 1.125L8 7.875L14.75 1.125" stroke="#B21C1D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"/>
+              </svg>
+
+            <ul class="desplegable">
+              <li><a href="#" class="texto-chico">Administrador</a></li>
+              <li><a href="#" class="texto-chico">Cocinero</a></li>
+              <li><a href="#" class="texto-chico">Empleado</a></li>
+            </ul>
+          </ul>
+        </nav>
+
+        <button class="boton-primario boton-modificar">Modificar</button>
+      </div> -->
+
+    </div>
+    </div>
+
+
+
+  </section>
+
+  <footer>
+    <div class="redes-sociales">
+      <p>Sigamos en contacto:</p>
+      <div class="iconos-redes">
+        <a target="_blank" href="https://twitter.com/elonmusk"><i class="fa-brands fa-twitter"></i></a>
+        <a target="_blank" href="https://www.facebook.com/mundogaturro"><i class="fa-brands fa-facebook"></i></a>
+        <a target="_blank" href="https://www.instagram.com/leomessi"><i class="fa-brands fa-instagram"></i></a>
+        <a target="_blank" href=""><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <p class="footer-marca">El Buen Sabor</p>
+  </footer>
+
+  <!-- Para navegar por el proyecto, puesto que aun no podemos
+    implementar js para la navegacion con listas desplegables
+    y pop ups -->
+    <div class="navegacion-proyecto">
+      <h2>Navegacion del proyecto</h2>
+      <ul class="lista-links-paginas">
+        <li class="link-pagina">
+          <a href="/index.html">Inicio</a>
+        </li>
+        <li class="link-pagina">
+          <a href="/paginas/modulo1/CrearCuenta.html">Crear Cuenta</a>
+        </li>
+        <li class="link-pagina">
+          <a href="/paginas/modulo1/HU4/Registroempleado.html">Registrar Empleado</a>
+        </li>
+        <li class="link-pagina">
+          <a href="/paginas/modulo1/ModificaciónyBajaCliente.html">Modificacion y baja cliente (por administrador)</a>
+        </li>
+        <li class="link-pagina">
+          <a href="/paginas/modulo1/ModificarCliente.html">Modificacion cliente (por cliente)</a>
+        </li>
+        <li class="link-pagina">
+          <a href="/paginas/modulo1/modificarUsuario.html">Modificar usuario</a>
+        </li>
+        <li class="link-pagina">
+          <a href="/paginas/modulo2/carrito.html">Carrito</a>
+        </li>
+        <li class="link-pagina">
+          <a href="/paginas/modulo2/historialpedidos.html">Historial de pedidos</a>
+        </li>
+        <li class="link-pagina">
+          <a href="/paginas/modulo4/vistaDePedidos.html">Vista de pedidos</a>
+        </li>
+        <li class="link-pagina">
+          <a href="/paginas/modulo7/ranking_productos.html">Ranking de productos</a>
+        </li>
+      </ul>
+    </div>
+</body>
+
+</html>
