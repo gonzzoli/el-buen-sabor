@@ -1,0 +1,175 @@
+/*estilos de letra segun figma*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #7d0300;
+    font-size: 40px;   
+}
+
+h2 {
+    color: #7d0300;
+    font-size: 33px;
+}
+
+h3 {
+    color: #7d0300;
+    font-size: 28px;
+}
+
+h4 {
+    color: #7d0300;
+    font-size: 23px;
+}
+
+h5 {
+    color: #7d0300;
+    font-size: 19px;
+}
+
+.texto_body {
+    color: #7d0300;
+    font-size: 16px;
+}
+
+.texto_chico {
+    color: #7d0300;
+    font-size: 13px;
+}
+
+.separacion_h{
+    text-align: left; 
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 20px; 
+}
+
+.container {
+    display: flex; /* Usamos flexbox para alinear los divs en una fila */
+  }
+  
+  .box {
+    flex: 1; /* Hace que los divs ocupen un tercio del ancho disponible */
+    padding: 10px; /* Agrega espacio interno alrededor del texto */
+  }
+
+.palabras {
+    color: black; /* Color del texto en negro */
+    font-weight: normal; /* Peso de la letra normal (por defecto) */
+  }
+
+/*tablas*/
+.tablepima{
+    width: 100%;
+    padding: 30px; /* Ajusta el espacio interno de las celdas */
+    border: 2px solid #ccc; /* Agrega un borde a las celdas */
+}
+
+.table {
+
+    display: flex;
+    justify-content: center;
+    border-collapse: collapse;
+    border-spacing: 40px;
+}
+
+.th {
+    background-color: #B81A1A;
+    color: white;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 0px;
+    border: 1px solid #000;
+}
+
+.td {
+    background-color: white;
+    text-align: center;
+    border-collapse: separate;
+    border: 1px solid #000;
+}
+
+/*boton*/
+.button {
+    background-color: #F1BD2D;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 32px;
+    float: left;
+    border: none;
+}
+
+.barraBusqueda {
+    background-color: #F1BD2D;
+    border-radius: 16px;
+    padding: 10px 20px;
+    margin-left: 1px;
+    /*espacio entre botones*/
+    float: right;
+    border: none;
+}
+
+.barraBusquedaprima {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barraBusquedaMid {
+    background-color: #F1BD2D;
+    border-radius: 16px;
+    padding: 10px 20px;
+    margin-left: 1px;
+    /*espacio entre botones*/
+    width: 200px;
+    /* Establece el ancho deseado para el elemento */
+    margin: 0 auto;
+    /* Centra horizontalmente el elemento */
+    border: none;
+}
+
+.buttonCancelar {
+    background-color: white;
+    border: 2px solid #B81A1A;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 32px;
+    float: center;
+}
+
+.form {
+    color: #B81A1A;
+    border-width: thin;
+    border-style: solid;
+    border-color: #B81A1A;
+    border-radius: 8px;
+    padding: 10px 15px;
+    /*medidas de la caja de formulario(hechas  a ojo según la HU20.1)*/
+}
+
+.hero {
+    height: 40vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../fuente/hamburguesa_prueba.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-hero {
+    color: white;
+    font-size: 40px;
+}
+
+.texto-heroprima {
+    color: white;
+    font-size: 25px;
+}
