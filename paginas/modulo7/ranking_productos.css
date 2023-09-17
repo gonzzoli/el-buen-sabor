@@ -14,7 +14,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  width: 100vw;
+  width: 100%;
 }
 header .header-logo {
   width: 25%;
@@ -295,22 +295,6 @@ footer .footer-marca {
     color: white;
     font-size: 32px;
   }
-}
-
-.navegacion-proyecto {
-  margin-top: 30px;
-}
-.navegacion-proyecto h2 {
-  text-align: center;
-}
-.navegacion-proyecto .lista-links-paginas {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  list-style-type: none;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 20px;
 }
 
 .principal {
