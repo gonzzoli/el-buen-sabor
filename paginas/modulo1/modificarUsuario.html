@@ -21,7 +21,7 @@
 <body>
     <header>
         <div class="header-logo">
-          <img src="/fuente/logo.png" alt="logo" />
+            <img src="../../fuente/logo.png" alt="logo">
         </div>
         <div class="header-botones-links">
           <ul class="header-links">
@@ -58,10 +58,26 @@
 
     <!-- Se viene lo principal capitos-->
 
-    <h1>Actualizar datos</h1>
-    <section class="principal">
+    <div id="miModal" class="modal">
+        <div class="modal-contenido">
+            <a href="#" class="cerrar-modal">&times;</a>
+            <h2 class="titulo-2"> ¡Cambios guardados correctamente!</h2>
+           <br>
+            <p>
+            <a href="../../index.html">
+                <button class="boton-secundario" >Volver a inicio</button>
+            </a>
+            </p>
+        </div>
+    </div>
 
-        <form class="superFormulario">
+
+    <section class="principal">
+        <h1 class="titulo-1">Actualizar datos</h1>
+<div class="superContenedor">
+
+        <div class="contenedor1">
+        <form>
             <div class="campo">
 
                 <label for="nombre">Nombre:</label>
@@ -74,26 +90,31 @@
                 <input type="text" id="direccion" name="campo" placeholder="Introduce tu dirección">
 
                 <label for="email">Email:</label>
-                <input type="text" id="email" name="campo" placeholder="Introduce tu email">
+                <input type="email" id="email" name="campo" placeholder="Introduce tu email">
 
                 <label for="telefono">Teléfono:</label>
                 <input type="text" id="telefono" name="campo" placeholder="Introduce tu teléfono">
 
                 <label for="contraseña">Contraseña:</label>
-                <input type="password" id="contraseña" name="campo" placeholder="Introduce tu nueva contraseña">
+                <input type="password" id="contraseña" name="campo" placeholder="La contraseña debe tener 8 caracteres y una mayuscula">
 
-                <label for="contraseñanueva">Nueva contraseña:</label>
+                <label for="contraseñanueva">Repita su contraseña:</label>
                 <input type="password" id="contraseñanueva" name="campo"
                     placeholder="Introduce nuevamente la contraseña">
 
             </div>
-
+            <br>
             <div class="cosasALaDerecha">
-                <input class="boton-estetico" type="submit" value="Enviar">
-                <input class="boton-estetico" type="reset" value="Borrar">
+                <a href="#miModal" class="abrir-modal boton-primario">
+                    Enviar
+                </a>
+                <br>
             </div>
-        </form>
 
+        </form>
+    </div>
+
+</div>
     </section>
 
     <!-- y hemos llegado al final, it was a long way home-->
@@ -152,6 +173,11 @@
             </li>
         </ul>
     </div>
+
+    <!-- PRUEBA DE VENTANA EMERGENTE-->
+    
+
+
 </body>
 
 </html>

@@ -1,0 +1,28 @@
+a{
+    text-decoration: none;
+    color: #7d0300;;
+}
+.hero {
+    /* ES LA IMAGEN DE FONDO GRANDE EN EL HERO
+    EN src PUEDEN PONER LA URL, O DESCARGAR LA FOTO
+    Y GUARDARLA EN LA MISMA CARPETA Y APUNTAR AHÍ */
+    height: 40vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.100), rgba(0, 0, 0, 0.100)), url("./FuenteModificarEmpleado/hero.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container{
+    gap: 30px;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+  }
+  .container-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

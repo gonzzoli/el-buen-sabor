@@ -18,37 +18,42 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <title>El Buen Sabor</title>
   </head>
   <body>
     <header>
       <div class="header-logo">
-        <img src="../../fuente//logo.png" alt="logo" />
+        <img src="../../fuente/logo.png" alt="logo" />
       </div>
       <div class="header-botones-links">
         <ul class="header-links">
           <li>
-            <a href="index.html">Inicio</a>
+            <a href="/index.html">Inicio</a>
           </li>
           <li>
-            <a href="index.html">Pagina 1</a>
+            <a href="index.html">Historial de Pedidos</a>
           </li>
           <li>
-            <a href="index.html">Pagina 2</a>
+            <a href="index.html"></a>
           </li>
         </ul>
         <div class="header-botones">
-          <button class="boton-secundario boton-carrito">
-            <i class="fa-solid fa-cart-shopping"></i>
-            Carrito
-          </button>
-          <button class="boton-primario boton-sesion">Iniciar Sesión</button>
+          <a href="/paginas/modulo2/carrito.html">
+            <button class="boton-secundario boton-carrito">
+              <i class="fa-solid fa-cart-shopping"></i>
+              Carrito
+            </button>
+          </a>
+  
+          <a href="/paginas/modulo1/CrearCuenta.html">
+            <button class="boton-primario boton-sesion">Iniciar Sesión</button>
+  
+          </a>
           <!-- Boton de sesion iniciada -->
           <!-- <button class="boton-sesion boton-sesion-iniciada">
-                    <i class="fa-solid fa-user"></i>
-                    Nombre
-                </button> -->
+                      <i class="fa-solid fa-user"></i>
+                      Nombre
+                  </button> -->
         </div>
       </div>
     </header>
@@ -57,8 +62,10 @@
   <section class="principal">
 
         <div>
-        <h1>Pedidos de Cocina</h1>
+        <h1 class="titulo-1">Pedidos de Cocina</h1>
         </div>
+
+        <br>
 
         <div>
         <table class="tabla" cellpadding="18" cellspacing="0">
@@ -89,33 +96,133 @@
               </td>
 
               <td class="celda">
-                <!-- Split button -->
-<div class="btn-group">
-  <button type="button" class="btn btn-danger">Action</button>
-  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="caret"></span>
-    <span class="sr-only">Toggle Dropdown</span>
-  </button>
-  <ul class="dropdown-menu">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-  </ul>
-</div>
-                <!-- <details>
-                    <summary>Botón Desplegable</summary>
-                    <div>
-                        <ul>
-                            <li><button>Pedido</button> </li>
-                            <li> <button>En Preparación</button></li>
-                            <li><button>Listo</button></li>
-                        </ul>
-                    </div>
-                </details> -->
+                  <select name="EstadoRubro" id="Estrubros" class="menuDesplegable">
+                      <option value="Alta" >Seleccionar Estado</option>
+                      <option value="Alta">En preparación</option>
+                      <option value="Baja">Listo</option>
+                  </select>
               </td>
             </tr>
+            <tr>
+              <td class="celda">XXXX</td>
+      
+              <td class="celda">XXXXXXXXXX</td>
+      
+              <td class="celda">DD-MM-AA</td>
+                
+              <td class="celda"> 
+                    <button class="boton-primario boton-sesion"> Ver detalles</button>
+              </td>
+
+              <td class="celda">
+                  <select name="EstadoRubro" id="Estrubros" class="menuDesplegable">
+                      <option value="Alta" >Seleccionar Estado</option>
+                      <option value="Alta">En preparación</option>
+                      <option value="Baja">Listo</option>
+                  </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="celda">XXXX</td>
+      
+              <td class="celda">XXXXXXXXXX</td>
+      
+              <td class="celda">DD-MM-AA</td>
+                
+              <td class="celda"> 
+                    <button class="boton-primario boton-sesion"> Ver detalles</button>
+              </td>
+
+              <td class="celda">
+                  <select name="EstadoRubro" id="Estrubros" class="menuDesplegable">
+                      <option value="Alta" >Seleccionar Estado</option>
+                      <option value="Alta">En preparación</option>
+                      <option value="Baja">Listo</option>
+                  </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="celda">XXXX</td>
+      
+              <td class="celda">XXXXXXXXXX</td>
+      
+              <td class="celda">DD-MM-AA</td>
+                
+              <td class="celda"> 
+                    <button class="boton-primario boton-sesion"> Ver detalles</button>
+              </td>
+
+              <td class="celda">
+                  <select name="EstadoRubro" id="Estrubros" class="menuDesplegable">
+                      <option value="Alta" >Seleccionar Estado</option>
+                      <option value="Alta">En preparación</option>
+                      <option value="Baja">Listo</option>
+                  </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="celda">XXXX</td>
+      
+              <td class="celda">XXXXXXXXXX</td>
+      
+              <td class="celda">DD-MM-AA</td>
+                
+              <td class="celda"> 
+                    <button class="boton-primario boton-sesion"> Ver detalles</button>
+              </td>
+
+              <td class="celda">
+                  <select name="EstadoRubro" id="Estrubros" class="menuDesplegable">
+                      <option value="Alta" >Seleccionar Estado</option>
+                      <option value="Alta">En preparación</option>
+                      <option value="Baja">Listo</option>
+                  </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="celda">XXXX</td>
+      
+              <td class="celda">XXXXXXXXXX</td>
+      
+              <td class="celda">DD-MM-AA</td>
+                
+              <td class="celda"> 
+                    <button class="boton-primario boton-sesion"> Ver detalles</button>
+              </td>
+
+              <td class="celda">
+                  <select name="EstadoRubro" id="Estrubros" class="menuDesplegable">
+                      <option value="Alta" >Seleccionar Estado</option>
+                      <option value="Alta">En preparación</option>
+                      <option value="Baja">Listo</option>
+                  </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="celda">XXXX</td>
+      
+              <td class="celda">XXXXXXXXXX</td>
+      
+              <td class="celda">DD-MM-AA</td>
+                
+              <td class="celda"> 
+                    <button class="boton-primario boton-sesion"> Ver detalles</button>
+              </td>
+
+              <td class="celda">
+                  <select name="EstadoRubro" id="Estrubros" class="menuDesplegable">
+                      <option value="Alta" >Seleccionar Estado</option>
+                      <option value="Alta">En preparación</option>
+                      <option value="Baja">Listo</option>
+                  </select>
+              </td>
+            </tr>
+
 
 
       
@@ -124,8 +231,9 @@
         </div>
     </section>
 
+<br>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
     <footer>
       <div class="redes-sociales">
         <p>Sigamos en contacto:</p>
@@ -144,43 +252,5 @@
       </div>
       <p class="footer-marca">El Buen Sabor</p>
     </footer>
-    <!-- Para navegar por el proyecto, puesto que aun no podemos
-    implementar js para la navegacion con listas desplegables
-    y pop ups -->
-  <div class="navegacion-proyecto">
-    <h2>Navegacion del proyecto</h2>
-    <ul class="lista-links-paginas">
-      <li class="link-pagina">
-        <a href="/index.html">Inicio</a>
-      </li>
-      <li class="link-pagina">
-        <a href="/paginas/modulo1/CrearCuenta.html">Crear Cuenta</a>
-      </li>
-      <li class="link-pagina">
-        <a href="/paginas/modulo1/HU4/Registroempleado.html">Registrar Empleado</a>
-      </li>
-      <li class="link-pagina">
-        <a href="/paginas/modulo1/ModificaciónyBajaCliente.html">Modificacion y baja cliente (por administrador)</a>
-      </li>
-      <li class="link-pagina">
-        <a href="/paginas/modulo1/ModificarCliente.html">Modificacion cliente (por cliente)</a>
-      </li>
-      <li class="link-pagina">
-        <a href="/paginas/modulo1/modificarUsuario.html">Modificar usuario</a>
-      </li>
-      <li class="link-pagina">
-        <a href="/paginas/modulo2/carrito.html">Carrito</a>
-      </li>
-      <li class="link-pagina">
-        <a href="/paginas/modulo2/historialpedidos.html">Historial de pedidos</a>
-      </li>
-      <li class="link-pagina">
-        <a href="/paginas/modulo4/vistaDePedidos.html">Vista de pedidos</a>
-      </li>
-      <li class="link-pagina">
-        <a href="/paginas/modulo7/ranking_productos.html">Ranking de productos</a>
-      </li>
-    </ul>
-  </div>
   </body>
 </html>
