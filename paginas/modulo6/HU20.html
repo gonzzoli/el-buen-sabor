@@ -2,7 +2,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="../estilos_generales.css" />
+        <link rel="stylesheet" href="../../fuente/estilos_generales.css" />
+        <link rel="stylesheet" href="./HU20.css">
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -16,102 +17,12 @@
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
         />
+        <title>El Buen Sabor</title>
     </head>
 <body>
-    <style>
-/*boton*/
-        .button{
-            background-color:#F1BD2D;
-            padding: 10px 15px;
-            text-align: center;
-            border-radius: 32px;
-            float: left;
-            border:none;
-        }
-
-        .barraBusqueda {
-            background-color:#F1BD2D;
-            border-radius: 16px;
-            border:none;
-            padding: 10px 20px;
-            margin-left: 100px; /*espacio entre botones*/
-            float: right;
-            border:none;
-        }
-        
-/*tabla*/
-        .table{
-                    
-                    display: flex;
-                    justify-content: center;
-                    border-collapse: collapse;
-                    border-spacing:40px;
-                }
-
-        .th{
-            background-color: #B81A1A;
-            color:white;
-            text-align: center;
-            border-collapse: separate;
-            border-spacing: 0px;
-            border: 1px solid #000;
-        }
-
-        .td {
-            background-color:white;
-            text-align: center;
-            border-collapse: separate;
-            border: 1px solid #000;
-        }
-/*encabezado y pie de pagina*/
-        footer{
-            text-align: center;
-             background-color: #7d0300;
-             color: white;
-            
-        }
-
-        .hr{
-            background-color: #7d0300;
-            height: 1px;
-        }
-/*Tipo de letras*/
-        h1{
-            color: #7d0300;
-            font-size: 40px;
-            font-family:Inter; /*arreglar fuente*/
-        }
-
-        h2{
-            color: #7d0300;
-            font-size: 33px;
-        }
-
-        h3{
-            color: #7d0300;
-            font-size: 28px;
-        }
-        h4{
-            color: #7d0300;
-            font-size: 23px;
-        }
-
-        h5{
-            color: #7d0300;
-            font-size: 19px;
-        }
-        texto_body {
-            color: #7d0300;
-            font-size: 16px;
-        }
-        texto_chico {
-            color: #7d0300;
-            font-size: 13px;
-        }
-        </style>
         <header>
             <div class="header-logo">
-                    <img src="./logo.png" alt="logo" />
+                    <img src="../../fuente/logo.png" alt="logo" />
                 </div>
                 <div class="header-botones-links">
                     <ul class="header-links">
@@ -131,107 +42,107 @@
                 Carrito
                 </button>
                 <button class="boton-primario boton-sesion">Iniciar Sesión</button>
-                <!-- Boton de sesion iniciada -->
-                <!-- <button class="boton-sesion boton-sesion-iniciada">
-                        <i class="fa-solid fa-user"></i>
-                        Nombre
-                    </button> -->
             </div>
-            </div></header>
-    <button class="button"> <strong>Nuevo Rubro </strong></button>
-    <input class="barraBusqueda"  type="search" name="busquedapedido" placeholder="Buscar un pedido..">
-    
-    <br><br><br><br>
-    <table class="table" cellpadding="18" cellspacing="0">
+            </div>
+        </header>
+    <br><br>
+       <div class="contenedor">
+        <button class="boton-primario"> <strong>Nuevo Rubro </strong></button>
+      
+        <input class="buscador-texto"  type="search" name="busquedapedido" placeholder="Buscar un pedido.." >
+        </div> 
+    <br><br>
+
+    <table class="tabla">
 
         <tr>
 
-            <th class="th">Rubro</th>
+            <th class="tabla-titulo-columna">Rubro</th>
         
-            <th class="th">Ingrediente Relacionado</th>
+            <th class="tabla-titulo-columna">Ingrediente Relacionado</th>
         
-            <th class="th">Estado</th>
+            <th class="tabla-titulo-columna">Estado</th>
 
-            <th class="th" colspan="2">Acciones</th>
+            <th class="tabla-titulo-columna" colspan="2">Acciones</th>
 
-            <th></th>
         
           </tr>
         <tr>
       
-          <td class="td">Rubro</td>
+          <td class="celdas" >Rubro</td>
       
-          <td class="td">Ingrediente</td>
+          <td class="celdas">Ingrediente</td>
       
-          <td class="td">Alta/Baja</td>
+          <td class="celdas">Alta/Baja</td>
 
-          <td class="td"> Editar</td>  
+          <td class="celdaIcono" ><i class="fa-solid fa-pencil"></i></td>  
 
-          <td class="td">Eliminar</td>
+          <td class="celdaIcono"><i class="fa-solid fa-trash"></i></td>
 
       
         </tr>
         <tr>
       
-            <td class="td">Rubro</td>
+            <td class="celdas">Rubro</td>
         
-            <td class="td">Ingrediente</td>
+            <td class="celdas">Ingrediente</td>
         
-            <td class="td">Alta/Baja</td>
+            <td class="celdas">Alta/Baja</td>
   
-            <td  class="td"> Editar</td>  
+            <td  class="celdaIcono"> <i class="fa-solid fa-pencil"></i></td>  
   
-            <td  class="td">Eliminar</td>
-  
-        
-          </tr>
-
-          <tr>
-      
-            <td class="td">Rubro</td>
-        
-            <td class="td">Ingrediente</td>
-        
-            <td class="td">Alta/Baja</td>
-  
-            <td class="td"> Editar</td>  
-  
-            <td class="td">Eliminar</td>
+            <td  class="celdaIcono"><i class="fa-solid fa-trash"></i></td>
   
         
           </tr>
 
           <tr>
       
-            <td class="td">Rubro</td>
+            <td class="celdas">Rubro</td>
         
-            <td class="td">Ingrediente</td>
+            <td class="celdas">Ingrediente</td>
         
-            <td class="td">Alta/Baja</td>
+            <td class="celdas">Alta/Baja</td>
   
-            <td class="td"> Editar</td>  
+            <td class="celdaIcono"> <i class="fa-solid fa-pencil"></i></td>  
   
-            <td class="td">Eliminar</td>
+            <td class="celdaIcono"><i class="fa-solid fa-trash"></i></td>
+  
+        
+          </tr>
+
+          <tr>
+      
+            <td class="celdas">Rubro</td>
+        
+            <td class="celdas">Ingrediente</td>
+        
+            <td class="celdas">Alta/Baja</td>
+  
+            <td class="celdaIcono"> <i class="fa-solid fa-pencil"></i></td>  
+  
+            <td class="celdaIcono"><i class="fa-solid fa-trash"></i></td>
   
         
           </tr>
           <tr>
       
-            <td class="td">Rubro</td>
+            <td class="celdas">Rubro</td>
         
-            <td class="td">Ingrediente</td>
+            <td class="celdas">Ingrediente</td>
         
-            <td class="td">Alta/Baja</td>
+            <td class="celdas">Alta/Baja</td>
   
-            <td class="td"> Editar</td>  
+            <td class="celdaIcono"> <i class="fa-solid fa-pencil"></i></td>  
   
-            <td class="td">Eliminar</td>
+            <td class="celdaIcono"> <i class="fa-solid fa-trash"></i></td>
   
         
           </tr>
       
       </table>
-<br><br><br><br><br><br>
+<br><br>
+
 <footer>
     <div class="redes-sociales">
       <p>Sigamos en contacto:</p>

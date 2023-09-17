@@ -1,0 +1,39 @@
+
+.buttonCancelar{
+    background-color: white;
+    border: 2px solid #B81A1A;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 32px;
+    float: center;
+}
+.form {
+    color:#B81A1A;
+    border-width:thin;
+    border-style:solid;
+    border-color:#B81A1A;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-left: 4px;
+
+}
+
+.hr{
+    background-color: #7d0300;
+     height: 1px;
+ }
+ 
+ .contenedor{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .celdas {
+    background-color: white;
+    text-align: center;
+    border-collapse: separate;
+    border: 1px solid #000;
+    padding: 50px;
+  }
