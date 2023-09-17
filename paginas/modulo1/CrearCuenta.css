@@ -144,7 +144,7 @@
   
   /*Esto lo voy a usar para que los divs se separen de forma Horisontal*/
   .divorisontale{
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     width: 50%;
     display: flex;
   }

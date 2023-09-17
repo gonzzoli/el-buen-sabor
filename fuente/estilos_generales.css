@@ -14,7 +14,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  width: 100vw;
+  width: 100%;
 }
 header .header-logo {
   width: 25%;
@@ -28,7 +28,7 @@ header .header-logo img {
 }
 header .header-botones-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
   gap: 30px;
 }
 header .header-botones-links .header-links {
@@ -295,32 +295,4 @@ footer .footer-marca {
     color: white;
     font-size: 32px;
   }
-}
-
-.navegacion-proyecto {
-  margin-top: 30px;
-}
-.navegacion-proyecto h2 {
-  text-align: center;
-}
-.navegacion-proyecto .lista-links-paginas {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  list-style-type: none;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 20px;
 }/*# sourceMappingURL=estilos_generales.css.map */
-
-
-.menuDesplegable {
-  border: 2px solid #7d0300;
-  border-radius: 50px ;
-  background-color: white;
-  color: #7d0300;
-  padding: 8px 8px;
-}
-
-
-

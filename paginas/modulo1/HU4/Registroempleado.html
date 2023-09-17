@@ -5,18 +5,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- ESTE ARCHIVO CSS ASEGURENSE QUE APUNTE AL DE
-    ESTILOS GENERALES BIEN. SI NO NO LES VA A TOMAR ESOS ESTILOS
-    QUE YA ESTAN HECHOS.
-    ADENTRO DE ESE ARCHIVO SE METANSE Y BUSCAN EL NOMBRE DE LA CLASE
-    PARA PONERLE A SUS ELEMENTOS HTML. HAY TITULOS, BOTONES PRIMARIO Y SECUNDARIO,
-    TABLAS, BUSCADOR, Y HEADER. -->
-  
-  <!-- Y ESTE ARCHIVO plantilla.css CAMBIENLE EL NOMBRE
-    AL MISMO QUE LE PONGAN A SU ARCHIVO plantilla.html
-    Y AHI LES VA A ANDAR BIEN LOS ESTILOS QUE ESCRIBAN PARA SU
-    PROPIA PAGINA -->
-  <link rel="stylesheet" href="./plantilla.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -26,7 +14,7 @@
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../../fuente/estilos_generales.css">
+    <link rel="stylesheet" href="/fuente/estilos_generales.css">
     <link rel="stylesheet" href="HU4Style2.css" />
     <title>El Buen Sabor</title>
 </head>
@@ -34,26 +22,32 @@
 <body>
   <header>
     <div class="header-logo">
-      <img src="./Fuente/logo.png" alt="logo" />
+      <img src="/fuente/logo.png" alt="logo" />
     </div>
     <div class="header-botones-links">
       <ul class="header-links">
         <li>
-          <a href="/el-buen-sabor-frontend/index.html">Inicio</a>
+          <a href="/index.html">Inicio</a>
         </li>
         <li>
-          <a href="index.html">Pagina 1</a>
+          <a href="index.html">Historial de Pedidos</a>
         </li>
         <li>
-          <a href="index.html">Pagina 2</a>
+          <a href="index.html"></a>
         </li>
       </ul>
       <div class="header-botones">
-        <button class="boton-secundario boton-carrito">
-          <i class="fa-solid fa-cart-shopping"></i>
-          Carrito
-        </button>
-        <button class="boton-primario boton-sesion">Iniciar Sesión</button>
+        <a href="/paginas/modulo2/carrito.html">
+          <button class="boton-secundario boton-carrito">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Carrito
+          </button>
+        </a>
+
+        <a href="/paginas/modulo1/CrearCuenta.html">
+          <button class="boton-primario boton-sesion">Iniciar Sesión</button>
+
+        </a>
         <!-- Boton de sesion iniciada -->
         <!-- <button class="boton-sesion boton-sesion-iniciada">
                     <i class="fa-solid fa-user"></i>
@@ -67,7 +61,7 @@
   </div>
 
   <section class="principal">
-    <h1>Registre a su empleado</h1>
+    <h1 class="titulo-1">Registre a su empleado</h1>
 <!-- COMIENZA TABLA DE BOOTSTRAP -->
 <form class="formulario">
   <div class="form-row">
@@ -229,9 +223,6 @@
         </li>
         <li class="link-pagina">
           <a href="/paginas/modulo1/HU4/Registroempleado.html">Registrar Empleado</a>
-        </li>
-        <li class="link-pagina">
-          <a href="/paginas/modulo1/">Crear Cuenta</a>
         </li>
         <li class="link-pagina">
           <a href="/paginas/modulo1/ModificaciónyBajaCliente.html">Modificacion y baja cliente (por administrador)</a>
