@@ -320,6 +320,58 @@ footer .footer-marca {
   align-items: center;
   gap: 75px;
 }
+
+.Menu-desplegable {
+  display: inline-block;
+  position: relative;
+}
+
+.boton-agregar {
+  border-radius: 16px;
+  padding: 16px 24px;
+  font: 'DM Sans';
+  font-weight: 700;
+  transition: 0.1s ease-out;
+  cursor: pointer;
+  color: #7D0300;
+  background: #FFFFFF;
+  border: none;
+}
+
+.boton-agregar:hover {
+  background: #FFFFFF;
+}
+
+.opciones {
+  display: none;
+  position: absolute;
+  width: 263px;
+  height: 102px;
+  overflow: auto;
+  border-radius: 16px;
+  cursor: pointer;
+}
+.Menu-desplegable:hover .opciones {
+  display: block;
+  z-index: 10;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+.opciones .opcion {
+  display: block;
+  color: #7d0300;
+  padding: 5px;
+  text-decoration: solid;
+  background-color: #FFFFFF;
+  z-index: 15;
+  cursor: pointer;
+}
+.opciones .opcion:hover {
+  color: #FFFFFF;
+  background-color: #7D0300;
+  z-index: 15;
+  cursor: pointer;
+}
+
 .principal .filtros-busqueda .rubros-iconos {
   display: flex;
   justify-content: space-between;
@@ -389,8 +441,12 @@ footer .footer-marca {
 }
 .principal .categoria-productos .categoria-titulo {
   text-align: center;
+  justify-content: center;
   margin: 30px 0;
 }
+
+
+
 .principal .categoria-productos .categoria-lista-productos {
   display: flex;
   flex-wrap: wrap;
@@ -465,7 +521,9 @@ footer .footer-marca {
   z-index: 2;
   display: block;
 }
-
+.ventana-carrito .boton-volver {
+  padding: 5px 10px;
+}
 .ventana-carrito .titulo-carrito {
   text-align: center;
   margin-bottom: 15px;
@@ -541,60 +599,74 @@ footer .footer-marca {
 }
 
 .cerrar-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
   text-decoration: none;
   font-size: 24px;
   color: #333;
 }
-.boton-Ingresar{
-  padding-top: 20px;
+
+.Boton-Habilitacion {
+  position: relative;
+  display: inline-block;
+  border-radius: 50px;
+width: 60px;
+height: 32px;
 }
 
-/* Estilos para el modal */
-.modal {
-  display: none;
-  position: fixed;
+/* Se oculta el checkbox de HTML*/
+.Boton-Habilitacion input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
+  right: 0;
+  bottom: -5%;
+  background-color: #25A111;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
-.modal:target {
-  display: block;
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.modal-contenido {
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
   background-color: white;
-  margin: 10% auto;
-  padding: 24px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 80%;
-  max-width: 400px;
-  text-align: center;
-  position: relative;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
-.modal-contenido .modal-arriba {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
+input:checked + .slider {
+  background-color: #BB0000;
 }
 
-.boton-volver {
-  padding: 5px 10px;
+input:focus + .slider {
+  box-shadow: 0 0 1px #BB0000;
 }
 
-.cerrar-modal:hover {
-  color: red;
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
 }
 
-a{
-  color: #7d0300;
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
 }
+
+.slider.round:before {
+  border-radius: 50%;
+}
+

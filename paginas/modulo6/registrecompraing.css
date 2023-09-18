@@ -47,6 +47,10 @@ h5 {
     margin-left: 20px; 
 }
 
+.medio{
+    text-align: center;
+}
+
 .container {
     display: flex; /* Usamos flexbox para alinear los divs en una fila */
   }
@@ -65,7 +69,7 @@ h5 {
 .tablepima{
     width: 100%;
     padding: 30px; /* Ajusta el espacio interno de las celdas */
-    border: 2px solid #ccc; /* Agrega un borde a las celdas */
+    border: 2px solid #ccc; 
 }
 
 .table {
@@ -107,7 +111,6 @@ h5 {
     border-radius: 16px;
     padding: 10px 20px;
     margin-left: 1px;
-    /*espacio entre botones*/
     float: right;
     border: none;
 }
@@ -123,11 +126,8 @@ h5 {
     border-radius: 16px;
     padding: 10px 20px;
     margin-left: 1px;
-    /*espacio entre botones*/
     width: 200px;
-    /* Establece el ancho deseado para el elemento */
     margin: 0 auto;
-    /* Centra horizontalmente el elemento */
     border: none;
 }
 
@@ -149,6 +149,7 @@ h5 {
     padding: 10px 15px;
     /*medidas de la caja de formulario(hechas  a ojo según la HU20.1)*/
 }
+ 
 
 .hero {
     height: 40vh;
