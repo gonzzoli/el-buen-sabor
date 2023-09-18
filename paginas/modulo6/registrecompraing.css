@@ -153,7 +153,7 @@ h5 {
 
 .hero {
     height: 40vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../fuente/hamburguesa_prueba.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../paginas/modulo1/manitos.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
