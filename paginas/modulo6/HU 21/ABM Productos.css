@@ -321,10 +321,57 @@ footer .footer-marca {
   gap: 75px;
 }
 
-.principal .filtros-busqueda .agregar-campos {
-
-  
+.Menu-desplegable {
+  display: inline-block;
+  position: relative;
 }
+
+.boton-agregar {
+  border-radius: 16px;
+  padding: 16px 24px;
+  font: 'DM Sans';
+  font-weight: 700;
+  transition: 0.1s ease-out;
+  cursor: pointer;
+  color: #7D0300;
+  background: #FFFFFF;
+  border: none;
+}
+
+.boton-agregar:hover {
+  background: #FFFFFF;
+}
+
+.opciones {
+  display: none;
+  position: absolute;
+  width: 263px;
+  height: 102px;
+  overflow: auto;
+  border-radius: 16px;
+  cursor: pointer;
+}
+.Menu-desplegable:hover .opciones {
+  display: block;
+  z-index: 10;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+.opciones .opcion {
+  display: block;
+  color: #7d0300;
+  padding: 5px;
+  text-decoration: solid;
+  background-color: #FFFFFF;
+  z-index: 15;
+  cursor: pointer;
+}
+.opciones .opcion:hover {
+  color: #FFFFFF;
+  background-color: #7D0300;
+  z-index: 15;
+  cursor: pointer;
+}
+
 .principal .filtros-busqueda .rubros-iconos {
   display: flex;
   justify-content: space-between;
@@ -394,6 +441,7 @@ footer .footer-marca {
 }
 .principal .categoria-productos .categoria-titulo {
   text-align: center;
+  justify-content: center;
   margin: 30px 0;
 }
 
@@ -621,3 +669,4 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+

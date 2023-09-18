@@ -104,9 +104,15 @@
 
   <section class="principal">
     <div class="filtros-busqueda">
-    <div class="boton-agregar-campos">
-<select name="">
+      <div class="Menu-desplegable">
+        <button class="boton-agregar">Agregar...</button>
+        <div class="opciones">
+        <a href="#nuevo-producto" class="opcion">Nuevo Producto</a>
+        <a href="#nuevo-rubro" class="opcion">Nuevo Rubro</a>
+        <a href="#editar-rubro" class="opcion">Editar Rubro</a>
+      </div>
     </div>
+
       <div class="rubros-iconos">
         <i class="fa-solid fa-burger"></i>
         <i class="fa-solid fa-pizza-slice"></i>
@@ -121,29 +127,7 @@
       <input class="buscador-texto" type="text" id="busqueda-producto" placeholder="Buscar un producto..." />
     </div>
     <!-- ACTIVAR Y DESACTIVAR DESPUES CON JS -->
-    <div class="producto-detalle">
-      <div class="imagen-detalle">
-        <!-- <img src="./fuente/hamburguesa-producto.jpg" alt="Imagen producto" /> -->
-      </div>
-      <div class="producto-detalle-informacion">
-        <div class="arriba">
-          <h3 class="titulo-4 producto-nombre">Titulo producto</h3>
-          <p class="texto-body producto-descripcion">
-            Descripcion. Lorem, ipsum dolor sit amet consectetur adipisicing.
-          </p>
-        </div>
-
-        <div class="abajo">
-          <p class="texto-body">Tiempo de cocina: MM minutos</p>
-          <p class="texto-body producto-precio">$99.99</p>
-          <p class="texto-body">En tu pedido: 1</p>
-          <div class="producto-botones">
-            <button class="boton-secundario">Quitar</button>
-            <button class="boton-primario">Agregar</button>
-          </div>
-        </div>
-      </div>
-    </div>
+ 
 
     <div class="categoria-productos">
       <h2 class="titulo-3 categoria-titulo">Hamburguesas</h2>
@@ -259,11 +243,12 @@
             <p class="titulo-5 producto-precio">$99.99</p>
             <div class="producto-botones">
               <button class="boton-secundario boton-detalles-producto">
-                Detalles
+                Editar
               </button>
-              <button class="boton-primario boton-agregar-producto">
-                Agregar
-              </button>
+              <label class="Boton-Habilitacion">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
             </div>
           </div>
         </div>
