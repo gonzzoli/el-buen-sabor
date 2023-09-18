@@ -7,6 +7,10 @@
   color: #7d0300;
 }
 
+a:hover{
+  color: #b21c1d;
+  }
+
 header {
   height: 82px;
   border-bottom: 1px solid black;
