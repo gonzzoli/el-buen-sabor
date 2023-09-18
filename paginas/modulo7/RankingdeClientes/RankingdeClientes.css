@@ -103,5 +103,11 @@ a{
   align-items: center;
   max-width: max-content;
 }
-
+a{
+  color:#7d0300;
+  text-decoration: none;
+}
+a:hover{
+  color:#b21c1d;
+}
 /*# sourceMappingURL=RankingdeCleintes.css.map */
