@@ -7,6 +7,9 @@
   color: #7d0300;
 }
 
+a:hover{
+color:#b21c1d;
+}
 .hero {
     /* ES LA IMAGEN DE FONDO GRANDE EN EL HERO
     EN src PUEDEN PONER LA URL, O DESCARGAR LA FOTO
