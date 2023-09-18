@@ -613,6 +613,14 @@ footer .footer-marca {
   border-radius: 50px;
   width: 60px;
   height: 32px;
+}
+
+.producto-carta .producto-informacion .producto-botones .Boton-Habilitacion {
+  position: relative;
+  display: inline-block;
+  border-radius: 50px;
+  width: 60px;
+  height: 32px;
   top: 10px;
 }
 
@@ -975,6 +983,32 @@ line-height: normal;
   gap: -8px;
 }
 
+.frame-boton-y-confirmacion {
+  display: flex;
+  width: 700px;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.frame-boton-confirmacion {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.boton-accion {
+  display: flex;
+  width: 127px;
+  height: 44px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  /*Estilo*/
+  border-radius: 30px;
+  border: 2px solid #B21C1D;
+  background: #FFF;
+}
 
 
