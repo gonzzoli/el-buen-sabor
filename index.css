@@ -465,9 +465,7 @@ footer .footer-marca {
   z-index: 2;
   display: block;
 }
-.ventana-carrito .boton-volver {
-  padding: 5px 10px;
-}
+
 .ventana-carrito .titulo-carrito {
   text-align: center;
   margin-bottom: 15px;
@@ -543,9 +541,6 @@ footer .footer-marca {
 }
 
 .cerrar-modal {
-  position: absolute;
-  top: 10px;
-  right: 10px;
   text-decoration: none;
   font-size: 24px;
   color: #333;
@@ -586,13 +581,14 @@ footer .footer-marca {
   position: relative;
 }
 
-.cerrar-modal {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  text-decoration: none;
-  font-size: 24px;
-  color: #333;
+.modal-contenido .modal-arriba {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.boton-volver {
+  padding: 5px 10px;
 }
 
 .cerrar-modal:hover {
