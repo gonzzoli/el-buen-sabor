@@ -107,11 +107,11 @@
       <div class="Menu-desplegable">
         <button class="boton-agregar">Agregar...</button>
         <div class="opciones">
-        <a href="#nuevo-producto" class="opcion">Nuevo Producto</a>
-        <a href="#nuevo-rubro" class="opcion">Nuevo Rubro</a>
-        <a href="#editar-rubro" class="opcion">Editar Rubro</a>
+          <a href="#nuevo-producto" class="opcion">Nuevo Producto</a>
+          <a href="#nuevo-rubro" class="opcion">Nuevo Rubro</a>
+          <a href="#editar-rubro" class="opcion">Editar Rubro</a>
+        </div>
       </div>
-    </div>
 
       <div class="rubros-iconos">
         <i class="fa-solid fa-burger"></i>
@@ -357,4 +357,112 @@
   </div>
   </div>
 
+  <div id="nuevo-rubro" class="nuevo-rubro">
+    <div class="newrubro-contenido">
+        <a href="#" class="cerrar-rubro">&times;</a>
+        <h2 class="titulo-2">Agregar Rubro</h2>
+       <br>
+       <form> 
+        <div class="form-floating mb-3">
+          <label for="floatingInput">Nombre</label>
+          <input class="caja-texto" id="floatingInput" placeholder="Titulo Rubro">
+        </div>
+        <div>
+            <button class="boton-subir-imagen">Subir imagen
+            </button>
+        </div>
+        <label class="Boton-Habilitacion">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      <div>
+        <button class ="boton-secundario">Agregar
+        </button>
+        <button class ="boton-secundario">Cancelar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="editar-rubro" class="nuevo-rubro">
+    <div class="newrubro-contenido">
+        <a href="#" class="cerrar-rubro">&times;</a>
+        <h2 class="titulo-2">Editar Rubro</h2>
+       <br>
+       <form> 
+        <div class="form-floating mb-3">
+          <label for="floatingInput">Nombre</label>
+          <input class="caja-texto" id="floatingInput" placeholder="Titulo Rubro">
+        </div>
+        <div>
+            <button class="boton-subir-imagen">Subir imagen
+            </button>
+        </div>
+        <label class="Boton-Habilitacion">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        </div>
+      <div>
+        <button class ="boton-secundario">Editar
+        </button>
+        <button class ="boton-secundario">Cancelar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="nuevo-producto" class="nuevo-producto">
+    <div class="newproducto-contenido">
+      <a href="#" class="cerrar-producto">&times;</a>
+      <h2 class="titulo-2">Nuevo Producto</h2>
+      <div class="frame-nombre-producto">
+        <label for="floatingInput">Nombre</label>
+        <input class="caja-texto" id="floatingInput" placeholder="Titulo Producto">
+      </div>
+      <div class="frame-nombre-producto">
+        <label for="floatingInput">Descripción</label>
+        <input type="text" class="caja-texto-detalles" placeholder=" ">
+      </div>
+      <div class="frame-preparacion">
+        <label for="floatingInput" class="frame-texto-preparacion">Preparación</label>
+        <input type="time" class="caja-texto-timepreparacion" id="floatingInput" placeholder="Tiempo">
+      </div>
+      <div class="frame-rubro">
+        <label for="floatingInput" class="frame-texto-rubro">Rubro</label>
+        <div class="Menu-desplegable">
+          <button class="frame-boton-rubro">Selecciona un Rubro</button>
+          <div class="opciones">
+            <a class="opcion">Rubro 1</a>
+            <a class="opcion">Rubro 2</a>
+            <a class="opcion">Rubro 3</a>
+          </div>
+        </div>
+      </div>
+      <div class="frame-ingredientes">
+        <label for="floatingInput" class="frame-texto-ingredientes">Ingredientes</label>
+        <button class="frame-boton-ingredientes">Ver Ingredientes</button>
+      </div>
+      <div class="frame-imagen">
+        <label for="floatingInput" class="frame-texto-ingredientes">Imagen</label>
+        <button class="frame-boton-ingredientes">Subir Archivo</button>
+      </div>
+      <div class="frame-preciofinal">
+        <label for="floatingInput" class="frame-texto-preciofinal">Precio Final</label>
+        <input type="text" class="caja-texto-timepreparacion" id="floatingInput" placeholder="$$$$">
+      </div>
+      <div class="frame-estado">
+        <label class="frame-texto-preciofinal">Estado</label>
+        <label class="Boton-Habilitacion">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+
+
+
+
+    </div>
+  </div>
 </html>
