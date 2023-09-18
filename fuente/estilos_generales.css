@@ -28,7 +28,7 @@ header .header-logo img {
 }
 header .header-botones-links {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   gap: 30px;
 }
 header .header-botones-links .header-links {
@@ -106,6 +106,7 @@ header .header-botones-links .header-botones .boton-carrito:hover i {
   left: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   display: none;
+  z-index: 2;
 }
 
 .ventana-emergente {
@@ -120,6 +121,7 @@ header .header-botones-links .header-botones .boton-carrito:hover i {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 4;
 }
 
 .titulo-1 {
@@ -296,3 +298,7 @@ footer .footer-marca {
     font-size: 32px;
   }
 }/*# sourceMappingURL=estilos_generales.css.map */
+
+.abajo {
+  display: inline-block;
+}

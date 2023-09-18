@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="ABM Productos.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -19,6 +19,7 @@
 
 <body>
   <header>
+    
     <div class="header-logo">
       <img src="/fuente/logo.png" alt="logo" />
     </div>
@@ -34,6 +35,7 @@
           <a href="index.html"></a>
         </li>
       </ul>
+     
       <div class="header-botones">
         <a href="#modal">
           <button class="boton-secundario boton-carrito">
@@ -42,10 +44,8 @@
           </button>
         </a>
 
-        <a href="#miModal" class="abrir-modal">
-          <button class="boton-primario">
-            Iniciar Sesión
-          </button>
+        <a href="#miModal" class="abrir-modal boton-primario">
+          <button class="boton-primario boton-sesion">Nombre</button>
 
         </a>
         <!-- Boton de sesion iniciada -->
@@ -56,12 +56,16 @@
       </div>
     </div>
   </header>
+  
+ 
 </div>
+
     <div id="modal">
       <div class="fondo_oscuro"></div>
       <div class="ventana-emergente ventana-carrito">
         <a href="/index.html">
           <button class="boton-secundario boton-volver">Volver</button>
+
         </a>
         <h2 class="titulo-2 titulo-carrito">Tu pedido</h2>
         <div class="carrito-lista-productos">
@@ -85,17 +89,24 @@
           <a href="/paginas/modulo2/carrito.html">
             <button class="boton-primario">Confirmar</button>
           </a>
+          
         </div>
       </div>
     </div>
+    
+
   <div class="hero">
     <h1 class="titulo-1 texto-hero">
       Cuando nuestros clientes prueban nuestra comida, suelen decir <br />
       "Este es el buen sabor"
     </h1>
   </div>
+
   <section class="principal">
     <div class="filtros-busqueda">
+    <div class="boton-agregar-campos">
+<select name="">
+    </div>
       <div class="rubros-iconos">
         <i class="fa-solid fa-burger"></i>
         <i class="fa-solid fa-pizza-slice"></i>
@@ -106,6 +117,7 @@
         <i class="fa-solid fa-carrot"></i>
         <i class="fa-solid fa-bottle-water"></i>
       </div>
+
       <input class="buscador-texto" type="text" id="busqueda-producto" placeholder="Buscar un producto..." />
     </div>
     <!-- ACTIVAR Y DESACTIVAR DESPUES CON JS -->
@@ -120,6 +132,7 @@
             Descripcion. Lorem, ipsum dolor sit amet consectetur adipisicing.
           </p>
         </div>
+
         <div class="abajo">
           <p class="texto-body">Tiempo de cocina: MM minutos</p>
           <p class="texto-body producto-precio">$99.99</p>
@@ -131,6 +144,7 @@
         </div>
       </div>
     </div>
+
     <div class="categoria-productos">
       <h2 class="titulo-3 categoria-titulo">Hamburguesas</h2>
       <div class="categoria-lista-productos">
@@ -145,11 +159,12 @@
             <p class="titulo-5 producto-precio">$99.99</p>
             <div class="producto-botones">
               <button class="boton-secundario boton-detalles-producto">
-                Detalles
+                Editar
               </button>
-              <button class="boton-primario boton-agregar-producto">
-                Agregar
-              </button>
+              <label class="Boton-Habilitacion">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
             </div>
           </div>
         </div>
@@ -164,11 +179,12 @@
             <p class="titulo-5 producto-precio">$99.99</p>
             <div class="producto-botones">
               <button class="boton-secundario boton-detalles-producto">
-                Detalles
+                Editar
               </button>
-              <button class="boton-primario boton-agregar-producto">
-                Agregar
-              </button>
+              <label class="Boton-Habilitacion">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
             </div>
           </div>
         </div>
@@ -183,11 +199,12 @@
             <p class="titulo-5 producto-precio">$99.99</p>
             <div class="producto-botones">
               <button class="boton-secundario boton-detalles-producto">
-                Detalles
+                Editar
               </button>
-              <button class="boton-primario boton-agregar-producto">
-                Agregar
-              </button>
+              <label class="Boton-Habilitacion">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
             </div>
           </div>
         </div>
@@ -202,11 +219,12 @@
             <p class="titulo-5 producto-precio">$99.99</p>
             <div class="producto-botones">
               <button class="boton-secundario boton-detalles-producto">
-                Detalles
+                Editar
               </button>
-              <button class="boton-primario boton-agregar-producto">
-                Agregar
-              </button>
+              <label class="Boton-Habilitacion">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
             </div>
           </div>
         </div>
@@ -221,11 +239,12 @@
             <p class="titulo-5 producto-precio">$99.99</p>
             <div class="producto-botones">
               <button class="boton-secundario boton-detalles-producto">
-                Detalles
+                Editar
               </button>
-              <button class="boton-primario boton-agregar-producto">
-                Agregar
-              </button>
+              <label class="Boton-Habilitacion">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
             </div>
           </div>
         </div>
@@ -251,6 +270,8 @@
       </div>
     </div>
   </section>
+
+
 
   <footer>
     <div class="redes-sociales">
@@ -301,6 +322,24 @@
       <li class="link-pagina">
         <a href="/paginas/modulo7/ranking_productos.html">Ranking de productos</a>
       </li>
+      <li class="link-pagina">
+        <a href="../../principales/indexCajero.html">Index Cajero</a>
+      </li>
+      <li class="link-pagina">
+        <a href="../../principales/indexCliente.html">Index Cliente</a>
+      </li>
+      <li class="link-pagina">
+        <a href="../../principales/indexCocina.html">Index Cocina</a>
+      </li>
+      <li class="link-pagina">
+        <a href="../../principales/indexDelivery.html">Index Delivery</a>
+      </li>
+      <li class="link-pagina">
+        <a href="../../../index.html">Index Normal</a>
+      </li>
+      <li class="link-pagina">
+        <a href="../../principales/indexAdministrador.html">Index Administrador</a>
+      </li>
     </ul>
   </div>
 
@@ -315,19 +354,19 @@
      </div>
      <form> 
       <div class="form-floating mb-3">
-        <label for="floatingInput">Ingresá tu email</label>
+        <label for="floatingInput">Email address</label>
         <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
        
       </div>
       <div class="form-floating">
-        <label for="floatingPassword">Ingresá tu contraseña</label>
+        <label for="floatingPassword">Password</label>
         <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
         
       </div>
   </form>
-      <p class="boton-Ingresar">
+      <p>
       <a href="../../index.html">
-          <button class="boton-primario boton-Ingresar">Ingresar</button>
+          <button class="boton-primario">Ingresar</button>
       </a>
       </p>
   </div>
