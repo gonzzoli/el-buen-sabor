@@ -182,3 +182,24 @@ tbody tr{
  tbody tr hover{
 background: #B21C1D;
  }
+
+ .titulo-buscador{
+  display: flex;
+  align-items: center;
+  gap: 75px;
+  justify-content: space-between;
+  padding: 16px;
+}   
+
+.buscador-texto {
+  background: rgba(241, 188, 44, 0.4941176471);
+  width: 100%;
+  min-width: 150px;
+  max-width: 350px;
+  color: #7d0300;
+  padding: 15px 20px;
+  border-radius: 50px;
+  border: none;
+}
+.buscador-texto:focus {
+  
