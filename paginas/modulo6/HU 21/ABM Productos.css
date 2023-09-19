@@ -80,7 +80,7 @@ header .header-botones-links .header-botones .boton-carrito:hover i {
     EN src PUEDEN PONER LA URL, O DESCARGAR LA FOTO
     Y GUARDARLA EN LA MISMA CARPETA Y APUNTAR AHÍ */
   height: 40vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./fuente/hamburguesa_prueba.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/fuente/hamburguesa_prueba.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1011,4 +1011,10 @@ line-height: normal;
   background: #FFF;
 }
 
+a:hover{
+  color:#B21C1D;
 
+}
+a{
+  color:#7D0300;
+}
