@@ -1,3 +1,50 @@
+.modal {
+  display: none;
+  position: fixed;
+  opacity: 1;
+  z-index: 2;
+}
+.modal:target {
+  display: block;
+}
+.modal i {
+  font-size: 24px;
+}
+.modal .fondo_oscuro {
+  display: block;
+}
+
+.modal .ventana-emergente {
+  display: block;
+}
+
+.ventana-emergente .arriba{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid red;
+}
+
+.ventana-emergente .detalles-pedido .datos-cliente{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.ventana-emergente .detalles-pedido .resumen-pedido {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: #F4F4F4;
+}
+
+.ventana-emergente .detalles-pedido .resumen-pedido .producto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
 
 .buttonCancelar{
     background-color: white;
@@ -23,35 +70,10 @@
      height: 1px;
  }
  
- .contenedor{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
 
   .celda {
     border-collapse: separate;
     padding: 10px;
-  }
-
-  .modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-  }
-
-  .modal:target {
-    display: block;
-    opacity: 1;
-    pointer-events: auto;
   }
 
   @media screen and (max-width: 768px) {
