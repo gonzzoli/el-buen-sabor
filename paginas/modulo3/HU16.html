@@ -21,254 +21,190 @@
     <title>El Buen Sabor</title>
   </head>
 
-
-    <body>
-      <header>
-          <div class="header-logo">
-            <img src="../../fuente/logo.png" alt="logo" />
-          </div>
-          <div class="header-botones-links">
-            <ul class="header-links">
-              <li>
-                <a href="index.html">Inicio</a>
-              </li>
-              <li>
-                <a href="index.html">Pagina 1</a>
-              </li>
-              <li>
-                <a href="index.html">Pagina 2</a>
-              </li>
-            </ul>
-            <div class="header-botones">
-              <button class="boton-secundario boton-carrito">
-                <i class="fa-solid fa-cart-shopping"></i>
-                Carrito
-              </button>
-              <button class="boton-primario boton-sesion">Iniciar Sesión</button>
-            </div>
-            </div>
-      </header>
-  <!-- CONTENIDO -->
-<section class="principal">
-        <br> <br>
-        <h2 class="titulo-2" style="text-align: center;">Pedidos a entregar</h2>
-        <br>
+  <body>
+    <header>
+      <div class="header-logo">
+        <img src="../../fuente/logo.png" alt="logo" />
+      </div>
+      <div class="header-botones-links">
+        <ul class="header-links">
+          <li>
+            <a href="index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="index.html">Pagina 1</a>
+          </li>
+          <li>
+            <a href="index.html">Pagina 2</a>
+          </li>
+        </ul>
+        <div class="header-botones">
+          <button class="boton-secundario boton-carrito">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Carrito
+          </button>
+          <button class="boton-primario boton-sesion">Iniciar Sesión</button>
+        </div>
+      </div>
+    </header>
+    <!-- CONTENIDO -->
+    <section class="principal">
+      <br />
+      <br />
+      <h2 class="titulo-2" style="text-align: center">Pedidos a entregar</h2>
+      <br />
       <div class="contenedor">
         <div>
-        <label for="fname" > <h5 class="titulo-5">Estado:</label>
-            <select name="EstadoRubro" id="Estrubros" class="form">
-                <option value="Alta" >Seleccionar Estado</option>
-                <option value="Alta">Alta</option>
-                <option value="Baja">Baja</option>
-            </select>
-          </div>
-        <input class="buscador-texto"  type="search" name="busquedapedido" placeholder="Buscar un pedido..">
-      
+          <label for="fname" class="titulo-5">Estado:</label>
+          <select name="EstadoRubro" id="Estrubros" class="form">
+            <option value="Alta">Seleccionar Estado</option>
+            <option value="Alta">Alta</option>
+            <option value="Baja">Baja</option>
+          </select>
+        </div>
+        <input
+          class="buscador-texto"
+          type="search"
+          name="busquedapedido"
+          placeholder="Buscar un pedido.."
+        />
       </div>
 
-        <br> <br> <br> <br>
-        <table class="tabla">
+      <br />
+      <br />
+      <br />
+      <br />
+      <table class="tabla">
+        <tr>
+          <th class="tabla-titulo-columna">N° Orden</th>
 
-            <tr>
-    
-                <th class="tabla-titulo-columna">N° Orden</th>
-            
-                <th class="tabla-titulo-columna">Cliente</th>
-            
-                <th class="tabla-titulo-columna">Teléfono</th>
+          <th class="tabla-titulo-columna">Cliente</th>
 
-                <th class="tabla-titulo-columna">Dirección</th>
+          <th class="tabla-titulo-columna">Teléfono</th>
 
-                <th class="tabla-titulo-columna">Detalles</th>
-    
-                <th class="tabla-titulo-columna">Acción</th>
-    
-                <th></th>
-            
-              </tr>
-            <tr>
-              <td class="celdas">XXXX</td>
-          
-              <td class="celdas">Nombre Apellido</td>
-          
-              <td class="celdas">XXXXXXXXXX</td>
-    
-              <td class="celdas"> texto</td>  
+          <th class="tabla-titulo-columna">Dirección</th>
 
-              <td class="celdas">
-                <button class="boton-secundario" style="color:#B81A1A"> <strong> Ver detalles </strong></button>
-              </td>
-    
-              <td class="celdas">
-                <button class="boton-primario"> <strong>Entregar </strong></button>
-              </td>
-            </tr>
-            
-            <tr>
-                <td class="celdas">XXXX</td>
-            
-                <td class="celdas">Nombre Apellido</td>
-            
-                <td class="celdas">XXXXXXXXXX</td>
-      
-                <td class="celdas"> texto</td>  
-  
-                <td class="celdas">
-                  <button class="boton-secundario" style="color:#B81A1A"> <strong> Ver detalles </strong></button>
-                </td>
-      
-                <td class="celdas">
-                  <button class="boton-primario"> <strong>Entregar </strong></button>
-                </td>
-              </tr>
+          <th class="tabla-titulo-columna">Detalles</th>
 
-              <tr>
-                <td class="celdas">XXXX</td>
-            
-                <td class="celdas">Nombre Apellido</td>
-            
-                <td class="celdas">XXXXXXXXXX</td>
-      
-                <td class="celdas"> texto</td>  
-  
-                <td class="celdas">
-                  <button class="boton-secundario" style="color:#B81A1A"> <strong> Ver detalles </strong></button>
-                </td>
-      
-                <td class="celdas">
-                  <button class="boton-primario"> <strong>Entregar </strong></button>
-                </td>
-              </tr>
+          <th class="tabla-titulo-columna">Acción</th>
 
-              <tr>
-                <td class="celdas">XXXX</td>
-            
-                <td class="celdas">Nombre Apellido</td>
-            
-                <td class="celdas">XXXXXXXXXX</td>
-      
-                <td class="celdas"> texto</td>  
-  
-                <td class="celdas">
-                  <button class="boton-secundario" style="color:#B81A1A"> <strong> Ver detalles </strong></button>
-                </td>
-      
-                <td class="celdas">
-                  <button class="boton-primario"> <strong>Entregar </strong></button>
-                </td>
-              </tr>
+          <th></th>
+        </tr>
+        <tr>
+          <td class="celda">XXXX</td>
 
-              <tr>
-                <td class="celdas">XXXX</td>
-            
-                <td class="celdas">Nombre Apellido</td>
-            
-                <td class="celdas">XXXXXXXXXX</td>
-      
-                <td class="celdas"> texto</td>  
-  
-                <td class="celdas">
-                  <button class="boton-secundario" style="color:#B81A1A"> <strong> Ver detalles </strong></button>
-                </td>
-      
-                <td class="celdas">
-                  <button class="boton-primario"> <strong>Entregar </strong></button>
-                </td>
-              </tr>
+          <td class="celda">Nombre Apellido</td>
 
-              <tr>
-                <td class="celdas">XXXX</td>
-            
-                <td class="celdas">Nombre Apellido</td>
-            
-                <td class="celdas">XXXXXXXXXX</td>
-      
-                <td class="celdas"> texto</td>  
-  
-                <td class="celdas">
-                  <button class="boton-secundario" style="color:#B81A1A"> <strong> Ver detalles </strong></button>
-                </td>
-      
-                <td class="celdas">
-                  <button class="boton-primario"> <strong>Entregar </strong></button>
-                </td>
-              </tr>
+          <td class="celda">XXXXXXXXXX</td>
 
-              <tr>
-                <td class="celdas">XXXX</td>
-            
-                <td class="celdas">Nombre Apellido</td>
-            
-                <td class="celdas">XXXXXXXXXX</td>
-      
-                <td class="celdas"> texto</td>  
-  
-                <td class="celdas">
-                  <button class="boton-secundario" style="color:#B81A1A"> <strong> Ver detalles </strong></button>
-                </td>
-      
-                <td class="celdas">
-                  <button class="boton-primario"> <strong>Entregar </strong></button>
-                </td>
-              </tr>
+          <td class="celda">texto</td>
 
-              <tr>
-                <td class="celdas">XXXX</td>
-            
-                <td class="celdas">Nombre Apellido</td>
-            
-                <td class="celdas">XXXXXXXXXX</td>
-      
-                <td class="celdas"> texto</td>  
-  
-                <td class="celdas">
-                  <button class="boton-secundario" style="color:#B81A1A"> <strong> Ver detalles </strong></button>
-                </td>
-      
-                <td class="celdas">
-                  <button class="boton-primario"> <strong>Entregar </strong></button>
-                </td>
-              </tr>
+          <td class="celda">
+            <button class="boton-secundario">
+              <strong> Ver detalles </strong>
+            </button>
+          </td>
 
-              <tr>
-                <td class="celdas">XXXX</td>
-            
-                <td class="celdas">Nombre Apellido</td>
-            
-                <td class="celdas">XXXXXXXXXX</td>
-      
-                <td class="celdas"> texto</td>  
-  
-                <td class="celdas">
-                  <button class="boton-secundario" style="color:#B81A1A"> <strong> Ver detalles </strong></button>
-                </td>
-      
-                <td class="celdas">
-                  <button class="boton-primario"> <strong>Entregar </strong></button>
-                </td>
-              </tr>
-          </table>
-        <br><br><br><br>
-</section>
-        <footer>
-          <div class="redes-sociales">
-            <p>Sigamos en contacto:</p>
-            <div class="iconos-redes">
-              <a target="_blank" href="https://twitter.com/elonmusk"
-                ><i class="fa-brands fa-twitter"></i
-              ></a>
-              <a target="_blank" href="https://www.facebook.com/mundogaturro"
-                ><i class="fa-brands fa-facebook"></i
-              ></a>
-              <a target="_blank" href="https://www.instagram.com/leomessi"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a target="_blank" href=""><i class="fa-solid fa-envelope"></i></a>
-            </div>
-          </div>
-          <p class="footer-marca">El Buen Sabor</p>
-    </footer>    
+          <td class="celda">
+            <button class="boton-primario"><strong>Entregar </strong></button>
+          </td>
+        </tr>
+        <tr>
+          <td class="celda">XXXX</td>
 
-    </body>
-    
+          <td class="celda">Nombre Apellido</td>
+
+          <td class="celda">XXXXXXXXXX</td>
+
+          <td class="celda">texto</td>
+
+          <td class="celda">
+            <button class="boton-secundario">
+              <strong> Ver detalles </strong>
+            </button>
+          </td>
+
+          <td class="celda">
+            <button class="boton-primario"><strong>Entregar </strong></button>
+          </td>
+        </tr>
+        <tr>
+          <td class="celda">XXXX</td>
+
+          <td class="celda">Nombre Apellido</td>
+
+          <td class="celda">XXXXXXXXXX</td>
+
+          <td class="celda">texto</td>
+
+          <td class="celda">
+            <button class="boton-secundario">
+              <strong> Ver detalles </strong>
+            </button>
+          </td>
+
+          <td class="celda">
+            <button class="boton-primario"><strong>Entregar </strong></button>
+          </td>
+        </tr>
+        <tr>
+          <td class="celda">XXXX</td>
+
+          <td class="celda">Nombre Apellido</td>
+
+          <td class="celda">XXXXXXXXXX</td>
+
+          <td class="celda">texto</td>
+
+          <td class="celda">
+            <button class="boton-secundario">
+              <strong> Ver detalles </strong>
+            </button>
+          </td>
+
+          <td class="celda">
+            <button class="boton-primario"><strong>Entregar </strong></button>
+          </td>
+        </tr>
+        <tr>
+          <td class="celda">XXXX</td>
+
+          <td class="celda">Nombre Apellido</td>
+
+          <td class="celda">XXXXXXXXXX</td>
+
+          <td class="celda">texto</td>
+
+          <td class="celda">
+            <button class="boton-secundario">
+              <strong> Ver detalles </strong>
+            </button>
+          </td>
+
+          <td class="celda">
+            <button class="boton-primario"><strong>Entregar </strong></button>
+          </td>
+        </tr>
+      </table>
+      <br /><br /><br /><br />
+    </section>
+    <footer>
+      <div class="redes-sociales">
+        <p>Sigamos en contacto:</p>
+        <div class="iconos-redes">
+          <a target="_blank" href="https://twitter.com/elonmusk"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a target="_blank" href="https://www.facebook.com/mundogaturro"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a target="_blank" href="https://www.instagram.com/leomessi"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a target="_blank" href=""><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+      <p class="footer-marca">El Buen Sabor</p>
+    </footer>
+  </body>
 </html>

@@ -30,10 +30,13 @@
     margin-right: 20px;
   }
 
-  .celdas {
-    background-color: white;
-    text-align: center;
+  .celda {
     border-collapse: separate;
-    border: 1px solid #000;
-    padding: 50px;
+    padding: 10px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .tabla button {
+      padding: 10px;
+    }
   }
